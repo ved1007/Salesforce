@@ -20,7 +20,7 @@ public class ClickOnGearIcon {
 
 		FirefoxDriver driver = new FirefoxDriver(); // Open firefox
 		// WebDriver driver = new ChromeDriver(); // Open Chrome
-		
+		//
 		
 		driver.get("https://rv--test.cs26.my.salesforce.com");
 
