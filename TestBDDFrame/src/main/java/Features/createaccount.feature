@@ -13,5 +13,5 @@ Then user will navigate to the Search field and search for the Account
 
 
 Examples: 
-	| username                           | password    |
+	| username                                                | password          |
 	| vedant.jagani@campingworld.com.test| Welcome2019*|

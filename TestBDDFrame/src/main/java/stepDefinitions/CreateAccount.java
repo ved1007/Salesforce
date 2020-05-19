@@ -3,6 +3,7 @@ package stepDefinitions;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -52,23 +53,22 @@ public class CreateAccount {
 		driver.findElement(By.xpath("//input[@id = 'Login' and @class = 'button r4 wide primary']")).click();
 
 	}
-	
+
 	@Then("^verify title for the Salesforce Home page$")
-	public void verify_title_for_the_Salesforce_Home_page()   {
+	public void verify_title_for_the_Salesforce_Home_page() {
 		String HomepageTitle = driver.getTitle();
 		System.out.println(HomepageTitle);
 		Assert.assertEquals("Lightning Experience", HomepageTitle);
-	   
-		
+
 	}
 
 	@Then("^user will click on the waffle icon$")
 	public void user_will_click_on_the_waffle_icon() throws InterruptedException {
-		
+
 		Actions action = new Actions(driver);
-	WebElement waffle =	driver.findElement(By.xpath("//button[@class='slds-button']"));
+		WebElement waffle = driver.findElement(By.xpath("//button[@class='slds-button']"));
 		action.moveToElement(waffle).click().build().perform();
-		
+
 		System.out.println("Clicked on the Waffle button");
 		Thread.sleep(3000);
 
@@ -83,12 +83,12 @@ public class CreateAccount {
 
 		}
 
-
 	}
 
 	@Then("^user will navigate to the Search field and search for the Account$")
 	public void user_will_navigate_to_the_Search_field_and_search_for_the_Account() {
 		driver.findElement(By.xpath("//input[@placeholder = 'Search apps and items...']")).sendKeys("Account");
+		driver.findElement(By.xpath("//input[@placeholder = 'Search apps and items...']")).sendKeys(Keys.ENTER);
 
 	}
 
