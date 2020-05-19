@@ -6,7 +6,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "/Users/vedant.jagani/eclipse-workspace/TestBDDFrame/src/main/java/Features"
+		features = "/Users/vedant.jagani/git/repository/TestBDDFrame/src/main/java/Features/createaccount.feature"
 		,glue= {"stepDefinitions"},
 				format= {"pretty","html:test-outout", "json:json_output/cucumber.json", "junit:junit_xml/cucumber.xml"}, //to generate different types of reporting
 				monochrome = true, //display the console output in a proper readable format

@@ -1,133 +1,183 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/Users/vedant.jagani/git/repository/TestBDDFrame/src/main/java/Features/createaccount.feature");
 formatter.feature({
   "line": 1,
-  "name": "Salesforce Login Feature",
+  "name": "Salesforce Create New Account",
   "description": "",
-  "id": "salesforce-login-feature",
+  "id": "salesforce-create-new-account",
   "keyword": "Feature"
 });
-formatter.scenario({
+formatter.scenarioOutline({
   "line": 3,
-  "name": "Salesforce Login Test Scenario",
+  "name": "User is able to create New Account in the Salesforce Scenario",
   "description": "",
-  "id": "salesforce-login-feature;salesforce-login-test-scenario",
-  "type": "scenario",
-  "keyword": "Scenario"
+  "id": "salesforce-create-new-account;user-is-able-to-create-new-account-in-the-salesforce-scenario",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
 });
 formatter.step({
   "line": 5,
-  "name": "Open Salesforce Website",
+  "name": "User will Open Salesforce Website",
   "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "verify title",
+  "name": "verify title for the Salesforce page",
   "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "user enter ID and Password",
+  "name": "user will enter \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
   "line": 8,
-  "name": "user click on the login button",
-  "keyword": "Then "
+  "name": "user click  the login button",
+  "keyword": "And "
 });
 formatter.step({
   "line": 9,
-  "name": "user will create new up",
-  "keyword": "Then "
+  "name": "verify title for the Salesforce Home page",
+  "keyword": "And "
 });
 formatter.step({
   "line": 10,
-  "name": "user will populate the SalesPerson field",
+  "name": "user will click on the waffle icon",
   "keyword": "Then "
 });
 formatter.step({
   "line": 11,
-  "name": "user will populate the email firstname lastname zipcode address fields",
+  "name": "user will navigate to the Search field and search for the Account",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 15,
+  "name": "",
+  "description": "",
+  "id": "salesforce-create-new-account;user-is-able-to-create-new-account-in-the-salesforce-scenario;",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "password"
+      ],
+      "line": 16,
+      "id": "salesforce-create-new-account;user-is-able-to-create-new-account-in-the-salesforce-scenario;;1"
+    },
+    {
+      "cells": [
+        "vedant.jagani@campingworld.com.test",
+        "Welcome2019*"
+      ],
+      "line": 17,
+      "id": "salesforce-create-new-account;user-is-able-to-create-new-account-in-the-salesforce-scenario;;2"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.scenario({
+  "line": 17,
+  "name": "User is able to create New Account in the Salesforce Scenario",
+  "description": "",
+  "id": "salesforce-create-new-account;user-is-able-to-create-new-account-in-the-salesforce-scenario;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 5,
+  "name": "User will Open Salesforce Website",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 6,
+  "name": "verify title for the Salesforce page",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "user will enter \"vedant.jagani@campingworld.com.test\" and \"Welcome2019*\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 12,
-  "name": "user click on the save button",
+  "line": 8,
+  "name": "user click  the login button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "verify title for the Salesforce Home page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "user will click on the waffle icon",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 13,
-  "name": "user will refresh the page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 14,
-  "name": "user will close the browser",
+  "line": 11,
+  "name": "user will navigate to the Search field and search for the Account",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginstepDefinitions.open_Salesforce_Website()"
+  "location": "CreateAccount.user_will_Open_Salesforce_Website()"
 });
 formatter.result({
-  "duration": 4901286564,
+  "duration": 3811290199,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginstepDefinitions.verify_title()"
+  "location": "CreateAccount.verify_title_for_the_Salesforce_page()"
 });
 formatter.result({
-  "duration": 8886728,
+  "duration": 6722869,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginstepDefinitions.user_enter_ID_and_Password()"
+  "arguments": [
+    {
+      "val": "vedant.jagani@campingworld.com.test",
+      "offset": 17
+    },
+    {
+      "val": "Welcome2019*",
+      "offset": 59
+    }
+  ],
+  "location": "CreateAccount.user_will_enter_and(String,String)"
 });
 formatter.result({
-  "duration": 262328650,
+  "duration": 249809144,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginstepDefinitions.user_click_on_the_login_button()"
+  "location": "CreateAccount.user_click_the_login_button()"
 });
 formatter.result({
-  "duration": 3258580125,
+  "duration": 2003575147,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginstepDefinitions.user_will_create_new_up()"
+  "location": "CreateAccount.verify_title_for_the_Salesforce_Home_page()"
 });
 formatter.result({
-  "duration": 9314461819,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027slds-m-horizontal_xxx-small slds-size--1-of-6 slds-truncate\u0027]//button [@type\u003d\u0027button\u0027]\"}\n  (Session info: chrome\u003d81.0.4044.138)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027HQ-991-2YEJG5H\u0027, ip: \u00272601:246:4500:eb00:9d77:54bd:f3e:9978%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14.4\u0027, java.version: \u002712.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: /var/folders/s3/88ktkygs3s3...}, goog:chromeOptions: {debuggerAddress: localhost:63158}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: affe58656b85b1b5000faf64419efe4a\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027slds-m-horizontal_xxx-small slds-size--1-of-6 slds-truncate\u0027]//button [@type\u003d\u0027button\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat stepDefinitions.LoginstepDefinitions.user_will_create_new_up(LoginstepDefinitions.java:58)\n\tat ✽.Then user will create new up(login.feature:9)\n",
-  "status": "failed"
+  "duration": 5399221283,
+  "status": "passed"
 });
 formatter.match({
-  "location": "LoginstepDefinitions.user_will_populate_the_SalesPerson_field()"
+  "location": "CreateAccount.user_will_click_on_the_waffle_icon()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3302576769,
+  "status": "passed"
 });
 formatter.match({
-  "location": "LoginstepDefinitions.user_will_populate_the_email_firstname_lastname_zipcode_address_fields()"
+  "location": "CreateAccount.user_will_navigate_to_the_Search_field_and_search_for_the_Account()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "LoginstepDefinitions.user_click_on_the_save_button()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "LoginstepDefinitions.user_will_refresh_the_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "LoginstepDefinitions.user_will_close_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
+  "duration": 313295027,
+  "status": "passed"
 });
 });

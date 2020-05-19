@@ -27,6 +27,8 @@ public class LoginstepDefinitions {
 		ChromeOptions opt = new ChromeOptions();
 		opt.addArguments("--disable-notifications");
 		driver = new ChromeDriver(opt);
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.get("https://rv--test.cs26.my.salesforce.com");
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
