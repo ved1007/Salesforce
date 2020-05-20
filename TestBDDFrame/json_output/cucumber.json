@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "line": 17,
+        "line": 25,
         "name": "User is able to create New Account in the Salesforce Scenario",
         "description": "",
         "id": "salesforce-create-new-account;user-is-able-to-create-new-account-in-the-salesforce-scenario;;2",
@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3811290199,
+              "duration": 5825483726,
               "status": "passed"
             },
             "line": 5,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 6722869,
+              "duration": 8036172,
               "status": "passed"
             },
             "line": 6,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 249809144,
+              "duration": 278397772,
               "status": "passed"
             },
             "line": 7,
@@ -62,7 +62,7 @@
           },
           {
             "result": {
-              "duration": 2003575147,
+              "duration": 2241885030,
               "status": "passed"
             },
             "line": 8,
@@ -74,7 +74,7 @@
           },
           {
             "result": {
-              "duration": 5399221283,
+              "duration": 11559042858,
               "status": "passed"
             },
             "line": 9,
@@ -86,7 +86,7 @@
           },
           {
             "result": {
-              "duration": 3302576769,
+              "duration": 3413161530,
               "status": "passed"
             },
             "line": 10,
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 313295027,
+              "duration": 7493582138,
               "status": "passed"
             },
             "line": 11,
@@ -107,6 +107,114 @@
               "location": "CreateAccount.user_will_navigate_to_the_Search_field_and_search_for_the_Account()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6067192,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user weill verify title for the Account page",
+            "match": {
+              "location": "CreateAccount.user_weill_verify_title_for_the_Account_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 173627867,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user will click on the New button",
+            "match": {
+              "location": "CreateAccount.user_will_click_on_the_New_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50276,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user will select the Household radio button",
+            "match": {
+              "location": "CreateAccount.user_will_select_the_Household_radio_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 29514,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user will click the Next button within the New Account window",
+            "match": {
+              "location": "CreateAccount.user_will_click_the_Next_button_within_the_New_Account_window()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28231,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user will verify that the required fields message is displayed",
+            "match": {
+              "location": "CreateAccount.user_will_verify_that_the_required_fields_message_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 103628,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user will populate fields within the Account Information section",
+            "match": {
+              "location": "CreateAccount.user_will_populate_fields_within_the_Account_Information_section()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 41551,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user will populate fields within the Address Inforamtion section",
+            "match": {
+              "location": "CreateAccount.user_will_populate_fields_within_the_Address_Inforamtion_section()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49963,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user will populate fields within the Cloud MDM Information",
+            "match": {
+              "location": "CreateAccount.user_will_populate_fields_within_the_Cloud_MDM_Information()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 112064,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user will create new account by clicking the Save button",
+            "match": {
+              "location": "CreateAccount.user_will_create_new_account_by_clicking_the_Save_button()"
+            },
+            "keyword": "And "
           }
         ]
       }

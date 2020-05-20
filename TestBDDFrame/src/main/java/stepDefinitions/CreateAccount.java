@@ -55,10 +55,11 @@ public class CreateAccount {
 	}
 
 	@Then("^verify title for the Salesforce Home page$")
-	public void verify_title_for_the_Salesforce_Home_page() {
+	public void verify_title_for_the_Salesforce_Home_page() throws InterruptedException {
 		String HomepageTitle = driver.getTitle();
 		System.out.println(HomepageTitle);
 		Assert.assertEquals("Lightning Experience", HomepageTitle);
+		Thread.sleep(4000);
 
 	}
 
@@ -86,9 +87,62 @@ public class CreateAccount {
 	}
 
 	@Then("^user will navigate to the Search field and search for the Account$")
-	public void user_will_navigate_to_the_Search_field_and_search_for_the_Account() {
+	public void user_will_navigate_to_the_Search_field_and_search_for_the_Account() throws InterruptedException {
 		driver.findElement(By.xpath("//input[@placeholder = 'Search apps and items...']")).sendKeys("Account");
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//input[@placeholder = 'Search apps and items...']")).sendKeys(Keys.ENTER);
+		Thread.sleep(4000);
+
+	}
+
+	@Then("^user weill verify title for the Account page$")
+	public void user_weill_verify_title_for_the_Account_page() {
+		String title = driver.getTitle();
+		System.out.println(title);
+		Assert.assertEquals("Recently Viewed | Account Websites | Salesforce", title);
+	}
+
+	@Then("^user will click on the New button$")
+	public void user_will_click_on_the_New_button() {
+		
+		driver.navigate().refresh();
+
+		driver.findElements(By.xpath("//div[@title='New' and @class='slds-truncate']")).get(1).click();
+
+	}
+
+	@Then("^user will select the Household radio button$")
+	public void user_will_select_the_Household_radio_button() {
+
+	}
+
+	@Then("^user will click the Next button within the New Account window$")
+	public void user_will_click_the_Next_button_within_the_New_Account_window() {
+
+	}
+
+	@Then("^user will verify that the required fields message is displayed$")
+	public void user_will_verify_that_the_required_fields_message_is_displayed() {
+
+	}
+
+	@Then("^user will populate fields within the Account Information section$")
+	public void user_will_populate_fields_within_the_Account_Information_section() {
+
+	}
+
+	@Then("^user will populate fields within the Address Inforamtion section$")
+	public void user_will_populate_fields_within_the_Address_Inforamtion_section() {
+
+	}
+
+	@Then("^user will populate fields within the Cloud MDM Information$")
+	public void user_will_populate_fields_within_the_Cloud_MDM_Information() {
+
+	}
+
+	@Then("^user will create new account by clicking the Save button$")
+	public void user_will_create_new_account_by_clicking_the_Save_button() {
 
 	}
 
