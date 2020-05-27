@@ -1,0 +1,240 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 26,
+        "name": "Within the Salesforce application User is able to create New Account",
+        "description": "",
+        "id": "create-new-account;within-the-salesforce-application-user-is-able-to-create-new-account;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3354978151,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User will Open Salesforce Website",
+            "match": {
+              "location": "NewAccount.user_will_Open_Salesforce_Website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5366005,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "verify title for the Salesforce page",
+            "match": {
+              "location": "NewAccount.verify_title_for_the_Salesforce_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 189855007,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user will enter \"vedant.jagani@campingworld.com.test\" and \"Welcome2019*\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "vedant.jagani@campingworld.com.test",
+                  "offset": 17
+                },
+                {
+                  "val": "Welcome2019*",
+                  "offset": 59
+                }
+              ],
+              "location": "NewAccount.user_will_enter_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2059405985,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click  the login button",
+            "match": {
+              "location": "NewAccount.user_click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8994343898,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verify title for the Salesforce Home page",
+            "match": {
+              "location": "NewAccount.verify_title_for_the_Salesforce_Home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3164428406,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user will click on the waffle icon",
+            "match": {
+              "location": "NewAccount.user_will_click_on_the_waffle_icon()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7407573115,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user will navigate to the Search field and search for the Account",
+            "match": {
+              "location": "NewAccount.user_will_navigate_to_the_Search_field_and_search_for_the_Account()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4884271,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user weill verify title for the Account page",
+            "match": {
+              "location": "NewAccount.user_weill_verify_title_for_the_Account_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2275050097,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user will click on the New button",
+            "match": {
+              "location": "NewAccount.user_will_click_on_the_New_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27801,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user will select the Household radio button",
+            "match": {
+              "location": "NewAccount.user_will_select_the_Household_radio_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23292,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user will click the Next button within the New Account window",
+            "match": {
+              "location": "NewAccount.user_will_click_the_Next_button_within_the_New_Account_window()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20464,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user will verify that the required fields message is displayed",
+            "match": {
+              "location": "NewAccount.user_will_verify_that_the_required_fields_message_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13964,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user will populate fields within the Account Information section",
+            "match": {
+              "location": "NewAccount.user_will_populate_fields_within_the_Account_Information_section()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12778,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user will populate fields within the Address Inforamtion section",
+            "match": {
+              "location": "NewAccount.user_will_populate_fields_within_the_Address_Inforamtion_section()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12763,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user will populate fields within the Cloud MDM Information",
+            "match": {
+              "location": "NewAccount.user_will_populate_fields_within_the_Cloud_MDM_Information()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12708,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user will create new account by clicking the Save button",
+            "match": {
+              "location": "NewAccount.user_will_create_new_account_by_clicking_the_Save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15511,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "use will close the application",
+            "match": {
+              "location": "NewAccount.use_will_close_the_application()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Create New Account",
+    "description": "",
+    "id": "create-new-account",
+    "keyword": "Feature",
+    "uri": "/Users/vedant.jagani/Documents/Automation/CucumberBDDFrame/src/main/java/Features/newaccount.feature"
+  }
+]

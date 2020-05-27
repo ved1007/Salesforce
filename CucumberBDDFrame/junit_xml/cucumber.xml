@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="27.456024">
+    <testcase classname="Create New Account" name="Within the Salesforce application User is able to create New Account" time="27.456024">
+        <system-out>
+            <![CDATA[Given User will Open Salesforce Website.....................................passed
+When verify title for the Salesforce page...................................passed
+Then user will enter "vedant.jagani@campingworld.com.test" and "Welcome2019*".passed
+And user click  the login button............................................passed
+And verify title for the Salesforce Home page...............................passed
+Then user will click on the waffle icon.....................................passed
+Then user will navigate to the Search field and search for the Account......passed
+Then user weill verify title for the Account page...........................passed
+Then user will click on the New button......................................passed
+Then user will select the Household radio button............................passed
+Then user will click the Next button within the New Account window..........passed
+Then user will verify that the required fields message is displayed.........passed
+Then user will populate fields within the Account Information section.......passed
+Then user will populate fields within the Address Inforamtion section.......passed
+Then user will populate fields within the Cloud MDM Information.............passed
+And user will create new account by clicking the Save button................passed
+And use will close the application..........................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

@@ -9,12 +9,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class CreateAccount {
+public class NewAccount {
 
 	WebDriver driver;
 
@@ -28,7 +30,7 @@ public class CreateAccount {
 		opt.addArguments("--disable-notifications");
 		driver = new ChromeDriver(opt);
 		driver.get("https://rv--test.cs26.my.salesforce.com");
-		driver.manage().window().maximize();
+//			driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 
 	}
@@ -88,7 +90,7 @@ public class CreateAccount {
 
 	@Then("^user will navigate to the Search field and search for the Account$")
 	public void user_will_navigate_to_the_Search_field_and_search_for_the_Account() throws InterruptedException {
-		driver.findElement(By.xpath("//input[@placeholder = 'Search apps and items...']")).sendKeys("Account");
+		driver.findElement(By.xpath("//input[@placeholder = 'Search apps and items...']")).sendKeys("Accounts");
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//input[@placeholder = 'Search apps and items...']")).sendKeys(Keys.ENTER);
 		Thread.sleep(4000);
@@ -104,10 +106,11 @@ public class CreateAccount {
 
 	@Then("^user will click on the New button$")
 	public void user_will_click_on_the_New_button() {
-		
-		driver.navigate().refresh();
 
-		driver.findElements(By.xpath("//div[@title='New' and @class='slds-truncate']")).get(1).click();
+		driver.navigate().refresh();
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebElement button = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@title='New']")));
+		button.click();
 
 	}
 
@@ -144,6 +147,12 @@ public class CreateAccount {
 	@Then("^user will create new account by clicking the Save button$")
 	public void user_will_create_new_account_by_clicking_the_Save_button() {
 
+	}
+
+	@Then("^use will close the application$")
+	public void use_will_close_the_application() {
+
+		// driver.close();
 	}
 
 }

@@ -1,6 +1,6 @@
-Feature: Salesforce Create New Account
+Feature: Create New Account
 
-Scenario Outline: User is able to create New Account in the Salesforce Scenario
+Scenario Outline: Within the Salesforce application User is able to create New Account
 
 Given User will Open Salesforce Website
 When verify title for the Salesforce page
@@ -18,6 +18,7 @@ Then user will populate fields within the Account Information section
 Then user will populate fields within the Address Inforamtion section
 Then user will populate fields within the Cloud MDM Information
 And user will create new account by clicking the Save button
+And use will close the application
 
 
 Examples: 
