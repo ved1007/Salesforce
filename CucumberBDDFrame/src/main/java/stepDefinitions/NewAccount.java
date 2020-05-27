@@ -97,16 +97,17 @@ public class NewAccount {
 
 	}
 
+// Verify page title
 	@Then("^user weill verify title for the Account page$")
 	public void user_weill_verify_title_for_the_Account_page() {
 		String title = driver.getTitle();
 		System.out.println(title);
-		Assert.assertEquals("Recently Viewed | Account Websites | Salesforce", title);
+		Assert.assertEquals("Recently Viewed | Accounts | Salesforce", title);
 	}
 
+// Click on New button
 	@Then("^user will click on the New button$")
 	public void user_will_click_on_the_New_button() {
-
 		driver.navigate().refresh();
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		WebElement button = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@title='New']")));
@@ -121,11 +122,24 @@ public class NewAccount {
 
 	@Then("^user will click the Next button within the New Account window$")
 	public void user_will_click_the_Next_button_within_the_New_Account_window() {
+		WebDriverWait wait2 = new WebDriverWait(driver, 20);
+		WebElement nextButton = wait2
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(),'Next')]")));
+		nextButton.click();
 
 	}
 
 	@Then("^user will verify that the required fields message is displayed$")
 	public void user_will_verify_that_the_required_fields_message_is_displayed() {
+		WebDriverWait wait3 = new WebDriverWait(driver, 10);
+		WebElement saveButton = wait3
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@title='Save']")));
+		saveButton.click();
+
+		String requiredFieldMessage = driver
+				.findElement(By.xpath("//span[contains(text(), 'Review the errors on this page.')]")).getText();
+		String expected = "Review the errors on this page.";
+		Assert.assertEquals(requiredFieldMessage, expected);
 
 	}
 
