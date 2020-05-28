@@ -1,5 +1,8 @@
 package stepDefinitions;
 
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -30,8 +33,9 @@ public class NewAccount {
 		opt.addArguments("--disable-notifications");
 		driver = new ChromeDriver(opt);
 		driver.get("https://rv--test.cs26.my.salesforce.com");
-//			driver.manage().window().maximize();
+		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 	}
 
@@ -130,7 +134,8 @@ public class NewAccount {
 	}
 
 	@Then("^user will verify that the required fields message is displayed$")
-	public void user_will_verify_that_the_required_fields_message_is_displayed() {
+	public void user_will_verify_that_the_required_fields_message_is_displayed() throws InterruptedException {
+		Thread.sleep(3000);
 		WebDriverWait wait3 = new WebDriverWait(driver, 10);
 		WebElement saveButton = wait3
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@title='Save']")));
@@ -144,13 +149,56 @@ public class NewAccount {
 	}
 
 	@Then("^user will populate fields within the Account Information section$")
-	public void user_will_populate_fields_within_the_Account_Information_section() {
+	public void user_will_populate_fields_within_the_Account_Information_section() throws InterruptedException {
+		Thread.sleep(3000);
+//Account Name field		
+		driver.findElements(By.xpath("//input[@class=' input' and @type='text']")).get(0).sendKeys("AutoAccount1");
+//Phone field		
+		driver.findElement(By.xpath("//input[@class=' input' and @type='tel']")).sendKeys("123-456-7890");
+//Asset Count
+		driver.findElement(By.xpath("//input[@class = 'input uiInputSmartNumber']")).sendKeys("101");
+//Close Date
+		driver.findElements(By.xpath("//input[@class=' input' and @type='text']")).get(1).click();
 
+		List<WebElement> dates = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+
+		int total_node = dates.size();
+
+		for (int i = 0; i < total_node; i++) {
+			String date = dates.get(i).getText();
+
+			if (date.equals("31")) {
+				dates.get(i).click();
+				break;
+			}
+		}
 	}
 
 	@Then("^user will populate fields within the Address Inforamtion section$")
-	public void user_will_populate_fields_within_the_Address_Inforamtion_section() {
+	public void user_will_populate_fields_within_the_Address_Inforamtion_section() throws InterruptedException {
+		// Billing Street
+		Thread.sleep(4000);
+		driver.findElement(By.xpath("//textarea[@placeholder='Billing Street']")).click();
 
+		driver.findElement(By.xpath("//textarea[@placeholder='Billing Street']")).sendKeys("1001 Billing Street");
+//		driver.findElement(By.xpath("*[id^='239:'][id$='a']")).sendKeys("1001 Billing Street");
+
+		// Shipping Street
+		Thread.sleep(4000);
+		driver.findElement(By.xpath("//textarea[@placeholder='Shipping Street']")).click();
+
+		driver.findElement(By.xpath("//textarea[@placeholder='Shipping Street']")).sendKeys("1002 Shipping Street");
+		// Billing City
+		driver.findElement(By.xpath("//input[@placeholder='Billing City']")).sendKeys("Chicago");
+
+		// Shipping City
+		driver.findElement(By.xpath("//input[@placeholder='Shipping City']")).sendKeys("Bartlett");
+
+		// Billing Zip Code
+		driver.findElement(By.xpath("//input[@placeholder='Billing Zip/Postal Code']")).sendKeys("60056");
+
+		// Shipping Zip Code
+		driver.findElement(By.xpath("//input[@placeholder='Shipping Zip/Postal Code']")).sendKeys("60103");
 	}
 
 	@Then("^user will populate fields within the Cloud MDM Information$")
