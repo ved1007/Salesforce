@@ -225,14 +225,14 @@ formatter.match({
   "location": "NewAccount.user_will_Open_Salesforce_Website()"
 });
 formatter.result({
-  "duration": 3898952558,
+  "duration": 4762135201,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.verify_title_for_the_Salesforce_page()"
 });
 formatter.result({
-  "duration": 5357393,
+  "duration": 6310112,
   "status": "passed"
 });
 formatter.match({
@@ -249,101 +249,105 @@ formatter.match({
   "location": "NewAccount.user_will_enter_and(String,String)"
 });
 formatter.result({
-  "duration": 205131057,
+  "duration": 229419835,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_click_the_login_button()"
 });
 formatter.result({
-  "duration": 1997570928,
+  "duration": 2065319992,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.verify_title_for_the_Salesforce_Home_page()"
 });
 formatter.result({
-  "duration": 25195233573,
+  "duration": 8503062016,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_click_on_the_waffle_icon()"
 });
 formatter.result({
-  "duration": 3297600944,
+  "duration": 3367804877,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_navigate_to_the_Search_field_and_search_for_the_Account()"
 });
 formatter.result({
-  "duration": 7420582260,
+  "duration": 7428881925,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_weill_verify_title_for_the_Account_page()"
 });
 formatter.result({
-  "duration": 5075501,
+  "duration": 5062608,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_click_on_the_New_button()"
 });
 formatter.result({
-  "duration": 2610885980,
+  "duration": 2452755015,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_select_the_Household_radio_button()"
 });
 formatter.result({
-  "duration": 26183,
+  "duration": 32641,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_click_the_Next_button_within_the_New_Account_window()"
 });
 formatter.result({
-  "duration": 1680790861,
+  "duration": 1191366444,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_verify_that_the_required_fields_message_is_displayed()"
 });
 formatter.result({
-  "duration": 11605169,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[@title\u003d\u0027Save\u0027]\"}\n  (Session info: chrome\u003d83.0.4103.61)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027HQ-991-0L7LVCF\u0027, ip: \u00272601:246:4500:eb00:186d:6569:7786:da0c%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14.6\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/s3/88ktkygs3s3...}, goog:chromeOptions: {debuggerAddress: localhost:53054}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 344251987fc83d561bd3aeee4128b815\n*** Element info: {Using\u003dxpath, value\u003d//button[@title\u003d\u0027Save\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat stepDefinitions.NewAccount.user_will_verify_that_the_required_fields_message_is_displayed(NewAccount.java:132)\n\tat ✽.Then user will verify that the required fields message is displayed(/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/src/main/java/Features/newaccount.feature:16)\n",
-  "status": "failed"
+  "duration": 3154569388,
+  "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_populate_fields_within_the_Account_Information_section()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3966251036,
+  "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_populate_fields_within_the_Address_Inforamtion_section()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 7485121627,
+  "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_populate_fields_within_the_Cloud_MDM_Information()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 31752370077,
+  "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_create_new_account_by_clicking_the_Save_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 24853,
+  "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.use_will_close_the_application()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 22923,
+  "status": "passed"
 });
 });

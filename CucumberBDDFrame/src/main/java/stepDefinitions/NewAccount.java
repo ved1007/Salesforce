@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.java.en.Given;
@@ -27,7 +29,7 @@ public class NewAccount {
 	public void user_will_Open_Salesforce_Website() {
 
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/vedant.jagani/Documents/Automation/ABCD/Drivers/chromedriver");
+				"/Users/vedant.jagani/Documents/Automation/SampleAutomation/Drivers/chromedriver");
 
 		ChromeOptions opt = new ChromeOptions();
 		opt.addArguments("--disable-notifications");
@@ -73,7 +75,7 @@ public class NewAccount {
 	public void user_will_click_on_the_waffle_icon() throws InterruptedException {
 
 		Actions action = new Actions(driver);
-		WebElement waffle = driver.findElement(By.xpath("//button[@class='slds-button']"));
+		WebElement waffle = driver.findElement(By.xpath("//div[@class='slds-icon-waffle']"));
 		action.moveToElement(waffle).click().build().perform();
 
 		System.out.println("Clicked on the Waffle button");
@@ -177,22 +179,36 @@ public class NewAccount {
 	@Then("^user will populate fields within the Address Inforamtion section$")
 	public void user_will_populate_fields_within_the_Address_Inforamtion_section() throws InterruptedException {
 		// Billing Street
-		Thread.sleep(4000);
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//textarea[@placeholder='Billing Street']")).click();
 
 		driver.findElement(By.xpath("//textarea[@placeholder='Billing Street']")).sendKeys("1001 Billing Street");
 //		driver.findElement(By.xpath("*[id^='239:'][id$='a']")).sendKeys("1001 Billing Street");
 
 		// Shipping Street
-		Thread.sleep(4000);
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//textarea[@placeholder='Shipping Street']")).click();
 
 		driver.findElement(By.xpath("//textarea[@placeholder='Shipping Street']")).sendKeys("1002 Shipping Street");
 		// Billing City
 		driver.findElement(By.xpath("//input[@placeholder='Billing City']")).sendKeys("Chicago");
 
+		// Billing States dropdown field
+		driver.findElement(By.xpath("//a[contains(text(),'None') and @data-interactive-lib-uid='17']")).click();
+		driver.findElement(By.xpath("//a[@title='Illinois']")).click();
+
 		// Shipping City
 		driver.findElement(By.xpath("//input[@placeholder='Shipping City']")).sendKeys("Bartlett");
+
+		// Shipping States dropdown field
+//		driver.findElement(By.xpath("//a[contains(text(),'None') and @data-interactive-lib-uid='22']")).click();
+//		Thread.sleep(4000);
+//		driver.findElement(By.xpath("//a[@title='Alaska']")).click();
+
+		WebElement ele = driver
+				.findElement(By.xpath("//a[contains(text(),'None') and @data-interactive-lib-uid='22']"));
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click();", ele);
 
 		// Billing Zip Code
 		driver.findElement(By.xpath("//input[@placeholder='Billing Zip/Postal Code']")).sendKeys("60056");
@@ -204,6 +220,51 @@ public class NewAccount {
 	@Then("^user will populate fields within the Cloud MDM Information$")
 	public void user_will_populate_fields_within_the_Cloud_MDM_Information() {
 
+		// Account Source
+//		driver.findElement(By.xpath("//a[contains(text(),'None') and @data-interactive-lib-uid='23']")).click();
+
+		// Brand Strategy
+		driver.findElement(By.xpath("//a[contains(text(),'None') and @data-interactive-lib-uid='26']")).click();
+		driver.findElement(By.xpath("//a[contains(text(), 'CWRV')]")).click();
+
+		// Acxiom Household ID
+		driver.findElement(By.xpath("//input[@data-interactive-lib-uid='24']")).sendKeys("Acxiom Household ID field");
+
+		// QAS Billing Validation Time stamp
+		driver.findElement(By.xpath("//input[@data-interactive-lib-uid='27']"))
+				.sendKeys("QAS Billing validation Status field");
+
+		// QAS Billing Validation Timestamp
+		driver.findElements(By.xpath("//input[@class=' input' and @type='text']")).get(4).click();
+
+		List<WebElement> dates = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+
+		int total_node = dates.size();
+
+		for (int i = 0; i < total_node; i++) {
+			String date = dates.get(i).getText();
+
+			if (date.equals("30")) {
+				dates.get(i).click();
+				break;
+			}
+		}
+
+		// Select Time
+		driver.findElements(By.xpath("//input[@class=' input' and @type='text']")).get(5).click();
+
+		List<WebElement> times = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+
+		for (int i = 1; i < i; i++) {
+			String time = times.get(i).getText();
+
+			if (time.equals("10")) {
+				times.get(i).click();
+				break;
+
+			}
+
+		}
 	}
 
 	@Then("^user will create new account by clicking the Save button$")
