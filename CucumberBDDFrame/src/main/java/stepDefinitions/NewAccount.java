@@ -294,8 +294,7 @@ public class NewAccount {
 		driver.findElement(By.xpath("//button[@title='Cancel']")).click();
 		driver.quit();
 		System.out.println("Salesforce application is closed");
-		System.out.println("Salesforce application is 1");
-		System.out.println("Salesforce application is 2");
+		
 	}
 
 }
