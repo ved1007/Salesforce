@@ -1,20 +1,24 @@
 package stepDefinitions;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.java.en.Given;
@@ -148,6 +152,19 @@ public class NewAccount {
 		String expected = "Review the errors on this page.";
 		Assert.assertEquals(requiredFieldMessage, expected);
 
+		// Take screenshot and store as a file format
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+
+		// now copy the screenshot to desired location using copyFile //method
+		try {
+			FileUtils.copyFile(source,
+					new File("/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/Screenshots/AccountPage.png"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 	}
 
 	@Then("^user will populate fields within the Account Information section$")
@@ -221,7 +238,8 @@ public class NewAccount {
 	public void user_will_populate_fields_within_the_Cloud_MDM_Information() {
 
 		// Account Source
-//		driver.findElement(By.xpath("//a[contains(text(),'None') and @data-interactive-lib-uid='23']")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'None') and @data-interactive-lib-uid='23']")).click();
+		driver.findElement(By.xpath("//a[@title='Internet']")).click();
 
 		// Brand Strategy
 		driver.findElement(By.xpath("//a[contains(text(),'None') and @data-interactive-lib-uid='26']")).click();
@@ -258,12 +276,11 @@ public class NewAccount {
 		for (int i = 1; i < i; i++) {
 			String time = times.get(i).getText();
 
-			if (time.equals("10")) {
+			if (time.equals("5")) {
 				times.get(i).click();
 				break;
 
 			}
-
 		}
 	}
 
@@ -274,8 +291,9 @@ public class NewAccount {
 
 	@Then("^use will close the application$")
 	public void use_will_close_the_application() {
-
-		// driver.close();
+		driver.findElement(By.xpath("//button[@title='Cancel']")).click();
+		driver.quit();
+		System.out.println("Salesforce application is closed");
 	}
 
 }
