@@ -269,32 +269,25 @@ public class NewAccount {
 		}
 
 		// Select Time
-		driver.findElements(By.xpath("//input[@class=' input' and @type='text']")).get(5).click();
-
-		List<WebElement> times = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
-
-		for (int i = 1; i < i; i++) {
-			String time = times.get(i).getText();
-
-			if (time.equals("5")) {
-				times.get(i).click();
-				break;
-
-			}
-		}
-	}
-
-	@Then("^user will create new account by clicking the Save button$")
-	public void user_will_create_new_account_by_clicking_the_Save_button() {
+		driver.findElements(By.xpath("//input[@class=' input' and @type='text']")).get(5).clear();
+		driver.findElements(By.xpath("//input[@class=' input' and @type='text']")).get(5).sendKeys("5:00 AM");
 
 	}
 
-	@Then("^use will close the application$")
-	public void use_will_close_the_application() {
-		driver.findElement(By.xpath("//button[@title='Cancel']")).click();
-		driver.quit();
-		System.out.println("Salesforce application is closed");
-		
+	@Then("^Click on the Save button$")
+	public void click_on_the_Save_button() {
+		driver.findElements(By.xpath("//span[contains(text(),'Save')]")).get(2).click();
+
 	}
 
 }
+
+
+//	@Then("^use will close the application$")
+//	public void use_will_close_the_application() {
+//		driver.findElement(By.xpath("//button[@title='Cancel']")).click();
+//		driver.quit();
+//		System.out.println("Salesforce application is closed");
+
+//		driver.findElements(By.xpath("werwerewrewrewr")).get(1).click();
+//	}

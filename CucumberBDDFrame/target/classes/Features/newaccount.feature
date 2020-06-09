@@ -17,8 +17,9 @@ Then user will verify that the required fields message is displayed
 Then user will populate fields within the Account Information section
 Then user will populate fields within the Address Inforamtion section
 Then user will populate fields within the Cloud MDM Information
-And user will create new account by clicking the Save button
-And use will close the application
+And Click on the Save button
+
+
 
 
 Examples: 
