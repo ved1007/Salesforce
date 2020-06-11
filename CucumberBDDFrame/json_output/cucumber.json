@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4152996522,
+              "duration": 4174036602,
               "status": "passed"
             },
             "line": 5,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 5119958,
+              "duration": 5396876,
               "status": "passed"
             },
             "line": 6,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 224321064,
+              "duration": 197687771,
               "status": "passed"
             },
             "line": 7,
@@ -62,7 +62,7 @@
           },
           {
             "result": {
-              "duration": 1901328652,
+              "duration": 2823439343,
               "status": "passed"
             },
             "line": 8,
@@ -74,7 +74,7 @@
           },
           {
             "result": {
-              "duration": 9111233597,
+              "duration": 33242413739,
               "status": "passed"
             },
             "line": 9,
@@ -86,7 +86,7 @@
           },
           {
             "result": {
-              "duration": 3314462418,
+              "duration": 10004456943,
               "status": "passed"
             },
             "line": 10,
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 7534912830,
+              "duration": 7276972611,
               "status": "passed"
             },
             "line": 11,
@@ -110,7 +110,7 @@
           },
           {
             "result": {
-              "duration": 5247393,
+              "duration": 5573124,
               "status": "passed"
             },
             "line": 12,
@@ -122,7 +122,7 @@
           },
           {
             "result": {
-              "duration": 2457679993,
+              "duration": 3042139576,
               "status": "passed"
             },
             "line": 13,
@@ -134,7 +134,7 @@
           },
           {
             "result": {
-              "duration": 38324,
+              "duration": 28559,
               "status": "passed"
             },
             "line": 14,
@@ -146,7 +146,7 @@
           },
           {
             "result": {
-              "duration": 1233568923,
+              "duration": 1860936112,
               "status": "passed"
             },
             "line": 15,
@@ -158,7 +158,7 @@
           },
           {
             "result": {
-              "duration": 3992347319,
+              "duration": 3767298077,
               "status": "passed"
             },
             "line": 16,
@@ -170,31 +170,83 @@
           },
           {
             "result": {
-              "duration": 3950636563,
+              "duration": 714253594,
               "status": "passed"
             },
             "line": 17,
-            "name": "user will populate fields within the Account Information section",
+            "name": "user will populate fields within the Account Information section \"Automation1\" and \"1234567890\" and \"101\"",
             "match": {
-              "location": "NewAccount.user_will_populate_fields_within_the_Account_Information_section()"
+              "arguments": [
+                {
+                  "val": "Automation1",
+                  "offset": 66
+                },
+                {
+                  "val": "1234567890",
+                  "offset": 84
+                },
+                {
+                  "val": "101",
+                  "offset": 101
+                }
+              ],
+              "location": "NewAccount.user_will_populate_fields_within_the_Account_Information_section_and_and(String,String,String)"
             },
+            "matchedColumns": [
+              2,
+              3,
+              4
+            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 7516890872,
+              "duration": 7205407228,
               "status": "passed"
             },
             "line": 18,
-            "name": "user will populate fields within the Address Inforamtion section",
+            "name": "user will populate fields within the Address Inforamtion section \"101 Chicago St\" and \"102 Chicago St\" and \"Chicago\" and \"S Chicago\" and \"\u003cbillingzipcode\u003e\" and \"60169\"",
             "match": {
-              "location": "NewAccount.user_will_populate_fields_within_the_Address_Inforamtion_section()"
+              "arguments": [
+                {
+                  "val": "101 Chicago St",
+                  "offset": 66
+                },
+                {
+                  "val": "102 Chicago St",
+                  "offset": 87
+                },
+                {
+                  "val": "Chicago",
+                  "offset": 108
+                },
+                {
+                  "val": "S Chicago",
+                  "offset": 122
+                },
+                {
+                  "val": "\u003cbillingzipcode\u003e",
+                  "offset": 138
+                },
+                {
+                  "val": "60169",
+                  "offset": 161
+                }
+              ],
+              "location": "NewAccount.user_will_populate_fields_within_the_Address_Inforamtion_section_and_and_and_and_and(String,String,String,String,String,String)"
             },
+            "matchedColumns": [
+              5,
+              6,
+              7,
+              8,
+              10
+            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 3116154794,
+              "duration": 1702801105,
               "status": "passed"
             },
             "line": 19,
@@ -206,7 +258,7 @@
           },
           {
             "result": {
-              "duration": 157384252,
+              "duration": 646456321,
               "status": "passed"
             },
             "line": 20,

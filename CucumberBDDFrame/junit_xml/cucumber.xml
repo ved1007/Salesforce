@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="48.674323">
-    <testcase classname="Create New Account" name="Within the Salesforce application User is able to create New Account" time="48.674323">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="76.669298">
+    <testcase classname="Create New Account" name="Within the Salesforce application User is able to create New Account" time="76.669298">
         <system-out>
             <![CDATA[Given User will Open Salesforce Website.....................................passed
 When verify title for the Salesforce page...................................passed
@@ -14,8 +14,8 @@ Then user will click on the New button......................................pass
 Then user will select the Household radio button............................passed
 Then user will click the Next button within the New Account window..........passed
 Then user will verify that the required fields message is displayed.........passed
-Then user will populate fields within the Account Information section.......passed
-Then user will populate fields within the Address Inforamtion section.......passed
+Then user will populate fields within the Account Information section "Automation1" and "1234567890" and "101".passed
+Then user will populate fields within the Address Inforamtion section "101 Chicago St" and "102 Chicago St" and "Chicago" and "S Chicago" and "<billingzipcode>" and "60169".passed
 Then user will populate fields within the Cloud MDM Information.............passed
 And Click on the Save button................................................passed
 ]]>

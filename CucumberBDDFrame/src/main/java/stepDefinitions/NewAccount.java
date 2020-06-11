@@ -21,6 +21,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -159,7 +160,7 @@ public class NewAccount {
 		// now copy the screenshot to desired location using copyFile //method
 		try {
 			FileUtils.copyFile(source,
-					new File("/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/Screenshots/AccountPage.png"));
+					new File("/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/Screenshots/RequiredField.png"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -167,15 +168,16 @@ public class NewAccount {
 
 	}
 
-	@Then("^user will populate fields within the Account Information section$")
-	public void user_will_populate_fields_within_the_Account_Information_section() throws InterruptedException {
-		Thread.sleep(3000);
+	@Then("^user will populate fields within the Account Information section \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void user_will_populate_fields_within_the_Account_Information_section_and_and(String accountname,
+			String phone, String assetcount) throws Throwable {
+
 //Account Name field		
-		driver.findElements(By.xpath("//input[@class=' input' and @type='text']")).get(0).sendKeys("AutoAccount1");
+		driver.findElements(By.xpath("//input[@class=' input' and @type='text']")).get(0).sendKeys(accountname);
 //Phone field		
-		driver.findElement(By.xpath("//input[@class=' input' and @type='tel']")).sendKeys("123-456-7890");
+		driver.findElement(By.xpath("//input[@class=' input' and @type='tel']")).sendKeys(phone);
 //Asset Count
-		driver.findElement(By.xpath("//input[@class = 'input uiInputSmartNumber']")).sendKeys("101");
+		driver.findElement(By.xpath("//input[@class = 'input uiInputSmartNumber']")).sendKeys(assetcount);
 //Close Date
 		driver.findElements(By.xpath("//input[@class=' input' and @type='text']")).get(1).click();
 
@@ -193,29 +195,31 @@ public class NewAccount {
 		}
 	}
 
-	@Then("^user will populate fields within the Address Inforamtion section$")
-	public void user_will_populate_fields_within_the_Address_Inforamtion_section() throws InterruptedException {
+	@Then("^user will populate fields within the Address Inforamtion section \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void user_will_populate_fields_within_the_Address_Inforamtion_section_and_and_and_and_and(String billingstreet,
+			String shippingstreet, String billingcity, String shippingcity, String abillingzipcoderg5, String shippingzipcode) throws Throwable {
+
 		// Billing Street
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//textarea[@placeholder='Billing Street']")).click();
 
-		driver.findElement(By.xpath("//textarea[@placeholder='Billing Street']")).sendKeys("1001 Billing Street");
-//		driver.findElement(By.xpath("*[id^='239:'][id$='a']")).sendKeys("1001 Billing Street");
+		driver.findElement(By.xpath("//textarea[@placeholder='Billing Street']")).sendKeys(billingstreet);
+//		driver.findElement(By.xpath("*[id^='239:'][id$='a']")).sendKeys("billingstreet");
 
 		// Shipping Street
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//textarea[@placeholder='Shipping Street']")).click();
 
-		driver.findElement(By.xpath("//textarea[@placeholder='Shipping Street']")).sendKeys("1002 Shipping Street");
+		driver.findElement(By.xpath("//textarea[@placeholder='Shipping Street']")).sendKeys(shippingstreet);
 		// Billing City
-		driver.findElement(By.xpath("//input[@placeholder='Billing City']")).sendKeys("Chicago");
+		driver.findElement(By.xpath("//input[@placeholder='Billing City']")).sendKeys(billingcity);
 
 		// Billing States dropdown field
 		driver.findElement(By.xpath("//a[contains(text(),'None') and @data-interactive-lib-uid='17']")).click();
 		driver.findElement(By.xpath("//a[@title='Illinois']")).click();
 
 		// Shipping City
-		driver.findElement(By.xpath("//input[@placeholder='Shipping City']")).sendKeys("Bartlett");
+		driver.findElement(By.xpath("//input[@placeholder='Shipping City']")).sendKeys(shippingcity);
 
 		// Shipping States dropdown field
 //		driver.findElement(By.xpath("//a[contains(text(),'None') and @data-interactive-lib-uid='22']")).click();
@@ -228,10 +232,10 @@ public class NewAccount {
 		executor.executeScript("arguments[0].click();", ele);
 
 		// Billing Zip Code
-		driver.findElement(By.xpath("//input[@placeholder='Billing Zip/Postal Code']")).sendKeys("60056");
+		driver.findElement(By.xpath("//input[@placeholder='Billing Zip/Postal Code']")).sendKeys(shippingzipcode);
 
 		// Shipping Zip Code
-		driver.findElement(By.xpath("//input[@placeholder='Shipping Zip/Postal Code']")).sendKeys("60103");
+		driver.findElement(By.xpath("//input[@placeholder='Shipping Zip/Postal Code']")).sendKeys(shippingzipcode);
 	}
 
 	@Then("^user will populate fields within the Cloud MDM Information$")
@@ -278,10 +282,22 @@ public class NewAccount {
 	public void click_on_the_Save_button() {
 		driver.findElements(By.xpath("//span[contains(text(),'Save')]")).get(2).click();
 
+		// Take screenshot and store as a file format
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+
+		// now copy the screenshot to desired location using copyFile //method
+		try {
+			FileUtils.copyFile(source,
+					new File("/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/Screenshots/AccountCreated.png"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 	}
 
 }
-
 
 //	@Then("^use will close the application$")
 //	public void use_will_close_the_application() {

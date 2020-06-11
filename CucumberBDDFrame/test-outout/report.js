@@ -76,12 +76,12 @@ formatter.step({
 });
 formatter.step({
   "line": 17,
-  "name": "user will populate fields within the Account Information section",
+  "name": "user will populate fields within the Account Information section \"\u003caccountname\u003e\" and \"\u003cphone\u003e\" and \"\u003cassetcount\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
   "line": 18,
-  "name": "user will populate fields within the Address Inforamtion section",
+  "name": "user will populate fields within the Address Inforamtion section \"\u003cbillingstreet\u003e\" and \"\u003cshippingstreet\u003e\" and \"\u003cbillingcity\u003e\" and \"\u003cshippingcity\u003e\" and \"\u003cbillingzipcode\u003e\" and \"\u003cshippingzipcode\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
@@ -103,7 +103,16 @@ formatter.examples({
     {
       "cells": [
         "username",
-        "password"
+        "password",
+        "accountname",
+        "phone",
+        "assetcount",
+        "billingstreet",
+        "shippingstreet",
+        "billingcity",
+        "shippingcity",
+        "billingzipCode",
+        "shippingzipcode"
       ],
       "line": 26,
       "id": "create-new-account;within-the-salesforce-application-user-is-able-to-create-new-account;;1"
@@ -111,7 +120,16 @@ formatter.examples({
     {
       "cells": [
         "vedant.jagani@campingworld.com.test",
-        "Welcome2019*"
+        "Welcome2019*",
+        "Automation1",
+        "1234567890",
+        "101",
+        "101 Chicago St",
+        "102 Chicago St",
+        "Chicago",
+        "S Chicago",
+        "60103",
+        "60169"
       ],
       "line": 27,
       "id": "create-new-account;within-the-salesforce-application-user-is-able-to-create-new-account;;2"
@@ -193,12 +211,24 @@ formatter.step({
 });
 formatter.step({
   "line": 17,
-  "name": "user will populate fields within the Account Information section",
+  "name": "user will populate fields within the Account Information section \"Automation1\" and \"1234567890\" and \"101\"",
+  "matchedColumns": [
+    2,
+    3,
+    4
+  ],
   "keyword": "Then "
 });
 formatter.step({
   "line": 18,
-  "name": "user will populate fields within the Address Inforamtion section",
+  "name": "user will populate fields within the Address Inforamtion section \"101 Chicago St\" and \"102 Chicago St\" and \"Chicago\" and \"S Chicago\" and \"\u003cbillingzipcode\u003e\" and \"60169\"",
+  "matchedColumns": [
+    5,
+    6,
+    7,
+    8,
+    10
+  ],
   "keyword": "Then "
 });
 formatter.step({
@@ -215,14 +245,14 @@ formatter.match({
   "location": "NewAccount.user_will_Open_Salesforce_Website()"
 });
 formatter.result({
-  "duration": 4152996522,
+  "duration": 4174036602,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.verify_title_for_the_Salesforce_page()"
 });
 formatter.result({
-  "duration": 5119958,
+  "duration": 5396876,
   "status": "passed"
 });
 formatter.match({
@@ -239,98 +269,138 @@ formatter.match({
   "location": "NewAccount.user_will_enter_and(String,String)"
 });
 formatter.result({
-  "duration": 224321064,
+  "duration": 197687771,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_click_the_login_button()"
 });
 formatter.result({
-  "duration": 1901328652,
+  "duration": 2823439343,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.verify_title_for_the_Salesforce_Home_page()"
 });
 formatter.result({
-  "duration": 9111233597,
+  "duration": 33242413739,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_click_on_the_waffle_icon()"
 });
 formatter.result({
-  "duration": 3314462418,
+  "duration": 10004456943,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_navigate_to_the_Search_field_and_search_for_the_Account()"
 });
 formatter.result({
-  "duration": 7534912830,
+  "duration": 7276972611,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_weill_verify_title_for_the_Account_page()"
 });
 formatter.result({
-  "duration": 5247393,
+  "duration": 5573124,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_click_on_the_New_button()"
 });
 formatter.result({
-  "duration": 2457679993,
+  "duration": 3042139576,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_select_the_Household_radio_button()"
 });
 formatter.result({
-  "duration": 38324,
+  "duration": 28559,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_click_the_Next_button_within_the_New_Account_window()"
 });
 formatter.result({
-  "duration": 1233568923,
+  "duration": 1860936112,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_verify_that_the_required_fields_message_is_displayed()"
 });
 formatter.result({
-  "duration": 3992347319,
+  "duration": 3767298077,
   "status": "passed"
 });
 formatter.match({
-  "location": "NewAccount.user_will_populate_fields_within_the_Account_Information_section()"
+  "arguments": [
+    {
+      "val": "Automation1",
+      "offset": 66
+    },
+    {
+      "val": "1234567890",
+      "offset": 84
+    },
+    {
+      "val": "101",
+      "offset": 101
+    }
+  ],
+  "location": "NewAccount.user_will_populate_fields_within_the_Account_Information_section_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 3950636563,
+  "duration": 714253594,
   "status": "passed"
 });
 formatter.match({
-  "location": "NewAccount.user_will_populate_fields_within_the_Address_Inforamtion_section()"
+  "arguments": [
+    {
+      "val": "101 Chicago St",
+      "offset": 66
+    },
+    {
+      "val": "102 Chicago St",
+      "offset": 87
+    },
+    {
+      "val": "Chicago",
+      "offset": 108
+    },
+    {
+      "val": "S Chicago",
+      "offset": 122
+    },
+    {
+      "val": "\u003cbillingzipcode\u003e",
+      "offset": 138
+    },
+    {
+      "val": "60169",
+      "offset": 161
+    }
+  ],
+  "location": "NewAccount.user_will_populate_fields_within_the_Address_Inforamtion_section_and_and_and_and_and(String,String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 7516890872,
+  "duration": 7205407228,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_populate_fields_within_the_Cloud_MDM_Information()"
 });
 formatter.result({
-  "duration": 3116154794,
+  "duration": 1702801105,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.click_on_the_Save_button()"
 });
 formatter.result({
-  "duration": 157384252,
+  "duration": 646456321,
   "status": "passed"
 });
 });
