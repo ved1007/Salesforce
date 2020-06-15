@@ -245,14 +245,14 @@ formatter.match({
   "location": "NewAccount.user_will_Open_Salesforce_Website()"
 });
 formatter.result({
-  "duration": 4174036602,
+  "duration": 4718173634,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.verify_title_for_the_Salesforce_page()"
 });
 formatter.result({
-  "duration": 5396876,
+  "duration": 10659567,
   "status": "passed"
 });
 formatter.match({
@@ -269,70 +269,70 @@ formatter.match({
   "location": "NewAccount.user_will_enter_and(String,String)"
 });
 formatter.result({
-  "duration": 197687771,
+  "duration": 226096610,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_click_the_login_button()"
 });
 formatter.result({
-  "duration": 2823439343,
+  "duration": 2596649416,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.verify_title_for_the_Salesforce_Home_page()"
 });
 formatter.result({
-  "duration": 33242413739,
+  "duration": 8397467665,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_click_on_the_waffle_icon()"
 });
 formatter.result({
-  "duration": 10004456943,
+  "duration": 3233781800,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_navigate_to_the_Search_field_and_search_for_the_Account()"
 });
 formatter.result({
-  "duration": 7276972611,
+  "duration": 7480151326,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_weill_verify_title_for_the_Account_page()"
 });
 formatter.result({
-  "duration": 5573124,
+  "duration": 5939738,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_click_on_the_New_button()"
 });
 formatter.result({
-  "duration": 3042139576,
+  "duration": 2414335350,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_select_the_Household_radio_button()"
 });
 formatter.result({
-  "duration": 28559,
+  "duration": 33148,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_click_the_Next_button_within_the_New_Account_window()"
 });
 formatter.result({
-  "duration": 1860936112,
+  "duration": 1199521954,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_verify_that_the_required_fields_message_is_displayed()"
 });
 formatter.result({
-  "duration": 3767298077,
+  "duration": 3766135445,
   "status": "passed"
 });
 formatter.match({
@@ -353,7 +353,7 @@ formatter.match({
   "location": "NewAccount.user_will_populate_fields_within_the_Account_Information_section_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 714253594,
+  "duration": 784773291,
   "status": "passed"
 });
 formatter.match({
@@ -386,21 +386,21 @@ formatter.match({
   "location": "NewAccount.user_will_populate_fields_within_the_Address_Inforamtion_section_and_and_and_and_and(String,String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 7205407228,
+  "duration": 7397001150,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.user_will_populate_fields_within_the_Cloud_MDM_Information()"
 });
 formatter.result({
-  "duration": 1702801105,
+  "duration": 2107707294,
   "status": "passed"
 });
 formatter.match({
   "location": "NewAccount.click_on_the_Save_button()"
 });
 formatter.result({
-  "duration": 646456321,
+  "duration": 659850512,
   "status": "passed"
 });
 });

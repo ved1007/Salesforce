@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="76.669298">
-    <testcase classname="Create New Account" name="Within the Salesforce application User is able to create New Account" time="76.669298">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="44.998278">
+    <testcase classname="Create New Account" name="Within the Salesforce application User is able to create New Account" time="44.998278">
         <system-out>
             <![CDATA[Given User will Open Salesforce Website.....................................passed
 When verify title for the Salesforce page...................................passed
