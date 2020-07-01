@@ -3,56 +3,56 @@
     "line": 1,
     "elements": [
       {
-        "line": 27,
-        "name": "Within the Salesforce application User is able to create New Account",
-        "description": "",
-        "id": "create-new-account;within-the-salesforce-application-user-is-able-to-create-new-account;;2",
+        "line": 26,
+        "name": "",
+        "description": "Within the Salesforce application User is able to delete Account",
+        "id": "delete-created-account;;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 4718173634,
+              "duration": 3995029847,
               "status": "passed"
             },
-            "line": 5,
-            "name": "User will Open Salesforce Website",
+            "line": 6,
+            "name": "Salesforce site",
             "match": {
-              "location": "NewAccount.user_will_Open_Salesforce_Website()"
+              "location": "CreateNewLead.salesforce_site()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 10659567,
+              "duration": 6073980,
               "status": "passed"
             },
-            "line": 6,
-            "name": "verify title for the Salesforce page",
+            "line": 7,
+            "name": "Salesforce page title",
             "match": {
-              "location": "NewAccount.verify_title_for_the_Salesforce_page()"
+              "location": "CreateNewLead.salesforce_page_title()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 226096610,
+              "duration": 242160471,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user will enter \"vedant.jagani@campingworld.com.test\" and \"Welcome2019*\"",
+            "line": 8,
+            "name": "login as Dealer Sales or DealerSalesManagerOrSystemAdmin enter \"vedant.jagani@campingworld.com.train\" and \"Welcome2019*\"",
             "match": {
               "arguments": [
                 {
-                  "val": "vedant.jagani@campingworld.com.test",
-                  "offset": 17
+                  "val": "vedant.jagani@campingworld.com.train",
+                  "offset": 64
                 },
                 {
                   "val": "Welcome2019*",
-                  "offset": 59
+                  "offset": 107
                 }
               ],
-              "location": "NewAccount.user_will_enter_and(String,String)"
+              "location": "CreateNewLead.login_as_Dealer_Sales_or_DealerSalesManagerOrSystemAdmin_enter_and(String,String)"
             },
             "matchedColumns": [
               0,
@@ -62,219 +62,72 @@
           },
           {
             "result": {
-              "duration": 2596649416,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user click  the login button",
-            "match": {
-              "location": "NewAccount.user_click_the_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 8397467665,
+              "duration": 1967053676,
               "status": "passed"
             },
             "line": 9,
-            "name": "verify title for the Salesforce Home page",
+            "name": "click login button",
             "match": {
-              "location": "NewAccount.verify_title_for_the_Salesforce_Home_page()"
+              "location": "CreateNewLead.click_login_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3233781800,
+              "duration": 8032285896,
               "status": "passed"
             },
             "line": 10,
-            "name": "user will click on the waffle icon",
+            "name": "Salesforce Home page title",
             "match": {
-              "location": "NewAccount.user_will_click_on_the_waffle_icon()"
+              "location": "CreateNewLead.salesforce_Home_page_title()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 7480151326,
+              "duration": 304545681,
               "status": "passed"
             },
             "line": 11,
-            "name": "user will navigate to the Search field and search for the Account",
+            "name": "click Leads tab",
             "match": {
-              "location": "NewAccount.user_will_navigate_to_the_Search_field_and_search_for_the_Account()"
+              "location": "CreateNewLead.click_Leads_tab()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 5939738,
+              "duration": 3675697838,
               "status": "passed"
             },
             "line": 12,
-            "name": "user weill verify title for the Account page",
+            "name": "click on the new button",
             "match": {
-              "location": "NewAccount.user_weill_verify_title_for_the_Account_page()"
+              "location": "CreateNewLead.click_on_the_new_button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2414335350,
-              "status": "passed"
+              "duration": 30057105614,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//select[@class\u003d\u0027slds-select\u0027]\"}\n  (Session info: chrome\u003d83.0.4103.116)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u0027unknown\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027HQ-991-0L7LVCF\u0027, ip: \u00272601:246:4500:eb00:a4e0:d8c2:4017:d864%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14.6\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/s3/88ktkygs3s3...}, goog:chromeOptions: {debuggerAddress: localhost:52475}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: dfc929c2158c18ea56913cd3b7c7507f\n*** Element info: {Using\u003dxpath, value\u003d//select[@class\u003d\u0027slds-select\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat stepDefinitions.CreateNewLead.choose_Location_and_Save(CreateNewLead.java:93)\n\tat ✽.Then Choose Location and Save(/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/src/main/java/Features/CreateNewLead.feature:13)\n",
+              "status": "failed"
             },
             "line": 13,
-            "name": "user will click on the New button",
+            "name": "Choose Location and Save",
             "match": {
-              "location": "NewAccount.user_will_click_on_the_New_button()"
+              "location": "CreateNewLead.choose_Location_and_Save()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 33148,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user will select the Household radio button",
-            "match": {
-              "location": "NewAccount.user_will_select_the_Household_radio_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1199521954,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user will click the Next button within the New Account window",
-            "match": {
-              "location": "NewAccount.user_will_click_the_Next_button_within_the_New_Account_window()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3766135445,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user will verify that the required fields message is displayed",
-            "match": {
-              "location": "NewAccount.user_will_verify_that_the_required_fields_message_is_displayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 784773291,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user will populate fields within the Account Information section \"Automation1\" and \"1234567890\" and \"101\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Automation1",
-                  "offset": 66
-                },
-                {
-                  "val": "1234567890",
-                  "offset": 84
-                },
-                {
-                  "val": "101",
-                  "offset": 101
-                }
-              ],
-              "location": "NewAccount.user_will_populate_fields_within_the_Account_Information_section_and_and(String,String,String)"
-            },
-            "matchedColumns": [
-              2,
-              3,
-              4
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 7397001150,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user will populate fields within the Address Inforamtion section \"101 Chicago St\" and \"102 Chicago St\" and \"Chicago\" and \"S Chicago\" and \"\u003cbillingzipcode\u003e\" and \"60169\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "101 Chicago St",
-                  "offset": 66
-                },
-                {
-                  "val": "102 Chicago St",
-                  "offset": 87
-                },
-                {
-                  "val": "Chicago",
-                  "offset": 108
-                },
-                {
-                  "val": "S Chicago",
-                  "offset": 122
-                },
-                {
-                  "val": "\u003cbillingzipcode\u003e",
-                  "offset": 138
-                },
-                {
-                  "val": "60169",
-                  "offset": 161
-                }
-              ],
-              "location": "NewAccount.user_will_populate_fields_within_the_Address_Inforamtion_section_and_and_and_and_and(String,String,String,String,String,String)"
-            },
-            "matchedColumns": [
-              5,
-              6,
-              7,
-              8,
-              10
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2107707294,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user will populate fields within the Cloud MDM Information",
-            "match": {
-              "location": "NewAccount.user_will_populate_fields_within_the_Cloud_MDM_Information()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 659850512,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "Click on the Save button",
-            "match": {
-              "location": "NewAccount.click_on_the_Save_button()"
-            },
-            "keyword": "And "
           }
         ]
       }
     ],
-    "name": "Create New Account",
+    "name": "Delete created Account",
     "description": "",
-    "id": "create-new-account",
+    "id": "delete-created-account",
     "keyword": "Feature",
-    "uri": "/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/src/main/java/Features/newaccount.feature"
+    "uri": "/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/src/main/java/Features/CreateNewLead.feature"
   }
 ]

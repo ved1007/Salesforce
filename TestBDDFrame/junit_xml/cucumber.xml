@@ -1,24 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="30.9997">
-    <testcase classname="Salesforce Create New Account" name="User is able to create New Account in the Salesforce Scenario" time="30.9997">
-        <system-out>
-            <![CDATA[Given User will Open Salesforce Website.....................................passed
-When verify title for the Salesforce page...................................passed
-Then user will enter "vedant.jagani@campingworld.com.test" and "Welcome2019*".passed
-And user click  the login button............................................passed
-And verify title for the Salesforce Home page...............................passed
-Then user will click on the waffle icon.....................................passed
-Then user will navigate to the Search field and search for the Account......passed
-Then user weill verify title for the Account page...........................passed
-Then user will click on the New button......................................passed
-Then user will select the Household radio button............................passed
-Then user will click the Next button within the New Account window..........passed
-Then user will verify that the required fields message is displayed.........passed
-Then user will populate fields within the Account Information section.......passed
-Then user will populate fields within the Address Inforamtion section.......passed
-Then user will populate fields within the Cloud MDM Information.............passed
-And user will create new account by clicking the Save button................passed
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.126535">
+    <testcase classname="Salesforce Create New Account" name="User is able to create New Account in the Salesforce Scenario" time="0.126535">
+        <failure message="java.lang.IllegalStateException: The driver executable does not exist: /Users/vedant.jagani/Documents/Automation/ABCD/Drivers/chromedriver&#10;&#9;at com.google.common.base.Preconditions.checkState(Preconditions.java:585)&#10;&#9;at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)&#10;&#9;at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)&#10;&#9;at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)&#10;&#9;at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)&#10;&#9;at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)&#10;&#9;at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)&#10;&#9;at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)&#10;&#9;at stepDefinitions.CreateAccount.user_will_Open_Salesforce_Website(CreateAccount.java:29)&#10;&#9;at ✽.Given User will Open Salesforce Website(/Users/vedant.jagani/git/Salesforce/TestBDDFrame/src/main/java/Features/createaccount.feature:5)&#10;">
+            <![CDATA[Given User will Open Salesforce Website.....................................failed
+When verify title for the Salesforce page...................................skipped
+Then user will enter "vedant.jagani@campingworld.com.test" and "Welcome2019*".skipped
+And user click  the login button............................................skipped
+And verify title for the Salesforce Home page...............................skipped
+Then user will click on the waffle icon.....................................skipped
+Then user will navigate to the Search field and search for the Account......skipped
+Then user weill verify title for the Account page...........................skipped
+Then user will click on the New button......................................skipped
+Then user will select the Household radio button............................skipped
+Then user will click the Next button within the New Account window..........skipped
+Then user will verify that the required fields message is displayed.........skipped
+Then user will populate fields within the Account Information section.......skipped
+Then user will populate fields within the Address Inforamtion section.......skipped
+Then user will populate fields within the Cloud MDM Information.............skipped
+And user will create new account by clicking the Save button................skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable does not exist: /Users/vedant.jagani/Documents/Automation/ABCD/Drivers/chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+	at stepDefinitions.CreateAccount.user_will_Open_Salesforce_Website(CreateAccount.java:29)
+	at ✽.Given User will Open Salesforce Website(/Users/vedant.jagani/git/Salesforce/TestBDDFrame/src/main/java/Features/createaccount.feature:5)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>

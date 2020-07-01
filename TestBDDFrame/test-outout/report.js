@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/Users/vedant.jagani/git/repository/TestBDDFrame/src/main/java/Features/createaccount.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/Users/vedant.jagani/git/Salesforce/TestBDDFrame/src/main/java/Features/createaccount.feature");
 formatter.feature({
   "line": 1,
   "name": "Salesforce Create New Account",
@@ -215,15 +215,15 @@ formatter.match({
   "location": "CreateAccount.user_will_Open_Salesforce_Website()"
 });
 formatter.result({
-  "duration": 5825483726,
-  "status": "passed"
+  "duration": 126535305,
+  "error_message": "java.lang.IllegalStateException: The driver executable does not exist: /Users/vedant.jagani/Documents/Automation/ABCD/Drivers/chromedriver\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:585)\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:157)\n\tat stepDefinitions.CreateAccount.user_will_Open_Salesforce_Website(CreateAccount.java:29)\n\tat ✽.Given User will Open Salesforce Website(/Users/vedant.jagani/git/Salesforce/TestBDDFrame/src/main/java/Features/createaccount.feature:5)\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "CreateAccount.verify_title_for_the_Salesforce_page()"
 });
 formatter.result({
-  "duration": 8036172,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -239,98 +239,84 @@ formatter.match({
   "location": "CreateAccount.user_will_enter_and(String,String)"
 });
 formatter.result({
-  "duration": 278397772,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "CreateAccount.user_click_the_login_button()"
 });
 formatter.result({
-  "duration": 2241885030,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "CreateAccount.verify_title_for_the_Salesforce_Home_page()"
 });
 formatter.result({
-  "duration": 11559042858,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "CreateAccount.user_will_click_on_the_waffle_icon()"
 });
 formatter.result({
-  "duration": 3413161530,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "CreateAccount.user_will_navigate_to_the_Search_field_and_search_for_the_Account()"
 });
 formatter.result({
-  "duration": 7493582138,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "CreateAccount.user_weill_verify_title_for_the_Account_page()"
 });
 formatter.result({
-  "duration": 6067192,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "CreateAccount.user_will_click_on_the_New_button()"
 });
 formatter.result({
-  "duration": 173627867,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "CreateAccount.user_will_select_the_Household_radio_button()"
 });
 formatter.result({
-  "duration": 50276,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "CreateAccount.user_will_click_the_Next_button_within_the_New_Account_window()"
 });
 formatter.result({
-  "duration": 29514,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "CreateAccount.user_will_verify_that_the_required_fields_message_is_displayed()"
 });
 formatter.result({
-  "duration": 28231,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "CreateAccount.user_will_populate_fields_within_the_Account_Information_section()"
 });
 formatter.result({
-  "duration": 103628,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "CreateAccount.user_will_populate_fields_within_the_Address_Inforamtion_section()"
 });
 formatter.result({
-  "duration": 41551,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "CreateAccount.user_will_populate_fields_within_the_Cloud_MDM_Information()"
 });
 formatter.result({
-  "duration": 49963,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "CreateAccount.user_will_create_new_account_by_clicking_the_Save_button()"
 });
 formatter.result({
-  "duration": 112064,
-  "status": "passed"
+  "status": "skipped"
 });
 });
