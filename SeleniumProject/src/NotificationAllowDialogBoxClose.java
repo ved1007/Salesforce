@@ -19,7 +19,6 @@ public class NotificationAllowDialogBoxClose {
 		driver.get("https://rv--test.cs26.my.salesforce.com");
 
 // Salesforce Test sandbox Web site		
-
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);

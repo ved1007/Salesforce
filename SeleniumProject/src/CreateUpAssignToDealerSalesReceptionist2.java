@@ -43,7 +43,6 @@ public class CreateUpAssignToDealerSalesReceptionist2 {
 		driver.navigate().refresh();
 
 //Click on the Home tab
-
 		driver.findElementByXPath("//span [contains( text(), 'Home')]");
 		String homepagetitle = driver.getTitle();
 		Thread.sleep(5000);
@@ -52,7 +51,6 @@ public class CreateUpAssignToDealerSalesReceptionist2 {
 		Thread.sleep(5000);
 		
 // Click on the Waffle icon		
-
 		driver.findElement(By.xpath("//div[@class = 'slds-icon-waffle']")).click();
 		Thread.sleep(5000);
 		
