@@ -56,16 +56,66 @@ formatter.step({
 });
 formatter.step({
   "line": 13,
-  "name": "Populate New Opportunity RV Sales fields",
+  "name": "Populate System Admin Layout fields",
   "keyword": "And "
 });
 formatter.step({
   "line": 14,
+  "name": "Opportunity Information",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "Interested In Attributes",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "Interested In Details",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 17,
+  "name": "Towing Information",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 18,
+  "name": "Currently Own Trade-InCurrently Own TradeIn from Web Lead fields",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 19,
+  "name": "Pupulate Info from lead fields",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 20,
+  "name": "Lead Source",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "Enter the Description Information",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 22,
+  "name": "Other data fields",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 23,
+  "name": "Populate the System Information fields",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 24,
   "name": "Click the Save button",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 17,
+  "line": 27,
   "name": "",
   "description": "",
   "id": "created-new-opportunitie;user-is-able-to-create-opportunitie;",
@@ -75,7 +125,7 @@ formatter.examples({
         "username",
         "password"
       ],
-      "line": 18,
+      "line": 28,
       "id": "created-new-opportunitie;user-is-able-to-create-opportunitie;;1"
     },
     {
@@ -83,14 +133,14 @@ formatter.examples({
         "vedant.jagani@campingworld.com.test",
         "Welcome2019*"
       ],
-      "line": 19,
+      "line": 29,
       "id": "created-new-opportunitie;user-is-able-to-create-opportunitie;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 19,
+  "line": 29,
   "name": "User is able to create Opportunitie",
   "description": "",
   "id": "created-new-opportunitie;user-is-able-to-create-opportunitie;;2",
@@ -143,11 +193,61 @@ formatter.step({
 });
 formatter.step({
   "line": 13,
-  "name": "Populate New Opportunity RV Sales fields",
+  "name": "Populate System Admin Layout fields",
   "keyword": "And "
 });
 formatter.step({
   "line": 14,
+  "name": "Opportunity Information",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "Interested In Attributes",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "Interested In Details",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 17,
+  "name": "Towing Information",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 18,
+  "name": "Currently Own Trade-InCurrently Own TradeIn from Web Lead fields",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 19,
+  "name": "Pupulate Info from lead fields",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 20,
+  "name": "Lead Source",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "Enter the Description Information",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 22,
+  "name": "Other data fields",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 23,
+  "name": "Populate the System Information fields",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 24,
   "name": "Click the Save button",
   "keyword": "Then "
 });
@@ -155,14 +255,14 @@ formatter.match({
   "location": "Opportunities.open_the_Salesforce_Website()"
 });
 formatter.result({
-  "duration": 4093489179,
+  "duration": 5629591241,
   "status": "passed"
 });
 formatter.match({
   "location": "Opportunities.verify_the_Salesforce_page_title()"
 });
 formatter.result({
-  "duration": 5276228,
+  "duration": 5631925,
   "status": "passed"
 });
 formatter.match({
@@ -179,56 +279,126 @@ formatter.match({
   "location": "Opportunities.login_with_valid_username_and_password_and(String,String)"
 });
 formatter.result({
-  "duration": 206210760,
+  "duration": 190710416,
   "status": "passed"
 });
 formatter.match({
   "location": "Opportunities.click_login_button()"
 });
 formatter.result({
-  "duration": 2178619826,
+  "duration": 1819368468,
   "status": "passed"
 });
 formatter.match({
   "location": "Opportunities.verify_Salesforce_Home_page_title()"
 });
 formatter.result({
-  "duration": 9637178223,
+  "duration": 8176097245,
   "status": "passed"
 });
 formatter.match({
   "location": "Opportunities.click_on_the_Opportunities_tab()"
 });
 formatter.result({
-  "duration": 4015121655,
+  "duration": 3968843254,
   "status": "passed"
 });
 formatter.match({
   "location": "Opportunities.click_on_the_New_button()"
 });
 formatter.result({
-  "duration": 153288930,
+  "duration": 148535456,
   "status": "passed"
 });
 formatter.match({
   "location": "Opportunities.select_a_record_type_and_click_Next()"
 });
 formatter.result({
-  "duration": 921697811,
+  "duration": 7226483620,
   "status": "passed"
 });
 formatter.match({
-  "location": "Opportunities.populate_New_Opportunity_RV_Sales_fields()"
+  "location": "Opportunities.populate_System_Admin_Layout_fields()"
 });
 formatter.result({
-  "duration": 5215083802,
+  "duration": 2059341213,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Opportunities.Opportunity_Information()"
+});
+formatter.result({
+  "duration": 6605674595,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Opportunities.populate_Interested_In_Attributes_fields()"
+});
+formatter.result({
+  "duration": 758039010,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Opportunities.Interested_In_Details()"
+});
+formatter.result({
+  "duration": 31542,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Opportunities.Towing_Information()"
+});
+formatter.result({
+  "duration": 22700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Opportunities.currently_Own_Trade_InCurrently_Own_TradeIn_from_Web_Lead_fields()"
+});
+formatter.result({
+  "duration": 33364,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Opportunities.pupulate_Info_from_lead_fields()"
+});
+formatter.result({
+  "duration": 19970,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Opportunities.Lead_Source()"
+});
+formatter.result({
+  "duration": 26532,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Opportunities.enter_the_Description_Information()"
+});
+formatter.result({
+  "duration": 19075,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Opportunities.populate_Other_data_fields()"
+});
+formatter.result({
+  "duration": 18239,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Opportunities.populate_the_System_Information_fields()"
+});
+formatter.result({
+  "duration": 29543,
   "status": "passed"
 });
 formatter.match({
   "location": "Opportunities.click_the_Save_button()"
 });
 formatter.result({
-  "duration": 43286,
+  "duration": 29367,
   "status": "passed"
 });
 });

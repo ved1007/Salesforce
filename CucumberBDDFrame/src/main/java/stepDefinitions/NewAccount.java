@@ -180,14 +180,10 @@ public class NewAccount {
 		driver.findElement(By.xpath("//input[@class = 'input uiInputSmartNumber']")).sendKeys(assetcount);
 //Close Date
 		driver.findElements(By.xpath("//input[@class=' input' and @type='text']")).get(1).click();
-
 		List<WebElement> dates = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
-
 		int total_node = dates.size();
-
 		for (int i = 0; i < total_node; i++) {
 			String date = dates.get(i).getText();
-
 			if (date.equals("31")) {
 				dates.get(i).click();
 				break;

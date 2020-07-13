@@ -8,10 +8,20 @@ Scenario Outline: User is able to create Opportunitie
 	And  Click login button 
 	And Verify Salesforce Home page title 
 	Then Click on the Opportunities tab 
-	Then Click on the New button
-	Then Select a record type and click Next
-	And Populate New Opportunity RV Sales fields
-	Then Click the Save button
+	Then Click on the New button 
+	Then Select a record type and click Next 
+	And  Populate System Admin Layout fields 
+	And Opportunity Information 
+	And Interested In Attributes 
+	And Interested In Details 
+	And Towing Information 
+	And Currently Own Trade-InCurrently Own TradeIn from Web Lead fields 
+	And Pupulate Info from lead fields 
+	And Lead Source 
+	And Enter the Description Information 
+	And Other data fields 
+	And Populate the System Information fields 
+	Then Click the Save button 
 	
 	
 	Examples: 

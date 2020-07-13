@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "line": 19,
+        "line": 29,
         "name": "User is able to create Opportunitie",
         "description": "",
         "id": "created-new-opportunitie;user-is-able-to-create-opportunitie;;2",
@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4093489179,
+              "duration": 5629591241,
               "status": "passed"
             },
             "line": 5,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 5276228,
+              "duration": 5631925,
               "status": "passed"
             },
             "line": 6,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 206210760,
+              "duration": 190710416,
               "status": "passed"
             },
             "line": 7,
@@ -62,7 +62,7 @@
           },
           {
             "result": {
-              "duration": 2178619826,
+              "duration": 1819368468,
               "status": "passed"
             },
             "line": 8,
@@ -74,7 +74,7 @@
           },
           {
             "result": {
-              "duration": 9637178223,
+              "duration": 8176097245,
               "status": "passed"
             },
             "line": 9,
@@ -86,7 +86,7 @@
           },
           {
             "result": {
-              "duration": 4015121655,
+              "duration": 3968843254,
               "status": "passed"
             },
             "line": 10,
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 153288930,
+              "duration": 148535456,
               "status": "passed"
             },
             "line": 11,
@@ -110,7 +110,7 @@
           },
           {
             "result": {
-              "duration": 921697811,
+              "duration": 7226483620,
               "status": "passed"
             },
             "line": 12,
@@ -122,22 +122,142 @@
           },
           {
             "result": {
-              "duration": 5215083802,
+              "duration": 2059341213,
               "status": "passed"
             },
             "line": 13,
-            "name": "Populate New Opportunity RV Sales fields",
+            "name": "Populate System Admin Layout fields",
             "match": {
-              "location": "Opportunities.populate_New_Opportunity_RV_Sales_fields()"
+              "location": "Opportunities.populate_System_Admin_Layout_fields()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 43286,
+              "duration": 6605674595,
               "status": "passed"
             },
             "line": 14,
+            "name": "Opportunity Information",
+            "match": {
+              "location": "Opportunities.Opportunity_Information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 758039010,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Interested In Attributes",
+            "match": {
+              "location": "Opportunities.populate_Interested_In_Attributes_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31542,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Interested In Details",
+            "match": {
+              "location": "Opportunities.Interested_In_Details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Towing Information",
+            "match": {
+              "location": "Opportunities.Towing_Information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33364,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Currently Own Trade-InCurrently Own TradeIn from Web Lead fields",
+            "match": {
+              "location": "Opportunities.currently_Own_Trade_InCurrently_Own_TradeIn_from_Web_Lead_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19970,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Pupulate Info from lead fields",
+            "match": {
+              "location": "Opportunities.pupulate_Info_from_lead_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26532,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Lead Source",
+            "match": {
+              "location": "Opportunities.Lead_Source()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19075,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Enter the Description Information",
+            "match": {
+              "location": "Opportunities.enter_the_Description_Information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18239,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Other data fields",
+            "match": {
+              "location": "Opportunities.populate_Other_data_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29543,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Populate the System Information fields",
+            "match": {
+              "location": "Opportunities.populate_the_System_Information_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29367,
+              "status": "passed"
+            },
+            "line": 24,
             "name": "Click the Save button",
             "match": {
               "location": "Opportunities.click_the_Save_button()"
