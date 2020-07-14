@@ -20,7 +20,7 @@ Scenario Outline: User is able to create Opportunitie
 	And Lead Source 
 	And Enter the Description Information 
 	And Other data fields 
-	And Populate the System Information fields 
+	And System Information fields 
 	Then Click the Save button 
 	
 	

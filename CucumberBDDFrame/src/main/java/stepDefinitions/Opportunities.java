@@ -170,25 +170,137 @@ public class Opportunities {
 		driver.findElement(By.cssSelector("*[id^='798:'][id$='a']")).sendKeys("IDS FI Quote #field");
 
 		// Review Requested Date field
+		driver.findElement(By.cssSelector("*[id^='824:'][id$='a']")).click();
+		List<WebElement> reviewRequestedDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node2 = reviewRequestedDate.size();
+		for (int i = 0; i < total_node2; i++) {
+			String date = reviewRequestedDate.get(i).getText();
+			if (date.equals("25")) {
+				reviewRequestedDate.get(i).click();
+				break;
+			}
+		}
 
-		// First Survey Attempt field
+		// First Survey Attempt Date field
+		driver.findElement(By.cssSelector("*[id^='865:'][id$='a']")).click();
+		List<WebElement> firstSurveyAttemptDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node3 = firstSurveyAttemptDate.size();
+		for (int i = 0; i < total_node3; i++) {
+			String date = firstSurveyAttemptDate.get(i).getText();
+			if (date.equals("25")) {
+				firstSurveyAttemptDate.get(i).click();
+				break;
+			}
+		}
 
 		// Write-Up Amount field
+		driver.findElement(By.cssSelector("*[id^='902:'][id$='a']")).sendKeys("Write Up Amount");
 
 		// County field
 		driver.findElement(By.cssSelector("*[id^='940:'][id$='a']")).sendKeys("Country field");
 
 		// Customer appointment Date and Time
+		driver.findElement(By.cssSelector("*[id^='865:'][id$='a']")).click();
+		List<WebElement> customerAppointmentDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node4 = customerAppointmentDate.size();
+		for (int i = 0; i < total_node4; i++) {
+			String date = customerAppointmentDate.get(i).getText();
+			if (date.equals("25")) {
+				customerAppointmentDate.get(i).click();
+				break;
+			}
+		}
 
 		// Type dropdown field
 
-		// Appointment complated Date
+		// Appointment completed Date
+		driver.findElement(By.cssSelector("*[id^='1232:'][id$='a']")).click();
+		List<WebElement> appointmentCompletedDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node5 = appointmentCompletedDate.size();
+		for (int i = 0; i < total_node5; i++) {
+			String date = appointmentCompletedDate.get(i).getText();
+			if (date.equals("25")) {
+				appointmentCompletedDate.get(i).click();
+				break;
+			}
+		}
 
-		// Customer Delivery Date and Time field
+		// CustomerDelivery Date and Time
+		driver.findElement(By.cssSelector("*[id^='1335:'][id$='a']")).click();
+		List<WebElement> CustomerDelivery = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node6 = CustomerDelivery.size();
+		for (int i = 0; i < total_node6; i++) {
+			String date = CustomerDelivery.get(i).getText();
+			if (date.equals("25")) {
+				CustomerDelivery.get(i).click();
+				break;
+			}
+		}
 
-		// Appointment - Deliveriry Set - Contacted - Up Assigned checkboxes
+		// Appointment - Deliverery Set - Contacted - Up Assigned checkboxes
 
-		// PDI Printed Date and Time
+		// FirstResponseTime
+		driver.findElement(By.cssSelector("*[id^='1523:'][id$='a']")).click();
+		List<WebElement> FirstResponseTime = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node7 = FirstResponseTime.size();
+		for (int i = 0; i < total_node7; i++) {
+			String date = FirstResponseTime.get(i).getText();
+			if (date.equals("25")) {
+				FirstResponseTime.get(i).click();
+				break;
+			}
+		}
+
+		// PDIPrinted Date and Time
+		driver.findElement(By.cssSelector("*[id^='1563:'][id$='a']")).click();
+		List<WebElement> PDIPrinted = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node8 = PDIPrinted.size();
+		for (int i = 0; i < total_node8; i++) {
+			String date = PDIPrinted.get(i).getText();
+			if (date.equals("25")) {
+				PDIPrinted.get(i).click();
+				break;
+			}
+		}
+
+		// BusinessAdjustedCreatedDate
+		driver.findElement(By.cssSelector("*[id^='1633:'][id$='a']")).click();
+		List<WebElement> BusinessAdjustedCreatedDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node9 = BusinessAdjustedCreatedDate.size();
+		for (int i = 0; i < total_node9; i++) {
+			String date = BusinessAdjustedCreatedDate.get(i).getText();
+			if (date.equals("25")) {
+				BusinessAdjustedCreatedDate.get(i).click();
+				break;
+			}
+		}
+
+		// BusinessAdjustedCreatedDateEnd
+		driver.findElement(By.cssSelector("*[id^='1687:'][id$='a']")).click();
+		List<WebElement> BusinessAdjustedCreatedDateEnd = driver
+				.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node10 = BusinessAdjustedCreatedDateEnd.size();
+		for (int i = 0; i < total_node10; i++) {
+			String date = BusinessAdjustedCreatedDateEnd.get(i).getText();
+			if (date.equals("25")) {
+				BusinessAdjustedCreatedDateEnd.get(i).click();
+				break;
+			}
+		}
+
+		// BusinessAdjustedCreatedDateStart
+		driver.findElement(By.cssSelector("*[id^='1741:'][id$='a']")).click();
+		List<WebElement> BusinessAdjustedCreatedDateStart = driver
+				.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node11 = BusinessAdjustedCreatedDateStart.size();
+		for (int i = 0; i < total_node11; i++) {
+			String date = BusinessAdjustedCreatedDateStart.get(i).getText();
+			if (date.equals("25")) {
+				BusinessAdjustedCreatedDateStart.get(i).click();
+				break;
+			}
+		}
+
 	}
 
 	@Then("^Interested In Attributes$")
@@ -321,6 +433,17 @@ public class Opportunities {
 		// Location Primary Lead
 		// Enterprise Lead
 		// eLead Create Date
+		driver.findElement(By.cssSelector("*[id^='5430:'][id$='a']")).click();
+		List<WebElement> eLeadCreatedDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node = eLeadCreatedDate.size();
+		for (int i = 0; i < total_node; i++) {
+			String date = eLeadCreatedDate.get(i).getText();
+			if (date.equals("27")) {
+				eLeadCreatedDate.get(i).click();
+				break;
+			}
+
+		}
 
 	}
 
@@ -360,15 +483,79 @@ public class Opportunities {
 
 	}
 
-	@Then("^Populate the System Information fields$")
-	public void populate_the_System_Information_fields() {
+	@Then("^System Information fields$")
+	public void System_Information_fields() {
 
-		// Last Activity Date
+		// LastActivityDate
+		driver.findElement(By.cssSelector("*[id^='6733:'][id$='a']")).click();
+		List<WebElement> LastActivityDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node12 = LastActivityDate.size();
+		for (int i = 0; i < total_node12; i++) {
+			String date = LastActivityDate.get(i).getText();
+			if (date.equals("27")) {
+				LastActivityDate.get(i).click();
+				break;
+			}
+		}
 		// Next Activity Date
-		// Last Stage Change Time Date and Time
+		driver.findElement(By.cssSelector("*[id^='6780:'][id$='a']")).click();
+		List<WebElement> NextActivityDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node13 = NextActivityDate.size();
+		for (int i = 0; i < total_node13; i++) {
+			String date = NextActivityDate.get(i).getText();
+			if (date.equals("27")) {
+				NextActivityDate.get(i).click();
+				break;
+			}
+		}
+
+		// LastStageChangeTime Date and Time
+		driver.findElement(By.cssSelector("*[id^='6843:'][id$='a']")).click();
+		List<WebElement> LastStageChangeTime = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node14 = LastStageChangeTime.size();
+		for (int i = 0; i < total_node14; i++) {
+			String date = LastStageChangeTime.get(i).getText();
+			if (date.equals("27")) {
+				LastStageChangeTime.get(i).click();
+				break;
+			}
+		}
+
 		// Last Sales Activity Date Time
-		// Last Lead Conversion Date TIme
+		driver.findElement(By.cssSelector("*[id^='6803:'][id$='a']")).click();
+		List<WebElement> LastSalesActivityDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node15 = LastSalesActivityDate.size();
+		for (int i = 0; i < total_node15; i++) {
+			String date = LastSalesActivityDate.get(i).getText();
+			if (date.equals("27")) {
+				LastSalesActivityDate.get(i).click();
+				break;
+			}
+		}
+
+		// Last Lead Conversion Date Time
+		driver.findElement(By.cssSelector("*[id^='6879:'][id$='a']")).click();
+		List<WebElement> LastLeadConversionDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node16 = LastLeadConversionDate.size();
+		for (int i = 0; i < total_node16; i++) {
+			String date = LastLeadConversionDate.get(i).getText();
+			if (date.equals("30")) {
+				LastLeadConversionDate.get(i).click();
+				break;
+			}
+		}
+
 		// CRM Submission TIME DATE
+		driver.findElement(By.cssSelector("*[id^='7061:'][id$='a']")).click();
+		List<WebElement> CRMSubmissionTime = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node17 = CRMSubmissionTime.size();
+		for (int i = 0; i < total_node17; i++) {
+			String date = CRMSubmissionTime.get(i).getText();
+			if (date.equals("30")) {
+				CRMSubmissionTime.get(i).click();
+				break;
+			}
+		}
 
 	}
 
