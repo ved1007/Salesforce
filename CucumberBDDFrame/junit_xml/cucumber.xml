@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="36.588547">
-    <testcase classname="created New Opportunitie" name="User is able to create Opportunitie" time="36.588547">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="91.652369">
+    <testcase classname="created New Opportunitie" name="User is able to create Opportunitie" time="91.652369">
         <system-out>
             <![CDATA[Given Open the Salesforce Website...........................................passed
 When verify the Salesforce page title.......................................passed
@@ -20,7 +20,7 @@ And Pupulate Info from lead fields..........................................pass
 And Lead Source.............................................................passed
 And Enter the Description Information.......................................passed
 And Other data fields.......................................................passed
-And Populate the System Information fields..................................passed
+And System Information fields...............................................passed
 Then Click the Save button..................................................passed
 ]]>
         </system-out>

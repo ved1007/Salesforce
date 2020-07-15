@@ -320,6 +320,8 @@ public class Opportunities {
 		driver.findElement(By.cssSelector("*[id^='2842:'][id$='a']")).sendKeys("Genius Notes 3 field");
 
 		// # Sleeps
+		driver.findElement(By.cssSelector("*[id^='2886:'][id$='a']")).sendKeys("# Sleeps field");
+
 		// Year From
 		// Year To
 		// Price From
@@ -336,30 +338,64 @@ public class Opportunities {
 	public void Interested_In_Details() {
 
 		// Intrested Type
+		driver.findElement(By.cssSelector("*[id^='2933:'][id$='a']")).sendKeys("Intrested Type field");
 
-		// INterior Color
+		// Interior Color
+		driver.findElement(By.cssSelector("*[id^='2949:'][id$='a']")).sendKeys("Interior Color field");
 
 		// Interested Category
+		driver.findElement(By.cssSelector("*[id^='2969:'][id$='a']")).sendKeys("Intrested Catagory field");
 
 		// Exterior Color
+		driver.findElement(By.cssSelector("*[id^='2985:'][id$='a']")).sendKeys("Exterior Color field");
 		// Interested Year
+		driver.findElement(By.cssSelector("*[id^='3005:'][id$='a']")).sendKeys("2019");
 		// # Doors
+		driver.findElement(By.cssSelector("*[id^='3021:'][id$='a']")).sendKeys("4");
 		// Interested Make
+		driver.findElement(By.cssSelector("*[id^='3043:'][id$='a']")).sendKeys("Intrested Make field");
 		// Mileage
+		driver.findElement(By.cssSelector("*[id^='3059:'][id$='a']")).sendKeys("5000");
 		// Interested Model
+		driver.findElement(By.cssSelector("*[id^='3081:'][id$='a']")).sendKeys("2020");
 		// Vehicle Options
+		driver.findElement(By.cssSelector("*[id^='3097:'][id$='a']")).sendKeys("Vehicle Options field");
 		// Interested Product
+		driver.findElement(By.cssSelector("*[id^='3117:'][id$='a']")).sendKeys("Intrested Product field");
+
 		// Interest Level dropdown
+
 		// Vehicle Trim
+		driver.findElement(By.cssSelector("*[id^='3183:'][id$='a']")).sendKeys("Vehicle Trim field");
 		// Buying Horizon
+		driver.findElement(By.cssSelector("*[id^='3199:'][id$='a']")).sendKeys("Buying Horizen field");
 		// Vehicle Engine
+		driver.findElement(By.cssSelector("*[id^='3219:'][id$='a']")).sendKeys("Vehicle Engine field");
+
 		// Payment Method dropdown
+		
 		// Chassis dropdown
+
 		// Payment Details
+		driver.findElement(By.cssSelector("*[id^='3331:'][id$='a']")).sendKeys("Payment Details field");
 		// Transmission
-		// Vehicle procing
+		driver.findElement(By.cssSelector("*[id^='3351:'][id$='a']")).sendKeys("Transmission field");
+
+		// Vehicle pricing
+		driver.findElement(By.cssSelector("*[id^='3367:'][id$='a']")).sendKeys("Vehicle pricing field");
+
+		// Interested Stock
+		driver.findElement(By.cssSelector("*[id^='3387:'][id$='a']")).sendKeys("Intrested Stock field");
+
+		// Vehicle Comments
+		driver.findElement(By.cssSelector("*[id^='3403:'][id$='a']")).sendKeys("Vehicle comments field");
+
 		// Interested Id
+		driver.findElement(By.cssSelector("*[id^='3423:'][id$='a']")).sendKeys("Intrested ID field");
+
 		// Webpage
+		driver.findElement(By.cssSelector("*[id^='3439:'][id$='a']")).sendKeys("www.campingworld.com");
+
 		// Toy Deck drop down
 		// Outdoor Kitchen
 		// Outdoor Entertainment
@@ -372,12 +408,25 @@ public class Opportunities {
 	public void Towing_Information() {
 
 		// Tow Vehicle Year
-		// Tow Vehicle Make
-		// Tow Vehicle Model
-		// Tow Vehicle Trim
-		// Tow Vehicle Style
+		driver.findElement(By.cssSelector("*[id^='3869:'][id$='a']")).sendKeys("Tow Vehicle Year field");
+
 		// Max Towing Capacity
+		driver.findElement(By.cssSelector("*[id^='3887:'][id$='a']")).sendKeys("Max Towing Capicity field");
+
+		// Tow Vehicle Make
+		driver.findElement(By.cssSelector("*[id^='3909:'][id$='a']")).sendKeys("Tow Vehicle Make field");
+
+		// Tow Vehicle Model
+		driver.findElement(By.cssSelector("*[id^='3943:'][id$='a']")).sendKeys("Tow Vehicle Model field");
+
 		// Tow Vehicle VIN
+		driver.findElement(By.cssSelector("*[id^='3959:'][id$='a']")).sendKeys("Tow Vehicle VIN field");
+
+		// Tow Vehicle Trim
+		driver.findElement(By.cssSelector("*[id^='3979:'][id$='a']")).sendKeys("Tow Vehicle Trim field");
+
+		// Tow Vehicle Style
+		driver.findElement(By.cssSelector("*[id^='4013:'][id$='a']")).sendKeys("Tow Vehicle Style field");
 
 	}
 
@@ -385,33 +434,78 @@ public class Opportunities {
 	public void currently_Own_Trade_InCurrently_Own_TradeIn_from_Web_Lead_fields() {
 
 		// Current Owner Category
-		// Current Owned Year
-		// Current Owned Make
-		// Current Owned Product
-		// Current Owned Model
-		// Current Owned Trim
-		// Current Owned Length
-		// Current Owned Engine
-		// Current Owned Options
+		driver.findElement(By.cssSelector("*[id^='4058:'][id$='a']")).sendKeys("Current Owner Category field");
+
 		// Current Owned Mileage
+		driver.findElement(By.cssSelector("*[id^='4074:'][id$='a']")).sendKeys("Current Owned Milage field");
+
+		// Current Owned Year
+		driver.findElement(By.cssSelector("*[id^='4096:'][id$='a']")).sendKeys("Current Owned Year field");
+
 		// Current Owned Payoff
+		driver.findElement(By.cssSelector("*[id^='4112:'][id$='a']")).sendKeys("Current Owned Payoff field");
+
+		// Current Owned Make
+		driver.findElement(By.cssSelector("*[id^='4134:'][id$='a']")).sendKeys("Current Owned Make field");
+
 		// Current Owned Quote Low
+		driver.findElement(By.cssSelector("*[id^='4150:'][id$='a']")).sendKeys("Current Owned Quote Low field");
+
+		// Current Owned Product
+		driver.findElement(By.cssSelector("*[id^='4172:'][id$='a']")).sendKeys("Current Owned Product field");
+
+		// Current Owned Model
+		driver.findElement(By.cssSelector("*[id^='4210:'][id$='a']")).sendKeys("Current Owned Model field");
+
 		// Current Owned Quote High
+		driver.findElement(By.cssSelector("*[id^='4188:'][id$='a']")).sendKeys("Current Owned Quote field");
+
+		// Current Owned Trim
+		driver.findElement(By.cssSelector("*[id^='4246:'][id$='a']")).sendKeys("Current Owned Trim field");
+
 		// Current Owned Quote Details
+		driver.findElement(By.cssSelector("*[id^='4226:'][id$='a']")).sendKeys("Current Owned Quote Details field");
+
+		// Current Owned Length
+		driver.findElement(By.cssSelector("*[id^='4282:'][id$='a']")).sendKeys("Current Owned Length field");
+
 		// Current Owned Comments
+		driver.findElement(By.cssSelector("*[id^='4262:'][id$='a']")).sendKeys("Current Owned Comments field");
+
+		// Current Owned Engine
+		driver.findElement(By.cssSelector("*[id^='4318:'][id$='a']")).sendKeys("Current Owned Engine field");
+
 		// Current Owned Condition
+		driver.findElement(By.cssSelector("*[id^='4298:'][id$='a']")).sendKeys("Current Owned Condtion field");
+
 		// Current Owned ID
+		driver.findElement(By.cssSelector("*[id^='4334:'][id$='a']")).sendKeys("Current Owner ID field");
+
+		// Current Owned Options
+		driver.findElement(By.cssSelector("*[id^='4354:'][id$='a']")).sendKeys("Current Owned Options field");
 
 	}
 
 	@Then("^Pupulate Info from lead fields$")
 	public void pupulate_Info_from_lead_fields() {
 		// Lead Phone
-		// Lead Mobile Phone
-		// Lead other Phone
-		// Lead Work Phone
+		driver.findElement(By.cssSelector("*[id^='4399:'][id$='a']")).sendKeys("1112223333");
+
 		// Lead Email
+		driver.findElement(By.cssSelector("*[id^='4415:'][id$='a']")).sendKeys("ved@gmail.com");
+
+		// Lead Mobile Phone
+		driver.findElement(By.cssSelector("*[id^='4435:'][id$='a']")).sendKeys("2223334444");
+
 		// Lead Score
+		driver.findElement(By.cssSelector("*[id^='4451:'][id$='a']")).sendKeys("Lead Score field");
+
+		// Lead other Phone
+		driver.findElement(By.cssSelector("*[id^='4473:'][id$='a']")).sendKeys("1112223333");
+
+		// Lead Work Phone
+		driver.findElement(By.cssSelector("*[id^='4507:'][id$='a']")).sendKeys("3334445555");
+
 		// Lead Message
 		// End Visit Notes
 
@@ -420,15 +514,30 @@ public class Opportunities {
 	@Then("^Lead Source$")
 	public void Lead_Source() {
 		// Source
-		// Lead Source
-		// Web Lead Source Detail
+		driver.findElement(By.cssSelector("*[id^='4652:'][id$='a']")).sendKeys("Source field");
+
+		// Lead Source dropdown
+
+		// FormName
+		driver.findElement(By.cssSelector("*[id^='4794:'][id$='a']")).sendKeys("Form Name field");
+
+		// Web Lead Source Detail drop down
+
+		// Tracking Medium
+		driver.findElement(By.cssSelector("*[id^='4860:'][id$='a']")).sendKeys("Tracking Meduim field");
+
+		// Tracking SCPC
+		driver.findElement(By.cssSelector("*[id^='4956:'][id$='a']")).sendKeys("Tracking SCPC field");
+
 		// Web Lead Source
+		
+		
 		// Web Lead Source Name
+		driver.findElement(By.cssSelector("*[id^='4976:'][id$='a']")).sendKeys("Web Lead Source Name field");
+
 		// Geo Lookup
 		// Lead Queue Id
 		// Original Location Account
-		// FormName
-		// Tracking Medium
 		// Website
 		// Location Primary Lead
 		// Enterprise Lead
@@ -450,7 +559,9 @@ public class Opportunities {
 	@Then("^Enter the Description Information$")
 	public void enter_the_Description_Information() {
 		// Description
-		// Price dropdown
+		driver.findElement(By.cssSelector("*[id^='5468:'][id$='a']")).sendKeys("Description field");
+
+		// Price drop down
 
 	}
 
@@ -458,28 +569,68 @@ public class Opportunities {
 	public void populate_Other_data_fields() {
 
 		// Primary Email
+		driver.findElement(By.cssSelector("*[id^='5863:'][id$='a']")).sendKeys("Primary Email field");
+
 		// Primary Phone
-		// Tracking Id
-		// Tracking LandingPage URL
-		// Tracking Referral URL
-		// Tracking Promo Code
-		// Tracking Campaign
-		// Tracking Source
-		// Tracking Content
-		// Tracking Keywords
-		// Ad Campaign
-		// Ad Group
-		// Ad Keyword
-		// Ad Slot
-		// Ad Slot Position
-		// Ad Content
+		driver.findElement(By.cssSelector("*[id^='5897:'][id$='a']")).sendKeys("1231231234");
+
 		// Lead Ip Address
+		driver.findElement(By.cssSelector("*[id^='5945:'][id$='a']")).sendKeys("Lead IP Address field");
+
 		// Lead System Data
-		// Category
+		driver.findElement(By.cssSelector("*[id^='5979:'][id$='a']")).sendKeys("Lead System Data field");
+
+		// Tracking Id
+		driver.findElement(By.cssSelector("*[id^='6138:'][id$='a']")).sendKeys("Tracking ID field");
+
+		// Tracking LandingPage URL
+		driver.findElement(By.cssSelector("*[id^='6174:'][id$='a']")).sendKeys("Tracking LandingPage URL field");
+
+		// Tracking Referral URL
+		driver.findElement(By.cssSelector("*[id^='6174:'][id$='a']")).sendKeys("Tracking Referral URL field");
+
+		// Tracking Promo Code
+		driver.findElement(By.cssSelector("*[id^='6248:'][id$='a']")).sendKeys("Tracking Promo Code field");
+
+		// Next Step
+		driver.findElement(By.cssSelector("*[id^='6264:'][id$='a']")).sendKeys("Next Step field");
+
+		// Tracking Campaign
+		driver.findElement(By.cssSelector("*[id^='6284:'][id$='a']")).sendKeys("Tracking Campaign field");
+
+		// Tracking Source
+		driver.findElement(By.cssSelector("*[id^='6318:'][id$='a']")).sendKeys("Tracking Source field");
+
+		// Tracking Content
+		driver.findElement(By.cssSelector("*[id^='6352:'][id$='a']")).sendKeys("Tracking Content field");
+
+		// Tracking Keywords
+		driver.findElement(By.cssSelector("*[id^='6448:'][id$='a']")).sendKeys("Tracking Keyword field");
+
+		// Backend GP
+		driver.findElement(By.cssSelector("*[id^='6496:'][id$='a']")).sendKeys("Backen GP field");
+
+		// Ad Campaign
+		driver.findElement(By.cssSelector("*[id^='6518:'][id$='a']")).sendKeys("AD Campaign field");
+
+		// Ad Group
+		driver.findElement(By.cssSelector("*[id^='6552:'][id$='a']")).sendKeys("AD Group field");
+
+		// Ad Keyword
+		driver.findElement(By.cssSelector("*[id^='6586:'][id$='a']")).sendKeys("AD Keyword field");
+
+		// Ad Slot
+		driver.findElement(By.cssSelector("*[id^='6620:'][id$='a']")).sendKeys("AD Slot field");
+
+		// Ad Slot Position
+		driver.findElement(By.cssSelector("*[id^='6654:'][id$='a']")).sendKeys("AD Slot Position field");
+
+		// Ad Content
+		driver.findElement(By.cssSelector("*[id^='6688:'][id$='a']")).sendKeys("AD Content field");
+
+		// Category drop down
 		// Forecast Category
 		// Manager Assisted | Manager Interaction | Manager Turn Over check boxes
-		// Next Step
-		// Backend GP
 
 	}
 
