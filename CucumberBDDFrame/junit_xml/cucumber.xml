@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="91.652369">
-    <testcase classname="created New Opportunitie" name="User is able to create Opportunitie" time="91.652369">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="87.783179">
+    <testcase classname="created New Opportunitie" name="User is able to create Opportunitie" time="87.783179">
         <system-out>
             <![CDATA[Given Open the Salesforce Website...........................................passed
 When verify the Salesforce page title.......................................passed

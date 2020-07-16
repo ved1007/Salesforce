@@ -6,12 +6,15 @@ import java.util.concurrent.TimeUnit;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.codoid.products.fillo.Select;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -100,8 +103,18 @@ public class Opportunities {
 	public void populate_System_Admin_Layout_fields() {
 
 		// Promo Message
-		driver.findElement(By.cssSelector("*[id^='77:'][id$='a']")).sendKeys("Promo Message field");
+		driver.findElement(By.cssSelector("*[id^='121:'][id$='a']")).sendKeys("Promo Message field");
 		// Expiration Date
+		driver.findElement(By.cssSelector("*[id^='11:'][id$='a']")).click();
+		List<WebElement> ExpirationDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node = ExpirationDate.size();
+		for (int i = 0; i < total_node; i++) {
+			String date = ExpirationDate.get(i).getText();
+			if (date.equals("31")) {
+				ExpirationDate.get(i).click();
+				break;
+			}
+		}
 
 		// eLead Cheat checkbox
 		driver.findElement(By.cssSelector("*[id^='172:'][id$='a']")).click();
@@ -111,8 +124,8 @@ public class Opportunities {
 		// Date and Time
 		driver.findElement(By.cssSelector("*[id^='11:'][id$='a']")).click();
 		List<WebElement> dates = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
-		int total_node = dates.size();
-		for (int i = 0; i < total_node; i++) {
+		int total_node2 = dates.size();
+		for (int i = 0; i < total_node2; i++) {
 			String date = dates.get(i).getText();
 			if (date.equals("20")) {
 				dates.get(i).click();
@@ -155,7 +168,7 @@ public class Opportunities {
 		// Reason dropdown field
 
 		// Probability % field
-		driver.findElement(By.cssSelector("*[id^='676:'][id$='a']")).sendKeys("20");
+		driver.findElement(By.cssSelector("*[id^='676:'][id$='a']")).sendKeys(".20");
 
 		// Opportunity Selling Owner Name field
 		driver.findElement(By.cssSelector("*[id^='708:'][id$='a']")).sendKeys("Opportunity Selling Owner Name");
@@ -194,7 +207,7 @@ public class Opportunities {
 		}
 
 		// Write-Up Amount field
-		driver.findElement(By.cssSelector("*[id^='902:'][id$='a']")).sendKeys("Write Up Amount");
+		driver.findElement(By.cssSelector("*[id^='902:'][id$='a']")).sendKeys("1000");
 
 		// County field
 		driver.findElement(By.cssSelector("*[id^='940:'][id$='a']")).sendKeys("Country field");
@@ -212,6 +225,10 @@ public class Opportunities {
 		}
 
 		// Type dropdown field
+		driver.findElement(By.cssSelector("*[aria-describedby^='1186:'][aria-describedby$='a-label']")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'New Business')]")).click();
+
+		
 
 		// Appointment completed Date
 		driver.findElement(By.cssSelector("*[id^='1232:'][id$='a']")).click();
@@ -237,7 +254,7 @@ public class Opportunities {
 			}
 		}
 
-		// Appointment - Deliverery Set - Contacted - Up Assigned checkboxes
+		// Appointment - Deliverery Set - Contacted - Up Assigned check boxes
 
 		// FirstResponseTime
 		driver.findElement(By.cssSelector("*[id^='1523:'][id$='a']")).click();
@@ -307,8 +324,12 @@ public class Opportunities {
 	public void populate_Interested_In_Attributes_fields() {
 
 		// New/Used - Year To
+		driver.findElement(By.cssSelector("*[aria-describedby^='1928:'][aria-describedby$='a-label']")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'New')]")).click();
 
 		// Floorplan Style
+		driver.findElement(By.cssSelector("*[aria-describedby^='2654:'][aria-describedby$='a-label']")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'Expandable')]")).click();
 
 		// Genius Notes 1 (RV Attributes)
 		driver.findElement(By.cssSelector("*[id^='2750:'][id$='a']")).sendKeys("Genius Notes 1 field");
@@ -320,17 +341,42 @@ public class Opportunities {
 		driver.findElement(By.cssSelector("*[id^='2842:'][id$='a']")).sendKeys("Genius Notes 3 field");
 
 		// # Sleeps
-		driver.findElement(By.cssSelector("*[id^='2886:'][id$='a']")).sendKeys("# Sleeps field");
+		driver.findElement(By.cssSelector("*[id^='2886:'][id$='a']")).sendKeys("22");
 
 		// Year From
+		driver.findElement(By.cssSelector("*[aria-describedby^='1878:'][aria-describedby$='a-label']")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'2016')]")).click();
+
 		// Year To
+		driver.findElement(By.cssSelector("*[aria-describedby^='1974:'][aria-describedby$='a-label']")).click();
+		driver.findElement(By.cssSelector("*[data-aura-rendered-by^='2321:'][data-aura-rendered-by$='0']")).click();
+
 		// Price From
+		driver.findElement(By.cssSelector("*[aria-describedby^='2100:'][aria-describedby$='a-label']")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'6000')]")).click();
+
 		// Price To
+		driver.findElement(By.cssSelector("*[aria-describedby^='2226:'][aria-describedby$='a-label']")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'4,000')]")).click();
+
 		// Payment From
+		driver.findElement(By.cssSelector("*[aria-describedby^='2352:'][aria-describedby$='a-label']")).click();
+		driver.findElement(By.cssSelector("*[data-aura-rendered-by^='4523:'][data-aura-rendered-by$='0']")).click();
+
 		// Payment To
+		driver.findElement(By.cssSelector("*[aria-describedby^='2478:'][aria-describedby$='a-label']")).click();
+		driver.findElement(By.cssSelector("*[data-aura-rendered-by^='5065:'][data-aura-rendered-by$='0']")).click();
+
 		// Length From
+		driver.findElement(By.cssSelector("*[aria-describedby^='2604:'][aria-describedby$='a-label']")).click();
+		driver.findElement(By.cssSelector("*[data-aura-rendered-by^='5589:'][data-aura-rendered-by$='0']")).click();
+
 		// Length To
+		driver.findElement(By.cssSelector("*[aria-describedby^='2700:'][aria-describedby$='a-label']")).click();
+		driver.findElement(By.cssSelector("*[data-aura-rendered-by^='5837:'][data-aura-rendered-by$='0']")).click();
+
 		// # Slide Outs
+		driver.findElement(By.cssSelector("*[id^='2776:'][id$='a']")).sendKeys("Slide Outs");
 
 	}
 
@@ -373,7 +419,7 @@ public class Opportunities {
 		driver.findElement(By.cssSelector("*[id^='3219:'][id$='a']")).sendKeys("Vehicle Engine field");
 
 		// Payment Method dropdown
-		
+
 		// Chassis dropdown
 
 		// Payment Details
@@ -408,10 +454,10 @@ public class Opportunities {
 	public void Towing_Information() {
 
 		// Tow Vehicle Year
-		driver.findElement(By.cssSelector("*[id^='3869:'][id$='a']")).sendKeys("Tow Vehicle Year field");
+		driver.findElement(By.cssSelector("*[id^='3869:'][id$='a']")).sendKeys("2015");
 
 		// Max Towing Capacity
-		driver.findElement(By.cssSelector("*[id^='3887:'][id$='a']")).sendKeys("Max Towing Capicity field");
+		driver.findElement(By.cssSelector("*[id^='3887:'][id$='a']")).sendKeys("100");
 
 		// Tow Vehicle Make
 		driver.findElement(By.cssSelector("*[id^='3909:'][id$='a']")).sendKeys("Tow Vehicle Make field");
@@ -437,19 +483,19 @@ public class Opportunities {
 		driver.findElement(By.cssSelector("*[id^='4058:'][id$='a']")).sendKeys("Current Owner Category field");
 
 		// Current Owned Mileage
-		driver.findElement(By.cssSelector("*[id^='4074:'][id$='a']")).sendKeys("Current Owned Milage field");
+		driver.findElement(By.cssSelector("*[id^='4074:'][id$='a']")).sendKeys("200");
 
 		// Current Owned Year
 		driver.findElement(By.cssSelector("*[id^='4096:'][id$='a']")).sendKeys("Current Owned Year field");
 
 		// Current Owned Payoff
-		driver.findElement(By.cssSelector("*[id^='4112:'][id$='a']")).sendKeys("Current Owned Payoff field");
+		driver.findElement(By.cssSelector("*[id^='4112:'][id$='a']")).sendKeys("500");
 
 		// Current Owned Make
 		driver.findElement(By.cssSelector("*[id^='4134:'][id$='a']")).sendKeys("Current Owned Make field");
 
 		// Current Owned Quote Low
-		driver.findElement(By.cssSelector("*[id^='4150:'][id$='a']")).sendKeys("Current Owned Quote Low field");
+		driver.findElement(By.cssSelector("*[id^='4150:'][id$='a']")).sendKeys("10");
 
 		// Current Owned Product
 		driver.findElement(By.cssSelector("*[id^='4172:'][id$='a']")).sendKeys("Current Owned Product field");
@@ -458,7 +504,7 @@ public class Opportunities {
 		driver.findElement(By.cssSelector("*[id^='4210:'][id$='a']")).sendKeys("Current Owned Model field");
 
 		// Current Owned Quote High
-		driver.findElement(By.cssSelector("*[id^='4188:'][id$='a']")).sendKeys("Current Owned Quote field");
+		driver.findElement(By.cssSelector("*[id^='4188:'][id$='a']")).sendKeys("20");
 
 		// Current Owned Trim
 		driver.findElement(By.cssSelector("*[id^='4246:'][id$='a']")).sendKeys("Current Owned Trim field");
@@ -498,7 +544,7 @@ public class Opportunities {
 		driver.findElement(By.cssSelector("*[id^='4435:'][id$='a']")).sendKeys("2223334444");
 
 		// Lead Score
-		driver.findElement(By.cssSelector("*[id^='4451:'][id$='a']")).sendKeys("Lead Score field");
+		driver.findElement(By.cssSelector("*[id^='4451:'][id$='a']")).sendKeys("10");
 
 		// Lead other Phone
 		driver.findElement(By.cssSelector("*[id^='4473:'][id$='a']")).sendKeys("1112223333");
@@ -514,7 +560,7 @@ public class Opportunities {
 	@Then("^Lead Source$")
 	public void Lead_Source() {
 		// Source
-		driver.findElement(By.cssSelector("*[id^='4652:'][id$='a']")).sendKeys("Source field");
+		driver.findElement(By.cssSelector("*[id^='4652:'][id$='a']")).sendKeys("10");
 
 		// Lead Source dropdown
 
@@ -530,8 +576,7 @@ public class Opportunities {
 		driver.findElement(By.cssSelector("*[id^='4956:'][id$='a']")).sendKeys("Tracking SCPC field");
 
 		// Web Lead Source
-		
-		
+
 		// Web Lead Source Name
 		driver.findElement(By.cssSelector("*[id^='4976:'][id$='a']")).sendKeys("Web Lead Source Name field");
 
@@ -608,7 +653,7 @@ public class Opportunities {
 		driver.findElement(By.cssSelector("*[id^='6448:'][id$='a']")).sendKeys("Tracking Keyword field");
 
 		// Backend GP
-		driver.findElement(By.cssSelector("*[id^='6496:'][id$='a']")).sendKeys("Backen GP field");
+		driver.findElement(By.cssSelector("*[id^='6496:'][id$='a']")).sendKeys("10");
 
 		// Ad Campaign
 		driver.findElement(By.cssSelector("*[id^='6518:'][id$='a']")).sendKeys("AD Campaign field");
