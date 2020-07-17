@@ -33,7 +33,7 @@ public class Opportunities {
 		opt.addArguments("--disable-notifications");
 		driver = new ChromeDriver(opt);
 		driver.get("https://rv--test.cs26.my.salesforce.com/");
-		driver.manage().window().maximize();
+	//	driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
@@ -103,7 +103,8 @@ public class Opportunities {
 	public void populate_System_Admin_Layout_fields() {
 
 		// Promo Message
-		driver.findElement(By.cssSelector("*[id^='121:'][id$='a']")).sendKeys("Promo Message field");
+		driver.findElement(By.cssSelector("*[id^='77:'][id$='a']")).sendKeys("Promo Message field");
+		
 		// Expiration Date
 		driver.findElement(By.cssSelector("*[id^='11:'][id$='a']")).click();
 		List<WebElement> ExpirationDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
@@ -140,6 +141,11 @@ public class Opportunities {
 
 		// Opportunities Name field
 		driver.findElement(By.cssSelector("*[id^='217:'][id$='a']")).sendKeys("Opportunitie Name field");
+		
+		//Account Name field
+		
+		driver.findElement(By.cssSelector("*[id^='302:'][id$='a']")).click();
+		driver.findElement(By.xpath("//div[contains(text(),'Automation1')]")).click();
 
 		// Amount field
 		driver.findElement(By.cssSelector("*[id^='233:'][id$='a']")).sendKeys("10");
@@ -227,8 +233,6 @@ public class Opportunities {
 		// Type dropdown field
 		driver.findElement(By.cssSelector("*[aria-describedby^='1186:'][aria-describedby$='a-label']")).click();
 		driver.findElement(By.xpath("//a[contains(text(),'New Business')]")).click();
-
-		
 
 		// Appointment completed Date
 		driver.findElement(By.cssSelector("*[id^='1232:'][id$='a']")).click();
@@ -345,11 +349,11 @@ public class Opportunities {
 
 		// Year From
 		driver.findElement(By.cssSelector("*[aria-describedby^='1878:'][aria-describedby$='a-label']")).click();
-		driver.findElement(By.xpath("//a[contains(text(),'2016')]")).click();
+		driver.findElement(By.xpath("//a[@title='2017']")).click();
 
 		// Year To
 		driver.findElement(By.cssSelector("*[aria-describedby^='1974:'][aria-describedby$='a-label']")).click();
-		driver.findElement(By.cssSelector("*[data-aura-rendered-by^='2321:'][data-aura-rendered-by$='0']")).click();
+		driver.findElements(By.xpath("//a[@title='2017']")).get(1).click();
 
 		// Price From
 		driver.findElement(By.cssSelector("*[aria-describedby^='2100:'][aria-describedby$='a-label']")).click();
@@ -361,19 +365,19 @@ public class Opportunities {
 
 		// Payment From
 		driver.findElement(By.cssSelector("*[aria-describedby^='2352:'][aria-describedby$='a-label']")).click();
-		driver.findElement(By.cssSelector("*[data-aura-rendered-by^='4523:'][data-aura-rendered-by$='0']")).click();
+		driver.findElement(By.xpath("//a[@title='75']")).click();
 
 		// Payment To
 		driver.findElement(By.cssSelector("*[aria-describedby^='2478:'][aria-describedby$='a-label']")).click();
-		driver.findElement(By.cssSelector("*[data-aura-rendered-by^='5065:'][data-aura-rendered-by$='0']")).click();
+		driver.findElements(By.xpath("//a[@title='100']")).get(1).click();
 
 		// Length From
 		driver.findElement(By.cssSelector("*[aria-describedby^='2604:'][aria-describedby$='a-label']")).click();
-		driver.findElement(By.cssSelector("*[data-aura-rendered-by^='5589:'][data-aura-rendered-by$='0']")).click();
+		driver.findElements(By.xpath("//a[@title='6 ft']")).get(0).click();
 
 		// Length To
 		driver.findElement(By.cssSelector("*[aria-describedby^='2700:'][aria-describedby$='a-label']")).click();
-		driver.findElement(By.cssSelector("*[data-aura-rendered-by^='5837:'][data-aura-rendered-by$='0']")).click();
+		driver.findElements(By.xpath("//a[@title='10 ft']")).get(1).click();
 
 		// # Slide Outs
 		driver.findElement(By.cssSelector("*[id^='2776:'][id$='a']")).sendKeys("Slide Outs");
@@ -410,7 +414,10 @@ public class Opportunities {
 		driver.findElement(By.cssSelector("*[id^='3117:'][id$='a']")).sendKeys("Intrested Product field");
 
 		// Interest Level dropdown
-
+		driver.findElement(By.cssSelector("*[aria-describedby^='3133:'][aria-describedby$='a-label']")).click();
+		driver.findElement(By.xpath("//a[@title='Highly Interested']")).click();
+		
+		
 		// Vehicle Trim
 		driver.findElement(By.cssSelector("*[id^='3183:'][id$='a']")).sendKeys("Vehicle Trim field");
 		// Buying Horizon
@@ -447,6 +454,7 @@ public class Opportunities {
 		// Outdoor Entertainment
 		// Check boxes |Meet&Greet|Needs Analysis|Selection|Presentation|Intro to
 		// Service|Write Up Stage|T.O to F&I|
+		//Previouse Stage drop down
 
 	}
 
@@ -553,7 +561,13 @@ public class Opportunities {
 		driver.findElement(By.cssSelector("*[id^='4507:'][id$='a']")).sendKeys("3334445555");
 
 		// Lead Message
+		driver.findElement(By.cssSelector("*[aria-labelledby^='label-4545:'][aria-labelledby$='a']")).sendKeys("Lead Message field");
+
+		// Lead Source
+
 		// End Visit Notes
+		driver.findElement(By.cssSelector("*[data-aura-rendered-by^='4615:'][data-aura-rendered-by$='a']"))
+				.sendKeys("Lead Message field");
 
 	}
 
@@ -562,20 +576,22 @@ public class Opportunities {
 		// Source
 		driver.findElement(By.cssSelector("*[id^='4652:'][id$='a']")).sendKeys("10");
 
-		// Lead Source dropdown
+		// Lead Source drop down
+		driver.findElement(By.cssSelector("*[aria-describedby^='4748:'][aria-describedby$='a-label']")).click();
+		driver.findElement(By.xpath("//a[@title='Internet']")).click();
 
 		// FormName
 		driver.findElement(By.cssSelector("*[id^='4794:'][id$='a']")).sendKeys("Form Name field");
 
 		// Web Lead Source Detail drop down
+		driver.findElement(By.cssSelector("*[aria-describedby^='4814:'][aria-describedby$='a-label']")).click();
+		driver.findElement(By.xpath("//a[@title='Dealer Website']")).click();
 
 		// Tracking Medium
 		driver.findElement(By.cssSelector("*[id^='4860:'][id$='a']")).sendKeys("Tracking Meduim field");
 
 		// Tracking SCPC
 		driver.findElement(By.cssSelector("*[id^='4956:'][id$='a']")).sendKeys("Tracking SCPC field");
-
-		// Web Lead Source
 
 		// Web Lead Source Name
 		driver.findElement(By.cssSelector("*[id^='4976:'][id$='a']")).sendKeys("Web Lead Source Name field");
@@ -607,6 +623,8 @@ public class Opportunities {
 		driver.findElement(By.cssSelector("*[id^='5468:'][id$='a']")).sendKeys("Description field");
 
 		// Price drop down
+		driver.findElement(By.cssSelector("*[aria-describedby^='5488:'][aria-describedby$='a-label']")).click();
+		driver.findElement(By.xpath("//a[@title='$15,000 to $30,000']")).click();
 
 	}
 
@@ -625,6 +643,10 @@ public class Opportunities {
 		// Lead System Data
 		driver.findElement(By.cssSelector("*[id^='5979:'][id$='a']")).sendKeys("Lead System Data field");
 
+		// Category drop down
+		driver.findElement(By.cssSelector("*[aria-describedby^='6049:'][aria-describedby$='a-label']")).click();
+		driver.findElement(By.xpath("//a[@title='Camping Trailer']")).click();
+
 		// Tracking Id
 		driver.findElement(By.cssSelector("*[id^='6138:'][id$='a']")).sendKeys("Tracking ID field");
 
@@ -632,7 +654,7 @@ public class Opportunities {
 		driver.findElement(By.cssSelector("*[id^='6174:'][id$='a']")).sendKeys("Tracking LandingPage URL field");
 
 		// Tracking Referral URL
-		driver.findElement(By.cssSelector("*[id^='6174:'][id$='a']")).sendKeys("Tracking Referral URL field");
+		driver.findElement(By.cssSelector("*[id^='6211:'][id$='a']")).sendKeys("Tracking Referral URL field");
 
 		// Tracking Promo Code
 		driver.findElement(By.cssSelector("*[id^='6248:'][id$='a']")).sendKeys("Tracking Promo Code field");
@@ -673,7 +695,6 @@ public class Opportunities {
 		// Ad Content
 		driver.findElement(By.cssSelector("*[id^='6688:'][id$='a']")).sendKeys("AD Content field");
 
-		// Category drop down
 		// Forecast Category
 		// Manager Assisted | Manager Interaction | Manager Turn Over check boxes
 
@@ -757,6 +778,8 @@ public class Opportunities {
 
 	@Then("^Click the Save button$")
 	public void click_the_Save_button() {
+		
+		driver.findElement(By.cssSelector("*[data-aura-rendered-by^='9211:'][data-aura-rendered-by$='a']")).click();
 
 	}
 }
