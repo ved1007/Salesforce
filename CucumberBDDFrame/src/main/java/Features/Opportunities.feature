@@ -3,7 +3,7 @@ Feature: created New Opportunitie
 Scenario Outline: User is able to create Opportunitie 
 
 	Given Open the Salesforce Website 
-	When verify the Salesforce page title 
+	When verify the Salesforce page title as "Login | Salesforce"
 	Then Login with valid username and password "<username>" and "<password>" 
 	And  Click login button 
 	And Verify Salesforce Home page title 

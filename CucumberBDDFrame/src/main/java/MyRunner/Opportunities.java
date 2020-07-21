@@ -14,7 +14,7 @@ import cucumber.api.junit.Cucumber;
 				"junit:junit_xml/cucumber.xml" },
 		monochrome = true,
 		strict = true,
-		dryRun = false
+		dryRun = true
 //      tags = {"~@SmokeTest" , "~@RegressionTest", "~@End2End"}
 	//	plugin= {"pretty", "html:test-output"}
 )

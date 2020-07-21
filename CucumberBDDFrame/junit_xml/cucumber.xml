@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="78.745594">
-    <testcase classname="created New Opportunitie" name="User is able to create Opportunitie" time="78.745594">
-        <system-out>
-            <![CDATA[Given Open the Salesforce Website...........................................passed
-When verify the Salesforce page title.......................................passed
-Then Login with valid username and password "vedant.jagani@campingworld.com.test" and "Welcome2019*".passed
-And Click login button......................................................passed
-And Verify Salesforce Home page title.......................................passed
-Then Click on the Opportunities tab.........................................passed
-Then Click on the New button................................................passed
-Then Select a record type and click Next....................................passed
-And Populate System Admin Layout fields.....................................passed
-And Opportunity Information.................................................passed
-And Interested In Attributes................................................passed
-And Interested In Details...................................................passed
-And Towing Information......................................................passed
-And Currently Own Trade-InCurrently Own TradeIn from Web Lead fields........passed
-And Pupulate Info from lead fields..........................................passed
-And Lead Source.............................................................passed
-And Enter the Description Information.......................................passed
-And Other data fields.......................................................passed
-And System Information fields...............................................passed
-Then Click the Save button..................................................passed
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0">
+    <testcase classname="created New Opportunitie" name="User is able to create Opportunitie" time="0">
+        <failure message="The scenario has pending or undefined step(s)">
+            <![CDATA[Given Open the Salesforce Website...........................................skipped
+When verify the Salesforce page title as "Login | Salesforce"...............undefined
+Then Login with valid username and password "vedant.jagani@campingworld.com.test" and "Welcome2019*".skipped
+And Click login button......................................................skipped
+And Verify Salesforce Home page title.......................................skipped
+Then Click on the Opportunities tab.........................................skipped
+Then Click on the New button................................................skipped
+Then Select a record type and click Next....................................skipped
+And Populate System Admin Layout fields.....................................skipped
+And Opportunity Information.................................................skipped
+And Interested In Attributes................................................skipped
+And Interested In Details...................................................skipped
+And Towing Information......................................................skipped
+And Currently Own Trade-InCurrently Own TradeIn from Web Lead fields........skipped
+And Pupulate Info from lead fields..........................................skipped
+And Lead Source.............................................................skipped
+And Enter the Description Information.......................................skipped
+And Other data fields.......................................................skipped
+And System Information fields...............................................skipped
+Then Click the Save button..................................................skipped
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>

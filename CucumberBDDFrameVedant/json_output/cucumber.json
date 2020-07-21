@@ -1,0 +1,276 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 29,
+        "name": "User is able to create Opportunitie",
+        "description": "",
+        "id": "created-new-opportunitie;user-is-able-to-create-opportunitie;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4961324746,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open the Salesforce Website",
+            "match": {
+              "location": "OpportunitiesStepDef.open_the_Salesforce_Website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5122620,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "verify the Salesforce page title",
+            "match": {
+              "location": "OpportunitiesStepDef.verify_the_Salesforce_page_title()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 194580934,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Login with valid username and password \"vedant.jagani@campingworld.com.test\" and \"Welcome2019*\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "vedant.jagani@campingworld.com.test",
+                  "offset": 40
+                },
+                {
+                  "val": "Welcome2019*",
+                  "offset": 82
+                }
+              ],
+              "location": "OpportunitiesStepDef.login_with_valid_username_and_password_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1760564142,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click login button",
+            "match": {
+              "location": "OpportunitiesStepDef.click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7913108317,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify Salesforce Home page title",
+            "match": {
+              "location": "OpportunitiesStepDef.verify_Salesforce_Home_page_title()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4141484637,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click on the Opportunities tab",
+            "match": {
+              "location": "OpportunitiesStepDef.click_on_the_Opportunities_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 139876843,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click on the New button",
+            "match": {
+              "location": "OpportunitiesStepDef.click_on_the_New_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6304666291,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Select a record type and click Next",
+            "match": {
+              "location": "OpportunitiesStepDef.select_a_record_type_and_click_Next()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3305401703,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Populate System Admin Layout fields",
+            "match": {
+              "location": "OpportunitiesStepDef.populate_System_Admin_Layout_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13194400977,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Opportunity Information",
+            "match": {
+              "location": "OpportunitiesStepDef.Opportunity_Information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4860135547,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Interested In Attributes",
+            "match": {
+              "location": "OpportunitiesStepDef.populate_Interested_In_Attributes_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7423336427,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Interested In Details",
+            "match": {
+              "location": "OpportunitiesStepDef.Interested_In_Details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2115911761,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Towing Information",
+            "match": {
+              "location": "OpportunitiesStepDef.Towing_Information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5822659458,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Currently Own Trade-InCurrently Own TradeIn from Web Lead fields",
+            "match": {
+              "location": "OpportunitiesStepDef.currently_Own_Trade_InCurrently_Own_TradeIn_from_Web_Lead_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2337765409,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Pupulate Info from lead fields",
+            "match": {
+              "location": "OpportunitiesStepDef.pupulate_Info_from_lead_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2977284184,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Lead Source",
+            "match": {
+              "location": "OpportunitiesStepDef.Lead_Source()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 564275633,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Enter the Description Information",
+            "match": {
+              "location": "OpportunitiesStepDef.enter_the_Description_Information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7210632088,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Other data fields",
+            "match": {
+              "location": "OpportunitiesStepDef.populate_Other_data_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3137127153,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "System Information fields",
+            "match": {
+              "location": "OpportunitiesStepDef.System_Information_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84046072,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Click the Save button",
+            "match": {
+              "location": "OpportunitiesStepDef.click_the_Save_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "created New Opportunitie",
+    "description": "",
+    "id": "created-new-opportunitie",
+    "keyword": "Feature",
+    "uri": "/Users/vedant.jagani/Documents/Automation/CucumberBDDFrameVedant/src/main/java/Features/Opportunities2.feature"
+  }
+]

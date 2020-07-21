@@ -12,8 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4916667349,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 5,
             "name": "Open the Salesforce Website",
@@ -24,20 +23,16 @@
           },
           {
             "result": {
-              "duration": 4912381,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 6,
-            "name": "verify the Salesforce page title",
-            "match": {
-              "location": "Opportunities.verify_the_Salesforce_page_title()"
-            },
+            "name": "verify the Salesforce page title as \"Login | Salesforce\"",
+            "match": {},
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 188228564,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "Login with valid username and password \"vedant.jagani@campingworld.com.test\" and \"Welcome2019*\"",
@@ -62,8 +57,7 @@
           },
           {
             "result": {
-              "duration": 1747918849,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "Click login button",
@@ -74,8 +68,7 @@
           },
           {
             "result": {
-              "duration": 8140125508,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "Verify Salesforce Home page title",
@@ -86,8 +79,7 @@
           },
           {
             "result": {
-              "duration": 4231871779,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "Click on the Opportunities tab",
@@ -98,8 +90,7 @@
           },
           {
             "result": {
-              "duration": 167711833,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 11,
             "name": "Click on the New button",
@@ -110,8 +101,7 @@
           },
           {
             "result": {
-              "duration": 6169041752,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 12,
             "name": "Select a record type and click Next",
@@ -122,8 +112,7 @@
           },
           {
             "result": {
-              "duration": 2376353805,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 13,
             "name": "Populate System Admin Layout fields",
@@ -134,8 +123,7 @@
           },
           {
             "result": {
-              "duration": 13059160910,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 14,
             "name": "Opportunity Information",
@@ -146,8 +134,7 @@
           },
           {
             "result": {
-              "duration": 4897513682,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 15,
             "name": "Interested In Attributes",
@@ -158,8 +145,7 @@
           },
           {
             "result": {
-              "duration": 7773615782,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 16,
             "name": "Interested In Details",
@@ -170,8 +156,7 @@
           },
           {
             "result": {
-              "duration": 2270498372,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 17,
             "name": "Towing Information",
@@ -182,8 +167,7 @@
           },
           {
             "result": {
-              "duration": 5953523301,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 18,
             "name": "Currently Own Trade-InCurrently Own TradeIn from Web Lead fields",
@@ -194,8 +178,7 @@
           },
           {
             "result": {
-              "duration": 2355292376,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 19,
             "name": "Pupulate Info from lead fields",
@@ -206,8 +189,7 @@
           },
           {
             "result": {
-              "duration": 3062398799,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 20,
             "name": "Lead Source",
@@ -218,8 +200,7 @@
           },
           {
             "result": {
-              "duration": 563345525,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 21,
             "name": "Enter the Description Information",
@@ -230,8 +211,7 @@
           },
           {
             "result": {
-              "duration": 7636839313,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 22,
             "name": "Other data fields",
@@ -242,8 +222,7 @@
           },
           {
             "result": {
-              "duration": 3118121531,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 23,
             "name": "System Information fields",
@@ -254,8 +233,7 @@
           },
           {
             "result": {
-              "duration": 112452240,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 24,
             "name": "Click the Save button",

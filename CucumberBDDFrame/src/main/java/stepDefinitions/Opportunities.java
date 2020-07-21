@@ -21,6 +21,7 @@ import com.qa.util.TestUtil;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import pages.OpportunitesPage;
 
 public class Opportunities {
 
@@ -127,26 +128,31 @@ public class Opportunities {
 	String ADSlotPosition = reader.getCellData("Sheet2Opportunities", "ADSlotPosition", 2);
 	String ADContent = reader.getCellData("Sheet2Opportunities", "ADContent", 2);
 
+	
+	OpportunitesPage op = new OpportunitesPage();
+	
+	
+	
 	@Given("^Open the Salesforce Website$")
 	public void open_the_Salesforce_Website() throws Throwable {
-		System.setProperty("webdriver.chrome.driver",
-				"/Users/vedant.jagani/Documents/Automation/SampleAutomation/Drivers/chromedriver");
-
-		ChromeOptions opt = new ChromeOptions();
-		opt.addArguments("--disable-notifications");
-		driver = new ChromeDriver(opt);
-		driver.get("https://rv--test.cs26.my.salesforce.com/");
-		// driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+//		System.setProperty("webdriver.chrome.driver",
+//				"/Users/vedant.jagani/Documents/Automation/SampleAutomation/Drivers/chromedriver");
+//
+//		ChromeOptions opt = new ChromeOptions();
+//		opt.addArguments("--disable-notifications");
+//		driver = new ChromeDriver(opt);
+//		driver.get("https://rv--test.cs26.my.salesforce.com/");
+//		// driver.manage().window().maximize();
+//		driver.manage().deleteAllCookies();
+//		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+//		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 	}
 
-	@When("^verify the Salesforce page title$")
-	public void verify_the_Salesforce_page_title() throws Throwable {
-		String title = driver.getTitle();
+	@When("^verify the Salesforce page title as \"([^\"]*)\"$")
+	public void verify_the_Salesforce_page_title_as(String saleforceTitle) throws Throwable {
+		String title = op.getTitle();
 		System.out.println(title);
-		Assert.assertEquals("Login | Salesforce", title);
+		Assert.assertEquals(saleforceTitle, title);
 
 	}
 
@@ -194,12 +200,15 @@ public class Opportunities {
 
 	@Then("^Select a record type and click Next$")
 	public void select_a_record_type_and_click_Next() throws Throwable {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		WebElement nextButton = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(),'Next')]")));
-		nextButton.click();
-		driver.navigate().refresh();
-		Thread.sleep(5000);
+		
+		op.clickOnNextBtn();
+		
+//		WebDriverWait wait = new WebDriverWait(driver, 10);
+//		WebElement nextButton = wait
+//				.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(),'Next')]")));
+//		nextButton.click();
+//		driver.navigate().refresh();
+//		Thread.sleep(5000);
 
 	}
 
@@ -246,7 +255,7 @@ public class Opportunities {
 	public void Opportunity_Information() throws Throwable {
 
 		// Opportunities Name field
-		driver.findElement(By.cssSelector("*[id^='217:'][id$='a']")).sendKeys(OpportunityName);
+		op.opportunityName(OpportunityName);
 
 		// Account Name field
 		driver.findElement(By.cssSelector("*[id^='302:'][id$='a']")).click();
