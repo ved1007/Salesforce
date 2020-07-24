@@ -4,24 +4,21 @@ import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
 public class Hooks {
-	
-	
-//	@Before
+
+	@Before
 	public void setup() {
-	
-		BasePage basepage = new BasePage();
+
+		BasePageTest basepage = new BasePageTest();
 		basepage.setup();
-		
-		
-		
-		
+
 	}
-//	@After
+
+	@After
 	public void teardown() {
-		
-		BasePage basepage = new BasePage();
+
+		BasePageTest basepage = new BasePageTest();
 		basepage.teardown();
-		
+
 	}
 
 }

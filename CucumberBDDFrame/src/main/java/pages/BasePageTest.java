@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.qa.util.TestUtil;
 
-public class BasePage {
+public class BasePageTest {
 
 	public WebDriver driver;
 	public final int WAIT = 10;
@@ -26,7 +26,7 @@ public class BasePage {
 		opt.addArguments("--disable-notifications");
 		driver = new ChromeDriver(opt);
 		driver.get("https://rv--test.cs26.my.salesforce.com/");
-//		driver.manage().window().maximize();
+		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
@@ -40,12 +40,14 @@ public class BasePage {
 	}
 
 	public void waitForElementToBeClickable(By by) {
+
 		WebDriverWait wait = new WebDriverWait(driver, WAIT);
 		WebElement nextButton = wait.until(ExpectedConditions.elementToBeClickable(by));
 	}
 
 	public WebElement $(By by) {
 		return driver.findElement(by);
+
 	}
 
 	public String getTitle() {

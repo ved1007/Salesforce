@@ -6,7 +6,7 @@ Scenario Outline: User is able to create Opportunitie
 	When verify the Salesforce page title as "Login | Salesforce"
 	Then Login with valid username and password "<username>" and "<password>" 
 	And  Click login button 
-	And Verify Salesforce Home page title 
+	And Verify Salesforce Home page title as "Lightning Experience"
 	Then Click on the Opportunities tab 
 	Then Click on the New button 
 	Then Select a record type and click Next 

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0">
-    <testcase classname="created New Opportunitie" name="User is able to create Opportunitie" time="0">
-        <failure message="The scenario has pending or undefined step(s)">
-            <![CDATA[Given Open the Salesforce Website...........................................skipped
-When verify the Salesforce page title as "Login | Salesforce"...............undefined
-Then Login with valid username and password "vedant.jagani@campingworld.com.test" and "Welcome2019*".skipped
-And Click login button......................................................skipped
-And Verify Salesforce Home page title.......................................skipped
-Then Click on the Opportunities tab.........................................skipped
-Then Click on the New button................................................skipped
-Then Select a record type and click Next....................................skipped
-And Populate System Admin Layout fields.....................................skipped
-And Opportunity Information.................................................skipped
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="25.590336">
+    <testcase classname="created New Opportunitie" name="User is able to create Opportunitie" time="25.590336">
+        <failure message="java.lang.NullPointerException&#10;&#9;at stepDefinitions.OpportunitiesStepDef.Opportunity_Information(OpportunitiesStepDef.java:234)&#10;&#9;at ✽.And Opportunity Information(/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/src/main/java/Features/Opportunities.feature:14)&#10;">
+            <![CDATA[Given Open the Salesforce Website...........................................passed
+When verify the Salesforce page title as "Login | Salesforce"...............passed
+Then Login with valid username and password "vedant.jagani@campingworld.com.test" and "Welcome2019*".passed
+And Click login button......................................................passed
+And Verify Salesforce Home page title as "Lightning Experience".............passed
+Then Click on the Opportunities tab.........................................passed
+Then Click on the New button................................................passed
+Then Select a record type and click Next....................................passed
+And Populate System Admin Layout fields.....................................passed
+And Opportunity Information.................................................failed
 And Interested In Attributes................................................skipped
 And Interested In Details...................................................skipped
 And Towing Information......................................................skipped
@@ -22,6 +22,11 @@ And Enter the Description Information.......................................skip
 And Other data fields.......................................................skipped
 And System Information fields...............................................skipped
 Then Click the Save button..................................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at stepDefinitions.OpportunitiesStepDef.Opportunity_Information(OpportunitiesStepDef.java:234)
+	at ✽.And Opportunity Information(/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/src/main/java/Features/Opportunities.feature:14)
 ]]>
         </failure>
     </testcase>

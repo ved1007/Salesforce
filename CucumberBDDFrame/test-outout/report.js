@@ -36,7 +36,7 @@ formatter.step({
 });
 formatter.step({
   "line": 9,
-  "name": "Verify Salesforce Home page title",
+  "name": "Verify Salesforce Home page title as \"Lightning Experience\"",
   "keyword": "And "
 });
 formatter.step({
@@ -173,7 +173,7 @@ formatter.step({
 });
 formatter.step({
   "line": 9,
-  "name": "Verify Salesforce Home page title",
+  "name": "Verify Salesforce Home page title as \"Lightning Experience\"",
   "keyword": "And "
 });
 formatter.step({
@@ -252,14 +252,24 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Opportunities.open_the_Salesforce_Website()"
+  "location": "OpportunitiesStepDef.open_the_Salesforce_Website()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5515425685,
+  "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Login | Salesforce",
+      "offset": 37
+    }
+  ],
+  "location": "OpportunitiesStepDef.verify_the_Salesforce_page_title_as(String)"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 7537764,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -272,109 +282,124 @@ formatter.match({
       "offset": 82
     }
   ],
-  "location": "Opportunities.login_with_valid_username_and_password_and(String,String)"
+  "location": "OpportunitiesStepDef.login_with_valid_username_and_password_and(String,String)"
+});
+formatter.result({
+  "duration": 194932590,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OpportunitiesStepDef.click_login_button()"
+});
+formatter.result({
+  "duration": 1997168543,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Lightning Experience",
+      "offset": 38
+    }
+  ],
+  "location": "OpportunitiesStepDef.verify_Salesforce_Home_page_title_as(String)"
+});
+formatter.result({
+  "duration": 6822233107,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OpportunitiesStepDef.click_on_the_Opportunities_tab()"
+});
+formatter.result({
+  "duration": 65439473,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OpportunitiesStepDef.click_on_the_New_button()"
+});
+formatter.result({
+  "duration": 1487312759,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OpportunitiesStepDef.select_a_record_type_and_click_Next()"
+});
+formatter.result({
+  "duration": 1386172079,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OpportunitiesStepDef.populate_System_Admin_Layout_fields()"
+});
+formatter.result({
+  "duration": 5985465378,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OpportunitiesStepDef.Opportunity_Information()"
+});
+formatter.result({
+  "duration": 2128648627,
+  "error_message": "java.lang.NullPointerException\n\tat stepDefinitions.OpportunitiesStepDef.Opportunity_Information(OpportunitiesStepDef.java:234)\n\tat ✽.And Opportunity Information(/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/src/main/java/Features/Opportunities.feature:14)\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "OpportunitiesStepDef.populate_Interested_In_Attributes_fields()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.match({
-  "location": "Opportunities.click_login_button()"
+  "location": "OpportunitiesStepDef.Interested_In_Details()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.match({
-  "location": "Opportunities.verify_Salesforce_Home_page_title()"
+  "location": "OpportunitiesStepDef.Towing_Information()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.match({
-  "location": "Opportunities.click_on_the_Opportunities_tab()"
+  "location": "OpportunitiesStepDef.currently_Own_Trade_InCurrently_Own_TradeIn_from_Web_Lead_fields()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.match({
-  "location": "Opportunities.click_on_the_New_button()"
+  "location": "OpportunitiesStepDef.pupulate_Info_from_lead_fields()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.match({
-  "location": "Opportunities.select_a_record_type_and_click_Next()"
+  "location": "OpportunitiesStepDef.Lead_Source()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.match({
-  "location": "Opportunities.populate_System_Admin_Layout_fields()"
+  "location": "OpportunitiesStepDef.enter_the_Description_Information()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.match({
-  "location": "Opportunities.Opportunity_Information()"
+  "location": "OpportunitiesStepDef.populate_Other_data_fields()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.match({
-  "location": "Opportunities.populate_Interested_In_Attributes_fields()"
+  "location": "OpportunitiesStepDef.System_Information_fields()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.match({
-  "location": "Opportunities.Interested_In_Details()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Opportunities.Towing_Information()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Opportunities.currently_Own_Trade_InCurrently_Own_TradeIn_from_Web_Lead_fields()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Opportunities.pupulate_Info_from_lead_fields()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Opportunities.Lead_Source()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Opportunities.enter_the_Description_Information()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Opportunities.populate_Other_data_fields()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Opportunities.System_Information_fields()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Opportunities.click_the_Save_button()"
+  "location": "OpportunitiesStepDef.click_the_Save_button()"
 });
 formatter.result({
   "status": "skipped"
