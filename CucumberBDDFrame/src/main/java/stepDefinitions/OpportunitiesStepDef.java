@@ -216,24 +216,20 @@ public class OpportunitiesStepDef {
 		// Account Name field
 		op.accountNameSearchField();
 		op.accountNameSearchFieldPopulated();
-		
+
 		// Close Date
 		op.closeDateClick();
 		op.closeDate();
-		
-		
+
 		// Stage field
 		op.stageClick();
 		op.stageSelect();
-		
+
 		// Nick Name field
 		op.nickNameInputField(Nickname);
 
-		
-
 		// Probability % field
-		op.probabilityInputField(Probability);		
-
+		op.probabilityInputField(Probability);
 
 		// Opportunity Selling Owner Name field
 		op.opportunitySellingOwnerName(OpportunitySellingOwnerName);
@@ -246,135 +242,58 @@ public class OpportunitiesStepDef {
 
 		// IDS FI Quote # field
 		op.iDSFIQuoteNumberField(IDSFIQuoteNum);
-		
-
 
 		// Review Requested Date field
 		op.reviewRequestedClick();
 		op.ReviewRequestedDatePopulated();
-		
 
 		// First Survey Attempt Date field
-		driver.findElement(By.cssSelector("*[id^='865:'][id$='a']")).click();
-		List<WebElement> firstSurveyAttemptDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
-		int total_node3 = firstSurveyAttemptDate.size();
-		for (int i = 0; i < total_node3; i++) {
-			String date = firstSurveyAttemptDate.get(i).getText();
-			if (date.equals("25")) {
-				firstSurveyAttemptDate.get(i).click();
-				break;
-			}
-		}
+		op.firstSurveyAttemptDate();
+		op.firstSurveyAttemptDatePopulate();
 
 		// Write-Up Amount field
-		driver.findElement(By.cssSelector("*[id^='902:'][id$='a']")).sendKeys(WriteUpAmount);
+		op.writeUpAmountField(WriteUpAmount);
 
 		// County field
-		driver.findElement(By.cssSelector("*[id^='940:'][id$='a']")).sendKeys(Country);
+		op.countryField(Country);
 
 		// Customer appointment Date and Time
-		driver.findElement(By.cssSelector("*[id^='1112:'][id$='a']")).click();
-		List<WebElement> customerAppointmentDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
-		int total_node4 = customerAppointmentDate.size();
-		for (int i = 0; i < total_node4; i++) {
-			String date = customerAppointmentDate.get(i).getText();
-			if (date.equals("25")) {
-				customerAppointmentDate.get(i).click();
-				break;
-			}
-		}
+		op.customerAppointmentDateAndTimeField();
+		op.customerAppointmentDateAndTimeCalender();
 
 		// Type dropdown field
-		driver.findElement(By.cssSelector("*[aria-describedby^='1186:'][aria-describedby$='a-label']")).click();
-		driver.findElement(By.xpath("//a[contains(text(),'New Business')]")).click();
+		op.typeDropDownField();
+		op.typeDropDownFieldPopulate();
 
 		// Appointment completed Date
-		driver.findElement(By.cssSelector("*[id^='1232:'][id$='a']")).click();
-		List<WebElement> appointmentCompletedDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
-		int total_node5 = appointmentCompletedDate.size();
-		for (int i = 0; i < total_node5; i++) {
-			String date = appointmentCompletedDate.get(i).getText();
-			if (date.equals("25")) {
-				appointmentCompletedDate.get(i).click();
-				break;
-			}
-		}
+		op.AppointmentCompletedDateField();
+		op.appointmentCompletedDateFieldCalender();
 
 		// CustomerDelivery Date and Time
-		driver.findElement(By.cssSelector("*[id^='1335:'][id$='a']")).click();
-		List<WebElement> CustomerDelivery = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
-		int total_node6 = CustomerDelivery.size();
-		for (int i = 0; i < total_node6; i++) {
-			String date = CustomerDelivery.get(i).getText();
-			if (date.equals("25")) {
-				CustomerDelivery.get(i).click();
-				break;
-			}
-		}
+		op.customerDeliveryDateAndTime();
+		op.customerDeliveryDateAndTimeCalender();
 
 		// Appointment - Deliverery Set - Contacted - Up Assigned check boxes
 
 		// FirstResponseTime
-		driver.findElement(By.cssSelector("*[id^='1523:'][id$='a']")).click();
-		List<WebElement> FirstResponseTime = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
-		int total_node7 = FirstResponseTime.size();
-		for (int i = 0; i < total_node7; i++) {
-			String date = FirstResponseTime.get(i).getText();
-			if (date.equals("25")) {
-				FirstResponseTime.get(i).click();
-				break;
-			}
-		}
+		op.firstResponseTimeField();
+		op.FirstResponseTimeFieldCalender();
 
 		// PDIPrinted Date and Time
-		driver.findElement(By.cssSelector("*[id^='1563:'][id$='a']")).click();
-		List<WebElement> PDIPrinted = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
-		int total_node8 = PDIPrinted.size();
-		for (int i = 0; i < total_node8; i++) {
-			String date = PDIPrinted.get(i).getText();
-			if (date.equals("25")) {
-				PDIPrinted.get(i).click();
-				break;
-			}
-		}
+		op.pdiPrintedDateAndTimeField();
+		op.PDIPrintedDateAndTimeCalender();
 
 		// BusinessAdjustedCreatedDate
-		driver.findElement(By.cssSelector("*[id^='1633:'][id$='a']")).click();
-		List<WebElement> BusinessAdjustedCreatedDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
-		int total_node9 = BusinessAdjustedCreatedDate.size();
-		for (int i = 0; i < total_node9; i++) {
-			String date = BusinessAdjustedCreatedDate.get(i).getText();
-			if (date.equals("25")) {
-				BusinessAdjustedCreatedDate.get(i).click();
-				break;
-			}
-		}
+		op.businessAdjustedCreatedDateField();
+		op.BusinessAdjustedCreatedDateCalender();
 
 		// BusinessAdjustedCreatedDateEnd
-		driver.findElement(By.cssSelector("*[id^='1687:'][id$='a']")).click();
-		List<WebElement> BusinessAdjustedCreatedDateEnd = driver
-				.findElements(By.xpath("//table[@class='calGrid']//td"));
-		int total_node10 = BusinessAdjustedCreatedDateEnd.size();
-		for (int i = 0; i < total_node10; i++) {
-			String date = BusinessAdjustedCreatedDateEnd.get(i).getText();
-			if (date.equals("25")) {
-				BusinessAdjustedCreatedDateEnd.get(i).click();
-				break;
-			}
-		}
+		op.businessAdjustedCreatedDateEndField();
+		op.BusinessAdjustedCreatedDateEndCalender();
 
 		// BusinessAdjustedCreatedDateStart
-		driver.findElement(By.cssSelector("*[id^='1741:'][id$='a']")).click();
-		List<WebElement> BusinessAdjustedCreatedDateStart = driver
-				.findElements(By.xpath("//table[@class='calGrid']//td"));
-		int total_node11 = BusinessAdjustedCreatedDateStart.size();
-		for (int i = 0; i < total_node11; i++) {
-			String date = BusinessAdjustedCreatedDateStart.get(i).getText();
-			if (date.equals("25")) {
-				BusinessAdjustedCreatedDateStart.get(i).click();
-				break;
-			}
-		}
+		op.businessAdjustedCreatedDateStartField();
+		op.BusinessAdjustedCreatedDateStartCalender();
 
 	}
 
@@ -382,59 +301,59 @@ public class OpportunitiesStepDef {
 	public void populate_Interested_In_Attributes_fields() {
 
 		// New/Used - Year To
-		driver.findElement(By.cssSelector("*[aria-describedby^='1928:'][aria-describedby$='a-label']")).click();
-		driver.findElements(By.xpath("//a[@title='New']")).get(1).click();
+		op.newUsedYearToClick();
+		op.newUsedYearToPopulate();
 
 		// Floorplan Style
-		driver.findElement(By.cssSelector("*[aria-describedby^='2654:'][aria-describedby$='a-label']")).click();
-		driver.findElement(By.xpath("//a[@title='Park Model']")).click();
+		op.floorplanStyleClick();
+		op.floorplanStylePopulate();
 
 		// Genius Notes 1 (RV Attributes)
-		driver.findElement(By.cssSelector("*[id^='2750:'][id$='a']")).sendKeys(GeniusNotes1);
+		op.geniusNotes1RVAttributes(GeniusNotes1);
 
 		// Notes 2 (Meet & Greet)
-		driver.findElement(By.cssSelector("*[id^='2798:'][id$='a']")).sendKeys(Notes2MeetAndGreet);
+		op.note2MeetAndGreet(Notes2MeetAndGreet);
 
 		// Genius Notes 3 (Trade Notes)
-		driver.findElement(By.cssSelector("*[id^='2842:'][id$='a']")).sendKeys(GeniusNotes3TradeNotes);
+		op.geniusNotes3TradeNotesInputField(GeniusNotes3TradeNotes);
 
 		// # Sleeps
-		driver.findElement(By.cssSelector("*[id^='2886:'][id$='a']")).sendKeys(NumSleeps);
+		op.numberSleep(NumSleeps);
 
 		// Year From
-		driver.findElement(By.cssSelector("*[aria-describedby^='1878:'][aria-describedby$='a-label']")).click();
-		driver.findElement(By.xpath("//a[@title='2017']")).click();
+		op.yearFromClick();
+		op.yearFromPopulate();
 
 		// Year To
-		driver.findElement(By.cssSelector("*[aria-describedby^='1974:'][aria-describedby$='a-label']")).click();
-		driver.findElements(By.xpath("//a[@title='2017']")).get(1).click();
+		op.yearToClick();
+		op.yearToPopulate();
 
 		// Price From
-		driver.findElement(By.cssSelector("*[aria-describedby^='2100:'][aria-describedby$='a-label']")).click();
-		driver.findElement(By.xpath("//a[contains(text(),'6000')]")).click();
+		op.priceFromClick();
+		op.PriceFromPopulate();
 
 		// Price To
-		driver.findElement(By.cssSelector("*[aria-describedby^='2226:'][aria-describedby$='a-label']")).click();
-		driver.findElement(By.xpath("//a[contains(text(),'4,000')]")).click();
+		op.priceToClick();
+		op.PriceFromPopulate();
 
 		// Payment From
-		driver.findElement(By.cssSelector("*[aria-describedby^='2352:'][aria-describedby$='a-label']")).click();
-		driver.findElement(By.xpath("//a[@title='75']")).click();
+		op.paymentFromClick();
+		op.paymentFromPopulate();
 
 		// Payment To
-		driver.findElement(By.cssSelector("*[aria-describedby^='2478:'][aria-describedby$='a-label']")).click();
-		driver.findElements(By.xpath("//a[@title='100']")).get(1).click();
+		op.paymentToClick();
+		op.paymentToPopulate();
 
 		// Length From
-		driver.findElement(By.cssSelector("*[aria-describedby^='2604:'][aria-describedby$='a-label']")).click();
-		driver.findElements(By.xpath("//a[@title='6 ft']")).get(0).click();
+		op.lengthFromClick();
+		op.lengthFromPopulate();
 
 		// Length To
-		driver.findElement(By.cssSelector("*[aria-describedby^='2700:'][aria-describedby$='a-label']")).click();
-		driver.findElements(By.xpath("//a[@title='10 ft']")).get(1).click();
+		op.lengthToClick();
+		op.lengthToPopulate();
 
 		// # Slide Outs
-		driver.findElement(By.cssSelector("*[id^='2776:'][id$='a']")).sendKeys(SlideOuts);
+		op.numberSlideOutsInputField();
 
 	}
 
@@ -442,30 +361,37 @@ public class OpportunitiesStepDef {
 	public void Interested_In_Details() {
 
 		// Interested Type
-		driver.findElement(By.cssSelector("*[id^='2933:'][id$='a']")).sendKeys(InterestedType);
+		op.interestedTypeInputField(InterestedType);
 
 		// Interior Color
-		driver.findElement(By.cssSelector("*[id^='2949:'][id$='a']")).sendKeys(InteriorColor);
+		op.interiorColorInputField(InteriorColor);
 
 		// Interested Category
-		driver.findElement(By.cssSelector("*[id^='2969:'][id$='a']")).sendKeys(IntrestedCategory);
+		op.interestedCategoryInputField(IntrestedCategory);
 
 		// Exterior Color
-		driver.findElement(By.cssSelector("*[id^='2985:'][id$='a']")).sendKeys(ExteriorColor);
+		op.exteriorColorInputField(ExteriorColor);
+
 		// Interested Year
-		driver.findElement(By.cssSelector("*[id^='3005:'][id$='a']")).sendKeys(InterestedYear);
+		op.interestedYear(InterestedYear);
+
 		// # Doors
-		driver.findElement(By.cssSelector("*[id^='3021:'][id$='a']")).sendKeys(Doors);
+		op.numberDoors(Doors);
+
 		// Interested Make
-		driver.findElement(By.cssSelector("*[id^='3043:'][id$='a']")).sendKeys(InterestedMake);
+		op.interestedMakeInputField(InterestedMake);
+
 		// Mileage
-		driver.findElement(By.cssSelector("*[id^='3059:'][id$='a']")).sendKeys(Mileage);
+		op.mileageInputField(Mileage);
+
 		// Interested Model
-		driver.findElement(By.cssSelector("*[id^='3081:'][id$='a']")).sendKeys(IntrestedModel);
+		op.interestedModelInputField(IntrestedModel);
+
 		// Vehicle Options
-		driver.findElement(By.cssSelector("*[id^='3097:'][id$='a']")).sendKeys(VehicleOptions);
+		op.vehicleOptionsInputField(VehicleOptions);
+
 		// Interested Product
-		driver.findElement(By.cssSelector("*[id^='3117:'][id$='a']")).sendKeys(IntrestedProduct);
+		op.interestedProductInput(IntrestedProduct);
 
 		// Interest Level dropdown
 		driver.findElement(By.cssSelector("*[aria-describedby^='3133:'][aria-describedby$='a-label']")).click();
