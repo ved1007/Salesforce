@@ -71,8 +71,8 @@ public class OpportunitesPage extends BasePageTest {
 	By YearFromPopulate = By.xpath("//a[@title='2017']");
 	By YearToClick = By.cssSelector("*[aria-describedby^='1974:'][aria-describedby$='a-label']");
 	By YearToPopulate = By.xpath("//a[@title='2017']");
-	By PriceFromClick = By.cssSelector("*[aria-describedby^='2100:'][aria-describedby$='a-label']");
-	By PriceFromPopulate = By.xpath("//a[contains(text(),'6000')]");
+//	By PriceFromClick = By.cssSelector("*[aria-describedby^='2100:'][aria-describedby$='a-label']");
+//	By PriceFromPopulate = By.xpath("//a[contains(text(),'6000')]");
 	By PriceToClick = By.cssSelector("*[aria-describedby^='2226:'][aria-describedby$='a-label']");
 	By PriceToPopulate = By.xpath("//a[contains(text(),'4,000')]");
 	By PaymentFromClick = By.cssSelector("*[aria-describedby^='2352:'][aria-describedby$='a-label']");
@@ -95,6 +95,46 @@ public class OpportunitesPage extends BasePageTest {
 	By InterestedModelInputField = By.cssSelector("*[id^='3081:'][id$='a']");
 	By VehicleOptionsInputField = By.cssSelector("*[id^='3097:'][id$='a']");
 	By InterestedProductInput = By.cssSelector("*[id^='3117:'][id$='a']");
+	By InterestLevelDropdownClick = By.cssSelector("*[aria-describedby^='3133:'][aria-describedby$='a-label']");
+	By InterestLevelDropdownPopulate = By.xpath("//a[@title='Highly Interested']");
+	By VehicleTrimInputField = By.cssSelector("*[id^='3183:'][id$='a']");
+	By BuyingHorizonInputField = By.cssSelector("*[id^='3199:'][id$='a']");
+	By VehicleEngineInputField = By.cssSelector("*[id^='3219:'][id$='a']");
+	By PaymentMethodDropdownClick = By.cssSelector("*[aria-describedby^='3235:'][aria-describedby$='a-label']");
+	By PaymentMethodDropdownPopulate = By.xpath("//a[@title='Finance']");
+	By ChassisDropdownClick = By.cssSelector("*[aria-describedby^='3285:'][aria-describedby$='a-label']");
+	By ChassisDropdownPopulate = By.xpath("//a[@title='Chevrolet Express 3500']");
+	By PaymentDetailsInput = By.cssSelector("*[id^='3331:'][id$='a']");
+	By TransmissionField = By.cssSelector("*[id^='3351:'][id$='a']");
+	By VehiclePricingField = By.cssSelector("*[id^='3367:'][id$='a']");
+	By InterestedStockField = By.cssSelector("*[id^='3387:'][id$='a']");
+	By VehicleCommentsField = By.cssSelector("*[id^='3403:'][id$='a']");
+	By InterestedIdField = By.cssSelector("*[id^='3423:'][id$='a']");
+	By WebpageField = By.cssSelector("*[id^='3439:'][id$='a']");
+	By TowVehicleYearField = By.cssSelector("*[id^='3869:'][id$='a']");
+	By MaxTowingCapacityField = By.cssSelector("*[id^='3887:'][id$='a']");
+	By TowVehicleMakeField = By.cssSelector("*[id^='3909:'][id$='a']");
+	By TowVehicleModelField = By.cssSelector("*[id^='3943:'][id$='a']");
+	By TowVehicleVINField = By.cssSelector("*[id^='3959:'][id$='a']");
+	By TowVehicleTrimField = By.cssSelector("*[id^='3979:'][id$='a']");
+	By TowVehicleStyleField = By.cssSelector("*[id^='4013:'][id$='a']");
+	By CurrentOwnerCategoryField = By.cssSelector("*[id^='4058:'][id$='a']");
+	By CurrentOwnedMileageField = By.cssSelector("*[id^='4074:'][id$='a']");
+	By CurrentOwnedYearField = By.cssSelector("*[id^='4096:'][id$='a']");
+	By CurrentOwnedPayoffField = By.cssSelector("*[id^='4112:'][id$='a']");
+	By CurrentOwnedMakeField = By.cssSelector("*[id^='4134:'][id$='a']");
+	By CurrentOwnedQuoteLowField = By.cssSelector("*[id^='4150:'][id$='a']");
+	By CurrentOwnedProductField = By.cssSelector("*[id^='4172:'][id$='a']");
+	By CurrentOwnedModelField = By.cssSelector("*[id^='4210:'][id$='a']");
+	By CurrentOwnedQuoteHighField = By.cssSelector("*[id^='4188:'][id$='a']");
+	By CurrentOwnedTrimField = By.cssSelector("*[id^='4246:'][id$='a']");
+	By CurrentOwnedQuoteDetailsField = By.cssSelector("*[id^='4226:'][id$='a']");
+	By CurrentOwnedLengthField = By.cssSelector("*[id^='4282:'][id$='a']");
+	By CurrentOwnedCommentsField = By.cssSelector("*[id^='4262:'][id$='a']");
+	By CurrentOwnedEngineField = By.cssSelector("*[id^='4318:'][id$='a']");
+	By CurrentOwnedConditionField = By.cssSelector("*[id^='4298:'][id$='a']");
+	By CurrentOwnedIDField = By.cssSelector("*[id^='4334:'][id$='a']");
+	By CurrentOwnedOptionsField = By.cssSelector("*[id^='4354:'][id$='a']");
 
 	public void userNamefield(String username) {
 		$(userNameField).sendKeys(username);
@@ -465,7 +505,7 @@ public class OpportunitesPage extends BasePageTest {
 
 	// New/Used - Year To
 	public void newUsedYearToPopulate() {
-		driver.findElements(By.xpath("//a[@title='New']")).get(1).click();
+		driver.findElements(By.xpath("//a[@title='New']")).get(2).click();
 
 	}
 
@@ -527,17 +567,17 @@ public class OpportunitesPage extends BasePageTest {
 
 	}
 
-	// Price From
-	public void priceFromClick() {
-		$(PriceFromClick).click();
-
-	}
-
-	// Price From
-	public void PriceFromPopulate() {
-		$(PriceFromPopulate).click();
-
-	}
+//	// Price From
+//	public void priceFromClick() {
+//		$(PriceFromClick).click();
+//
+//	}
+//
+//	// Price From
+//	public void PriceFromPopulate() {
+//		$(PriceFromPopulate).click();
+//
+//	}
 
 	// Price To Click
 	public void priceToClick() {
@@ -571,7 +611,8 @@ public class OpportunitesPage extends BasePageTest {
 
 	// Payment To
 	public void paymentToPopulate() {
-		$(PaymentToPopulate).click();
+
+		driver.findElements(By.xpath("//a[@title='100']")).get(1).click();
 
 	}
 
@@ -587,15 +628,15 @@ public class OpportunitesPage extends BasePageTest {
 
 	}
 
-	// click on the Length To field
+	// Length To field click
 	public void lengthToClick() {
 		$(LengthToClick).click();
 
 	}
 
-	// Populate the Length To field
+	// Length To field populate
 	public void lengthToPopulate() {
-		$(LengthToClick).click();
+		driver.findElements(By.xpath("//a[@title='10 ft']")).get(1).click();
 
 	}
 
@@ -669,6 +710,218 @@ public class OpportunitesPage extends BasePageTest {
 	public void interestedProductInput(String IntrestedProduct) {
 		$(InterestedProductInput).sendKeys(IntrestedProduct);
 
+	}
+
+	// Interest Level Click
+
+	public void iNterestLevelDropdownClick() {
+		$(InterestLevelDropdownClick).click();
+
+	}
+	// Interest Level Populate
+
+	public void iNterestLevelDropdownPopulate() {
+		$(InterestLevelDropdownPopulate).click();
+
+	}
+
+	// Vehicle Trim
+	public void vehicleTrim(String VehicleTrim) {
+		$(VehicleTrimInputField).sendKeys(VehicleTrim);
+
+	}
+
+	// Buying Horizon
+	public void buyingHorizon(String BuyingHorizon) {
+		$(BuyingHorizonInputField).sendKeys(BuyingHorizon);
+
+	}
+
+	// Vehicle Engine
+	public void vehicleEngine(String VehicleEngine) {
+		$(VehicleEngineInputField).sendKeys(VehicleEngine);
+
+	}
+
+	// Payment Method Click
+
+	public void paymentMethodDropdownClick() {
+		$(PaymentMethodDropdownClick).click();
+
+	}
+	// Payment Method Populate
+
+	public void paymentMethodDropdownPopulate() {
+		$(PaymentMethodDropdownPopulate).click();
+
+	}
+
+	// Chassis dropdown Click
+	public void chassisDropdownClick() {
+		$(ChassisDropdownClick).click();
+
+	}
+
+	// Chassis dropdown Populate
+	public void chassisDropdownPopulate() {
+		$(ChassisDropdownPopulate).click();
+
+	}
+
+	// Payment Details
+	public void paymentDetailsInput(String PaymentDetails) {
+		$(PaymentDetailsInput).sendKeys(PaymentDetails);
+
+	}
+
+	// Transmission
+	public void transmissionField(String Transmission) {
+		$(TransmissionField).sendKeys(Transmission);
+	}
+
+	// Vehicle pricing
+	public void vehiclePricingField(String VehiclePricing) {
+		$(VehiclePricingField).sendKeys(VehiclePricing);
+	}
+
+	// Interested Stock
+	public void interestedStockField(String InterestedStock) {
+		$(InterestedStockField).sendKeys(InterestedStock);
+	}
+
+	// Vehicle Comments
+	public void vehicleCommentsField(String VehicleComments) {
+		$(VehicleCommentsField).sendKeys(VehicleComments);
+	}
+
+	// Interested Id
+	public void interestedIdField(String IntrestedID) {
+		$(InterestedIdField).sendKeys(IntrestedID);
+	}
+
+	// Webpage
+	public void webpageField(String webpage) {
+		$(WebpageField).sendKeys(webpage);
+	}
+
+	// Tow Vehicle Year
+	public void towVehicleYearField(String TowVehicleYear) {
+		$(TowVehicleYearField).sendKeys(TowVehicleYear);
+	}
+
+	// Max Towing Capacity
+	public void maxTowingCapacityField(String MaxTowingCapacity) {
+		$(MaxTowingCapacityField).sendKeys(MaxTowingCapacity);
+	}
+
+	// Tow Vehicle Make
+	public void towVehicleMakeField(String TowVehicleMake) {
+		$(TowVehicleMakeField).sendKeys(TowVehicleMake);
+	}
+
+	// Tow Vehicle Model
+	public void towVehicleModelField(String TowVehicleModel) {
+		$(TowVehicleModelField).sendKeys(TowVehicleModel);
+	}
+
+	// Tow Vehicle VIN
+	public void towVehicleVINField(String TowVehicleVIN) {
+		$(TowVehicleVINField).sendKeys(TowVehicleVIN);
+	}
+
+	// Tow Vehicle Trim
+	public void towVehicleTrimField(String TowVehicleTrim) {
+		$(TowVehicleTrimField).sendKeys(TowVehicleTrim);
+	}
+
+	// Tow Vehicle Style
+	public void towVehicleStyleField(String TowVehicleStyle) {
+		$(TowVehicleStyleField).sendKeys(TowVehicleStyle);
+	}
+
+	// Current Owner Category
+	public void currentOwnerCategoryField(String CurrentOwnerCategory) {
+		$(CurrentOwnerCategoryField).sendKeys(CurrentOwnerCategory);
+	}
+
+	// Current Owned Mileage
+	public void currentOwnedMileageField(String CurrentOwnedMileage) {
+		$(CurrentOwnedMileageField).sendKeys(CurrentOwnedMileage);
+	}
+
+	// Current Owned Year
+	public void currentOwnedYearField(String CurrentOwnedYear) {
+		$(CurrentOwnedYearField).sendKeys(CurrentOwnedYear);
+	}
+
+	// Current Owned Payoff
+	public void currentOwnedPayoffField(String CurrentOwnedPayoff) {
+		$(CurrentOwnedPayoffField).sendKeys(CurrentOwnedPayoff);
+	}
+
+	// Current Owned Make
+	public void currentOwnedMakeField(String CurrentOwnedMake) {
+		$(CurrentOwnedMakeField).sendKeys(CurrentOwnedMake);
+	}
+
+	// Current Owned Quote Low
+	public void currentOwnedQuoteLowField(String CurrentOwnedQuoteLow) {
+		$(CurrentOwnedQuoteLowField).sendKeys(CurrentOwnedQuoteLow);
+	}
+
+	// Current Owned Product
+	public void currentOwnedProductField(String CurrentOwnedProduct) {
+		$(CurrentOwnedProductField).sendKeys(CurrentOwnedProduct);
+	}
+
+	// Current Owned Model
+	public void currentOwnedModelField(String CurrentOwnedModel) {
+		$(CurrentOwnedModelField).sendKeys(CurrentOwnedModel);
+	}
+
+	// Current Owned Quote High
+	public void currentOwnedQuoteHighField(String CurrentOwnedQuoteHigh) {
+		$(CurrentOwnedQuoteHighField).sendKeys(CurrentOwnedQuoteHigh);
+	}
+
+	// Current Owned Trim
+	public void currentOwnedTrimField(String CurrentOwnedTrim) {
+		$(CurrentOwnedTrimField).sendKeys(CurrentOwnedTrim);
+	}
+
+	// Current Owned Quote Details
+	public void currentOwnedQuoteDetailsField(String CurrentOwnedQuoteDetails) {
+		$(CurrentOwnedQuoteDetailsField).sendKeys(CurrentOwnedQuoteDetails);
+	}
+
+	// Current Owned Length
+	public void currentOwnedLengthField(String CurrentOwnedLength) {
+		$(CurrentOwnedLengthField).sendKeys(CurrentOwnedLength);
+	}
+
+	// Current Owned Comments
+	public void currentOwnedCommentsField(String CurrentOwnedComments) {
+		$(CurrentOwnedCommentsField).sendKeys(CurrentOwnedComments);
+	}
+
+	// Current Owned Engine
+	public void currentOwnedEngineField(String CurrentOwnedEngine) {
+		$(CurrentOwnedEngineField).sendKeys(CurrentOwnedEngine);
+	}
+
+	// Current Owned Condition
+	public void currentOwnedConditionField(String CurrentOwnedCondition) {
+		$(CurrentOwnedConditionField).sendKeys(CurrentOwnedCondition);
+	}
+
+	// Current Owned ID
+	public void currentOwnedIDField(String CurrentOwnedID) {
+		$(CurrentOwnedIDField).sendKeys(CurrentOwnedID);
+	}
+
+	// Current Owned Options
+	public void currentOwnedOptionsField(String CurrentOwnedOptions) {
+		$(CurrentOwnedOptionsField).sendKeys(CurrentOwnedOptions);
 	}
 
 }

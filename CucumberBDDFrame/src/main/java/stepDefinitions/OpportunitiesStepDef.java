@@ -127,6 +127,7 @@ public class OpportunitiesStepDef {
 	String ADSlot = reader.getCellData("Sheet2Opportunities", "ADSlot", 2);
 	String ADSlotPosition = reader.getCellData("Sheet2Opportunities", "ADSlotPosition", 2);
 	String ADContent = reader.getCellData("Sheet2Opportunities", "ADContent", 2);
+	By InterestedIdField = By.cssSelector("*[id^='3423:'][id$='a']");
 
 	OpportunitesPage op = new OpportunitesPage();
 
@@ -329,12 +330,12 @@ public class OpportunitiesStepDef {
 		op.yearToPopulate();
 
 		// Price From
-		op.priceFromClick();
-		op.PriceFromPopulate();
+//		op.priceFromClick();
+//		op.PriceFromPopulate();
 
 		// Price To
 		op.priceToClick();
-		op.PriceFromPopulate();
+		op.PriceToPopulate();
 
 		// Payment From
 		op.paymentFromClick();
@@ -394,43 +395,47 @@ public class OpportunitiesStepDef {
 		op.interestedProductInput(IntrestedProduct);
 
 		// Interest Level dropdown
-		driver.findElement(By.cssSelector("*[aria-describedby^='3133:'][aria-describedby$='a-label']")).click();
-		driver.findElement(By.xpath("//a[@title='Highly Interested']")).click();
+		op.iNterestLevelDropdownClick();
+		op.iNterestLevelDropdownPopulate();
 
 		// Vehicle Trim
-		driver.findElement(By.cssSelector("*[id^='3183:'][id$='a']")).sendKeys(VehicleTrim);
+		op.vehicleTrim(VehicleTrim);
+
 		// Buying Horizon
-		driver.findElement(By.cssSelector("*[id^='3199:'][id$='a']")).sendKeys(BuyingHorizon);
+
+		op.buyingHorizon(BuyingHorizon);
+
 		// Vehicle Engine
-		driver.findElement(By.cssSelector("*[id^='3219:'][id$='a']")).sendKeys(VehicleEngine);
+		op.vehicleEngine(VehicleEngine);
 
 		// Payment Method dropdown
-		driver.findElement(By.cssSelector("*[aria-describedby^='3235:'][aria-describedby$='a-label']")).click();
-		driver.findElement(By.xpath("//a[@title='Finance']")).click();
+		op.paymentMethodDropdownClick();
+		op.paymentMethodDropdownPopulate();
 
 		// Chassis dropdown
-		driver.findElement(By.cssSelector("*[aria-describedby^='3285:'][aria-describedby$='a-label']")).click();
-		driver.findElement(By.xpath("//a[@title='Chevrolet Express 3500']")).click();
+		op.chassisDropdownClick();
+		op.chassisDropdownPopulate();
 
 		// Payment Details
-		driver.findElement(By.cssSelector("*[id^='3331:'][id$='a']")).sendKeys(PaymentDetails);
+		op.paymentDetailsInput(PaymentDetails);
+
 		// Transmission
-		driver.findElement(By.cssSelector("*[id^='3351:'][id$='a']")).sendKeys(Transmission);
+		op.transmissionField(Transmission);
 
 		// Vehicle pricing
-		driver.findElement(By.cssSelector("*[id^='3367:'][id$='a']")).sendKeys(VehiclePricing);
+		op.vehiclePricingField(VehiclePricing);
 
 		// Interested Stock
-		driver.findElement(By.cssSelector("*[id^='3387:'][id$='a']")).sendKeys(InterestedStock);
+		op.interestedStockField(InterestedStock);
 
 		// Vehicle Comments
-		driver.findElement(By.cssSelector("*[id^='3403:'][id$='a']")).sendKeys(VehicleComments);
+		op.vehicleCommentsField(VehicleComments);
 
 		// Interested Id
-		driver.findElement(By.cssSelector("*[id^='3423:'][id$='a']")).sendKeys(IntrestedID);
+		op.interestedIdField(IntrestedID);
 
 		// Webpage
-		driver.findElement(By.cssSelector("*[id^='3439:'][id$='a']")).sendKeys(webpage);
+		op.webpageField(webpage);
 
 		// Toy Deck drop down
 		// Outdoor Kitchen
@@ -445,25 +450,25 @@ public class OpportunitiesStepDef {
 	public void Towing_Information() {
 
 		// Tow Vehicle Year
-		driver.findElement(By.cssSelector("*[id^='3869:'][id$='a']")).sendKeys(TowVehicleYear);
+		op.towVehicleYearField(TowVehicleYear);
 
 		// Max Towing Capacity
-		driver.findElement(By.cssSelector("*[id^='3887:'][id$='a']")).sendKeys(MaxTowingCapacity);
+		op.maxTowingCapacityField(MaxTowingCapacity);
 
 		// Tow Vehicle Make
-		driver.findElement(By.cssSelector("*[id^='3909:'][id$='a']")).sendKeys(TowVehicleMake);
+		op.towVehicleMakeField(TowVehicleMake);
 
 		// Tow Vehicle Model
-		driver.findElement(By.cssSelector("*[id^='3943:'][id$='a']")).sendKeys(TowVehicleModel);
+		op.towVehicleModelField(TowVehicleModel);
 
 		// Tow Vehicle VIN
-		driver.findElement(By.cssSelector("*[id^='3959:'][id$='a']")).sendKeys(TowVehicleVIN);
+		op.towVehicleVINField(TowVehicleVIN);
 
 		// Tow Vehicle Trim
-		driver.findElement(By.cssSelector("*[id^='3979:'][id$='a']")).sendKeys(TowVehicleTrim);
+		op.towVehicleTrimField(TowVehicleTrim);
 
 		// Tow Vehicle Style
-		driver.findElement(By.cssSelector("*[id^='4013:'][id$='a']")).sendKeys(TowVehicleStyle);
+		op.towVehicleStyleField(TowVehicleStyle);
 
 	}
 
@@ -471,55 +476,55 @@ public class OpportunitiesStepDef {
 	public void currently_Own_Trade_InCurrently_Own_TradeIn_from_Web_Lead_fields() {
 
 		// Current Owner Category
-		driver.findElement(By.cssSelector("*[id^='4058:'][id$='a']")).sendKeys(CurrentOwnerCategory);
+		op.currentOwnerCategoryField(CurrentOwnerCategory);
 
 		// Current Owned Mileage
-		driver.findElement(By.cssSelector("*[id^='4074:'][id$='a']")).sendKeys(CurrentOwnedMileage);
+		op.currentOwnedMileageField(CurrentOwnedMileage);
 
 		// Current Owned Year
-		driver.findElement(By.cssSelector("*[id^='4096:'][id$='a']")).sendKeys(CurrentOwnedYear);
+		op.currentOwnedYearField(CurrentOwnedYear);
 
 		// Current Owned Payoff
-		driver.findElement(By.cssSelector("*[id^='4112:'][id$='a']")).sendKeys(CurrentOwnedPayoff);
+		op.currentOwnedPayoffField(CurrentOwnedPayoff);
 
 		// Current Owned Make
-		driver.findElement(By.cssSelector("*[id^='4134:'][id$='a']")).sendKeys(CurrentOwnedMake);
+		op.currentOwnedMakeField(CurrentOwnedMake);
 
 		// Current Owned Quote Low
-		driver.findElement(By.cssSelector("*[id^='4150:'][id$='a']")).sendKeys(CurrentOwnedQuoteLow);
+		op.currentOwnedQuoteLowField(CurrentOwnedQuoteLow);
 
 		// Current Owned Product
-		driver.findElement(By.cssSelector("*[id^='4172:'][id$='a']")).sendKeys(CurrentOwnedProduct);
+		op.currentOwnedProductField(CurrentOwnedProduct);
 
 		// Current Owned Model
-		driver.findElement(By.cssSelector("*[id^='4210:'][id$='a']")).sendKeys(CurrentOwnedModel);
+		op.currentOwnedModelField(CurrentOwnedModel);
 
 		// Current Owned Quote High
-		driver.findElement(By.cssSelector("*[id^='4188:'][id$='a']")).sendKeys(CurrentOwnedQuoteHigh);
+		op.currentOwnedQuoteHighField(CurrentOwnedQuoteHigh);
 
 		// Current Owned Trim
-		driver.findElement(By.cssSelector("*[id^='4246:'][id$='a']")).sendKeys(CurrentOwnedTrim);
+		op.currentOwnedTrimField(CurrentOwnedTrim);
 
 		// Current Owned Quote Details
-		driver.findElement(By.cssSelector("*[id^='4226:'][id$='a']")).sendKeys(CurrentOwnedQuoteDetails);
+		op.currentOwnedQuoteDetailsField(CurrentOwnedQuoteDetails);
 
 		// Current Owned Length
-		driver.findElement(By.cssSelector("*[id^='4282:'][id$='a']")).sendKeys(CurrentOwnedLength);
+		op.currentOwnedLengthField(CurrentOwnedLength);
 
 		// Current Owned Comments
-		driver.findElement(By.cssSelector("*[id^='4262:'][id$='a']")).sendKeys(CurrentOwnedComments);
+		op.currentOwnedCommentsField(CurrentOwnedComments);
 
 		// Current Owned Engine
-		driver.findElement(By.cssSelector("*[id^='4318:'][id$='a']")).sendKeys(CurrentOwnedEngine);
+		op.currentOwnedEngineField(CurrentOwnedEngine);
 
 		// Current Owned Condition
-		driver.findElement(By.cssSelector("*[id^='4298:'][id$='a']")).sendKeys(CurrentOwnedCondition);
+		op.currentOwnedConditionField(CurrentOwnedCondition);
 
 		// Current Owned ID
-		driver.findElement(By.cssSelector("*[id^='4334:'][id$='a']")).sendKeys(CurrentOwnedID);
+		op.currentOwnedIDField(CurrentOwnedID);
 
-		// Current Owned Options
-		driver.findElement(By.cssSelector("*[id^='4354:'][id$='a']")).sendKeys(CurrentOwnedOptions);
+		// Current Owned Option
+		op.currentOwnedOptionsField(CurrentOwnedOptions);
 
 	}
 
