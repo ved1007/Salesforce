@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5515425685,
+              "duration": 4931719773,
               "status": "passed"
             },
             "line": 5,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 7537764,
+              "duration": 8232388,
               "status": "passed"
             },
             "line": 6,
@@ -42,7 +42,7 @@
           },
           {
             "result": {
-              "duration": 194932590,
+              "duration": 192339579,
               "status": "passed"
             },
             "line": 7,
@@ -68,7 +68,7 @@
           },
           {
             "result": {
-              "duration": 1997168543,
+              "duration": 1906711793,
               "status": "passed"
             },
             "line": 8,
@@ -80,7 +80,7 @@
           },
           {
             "result": {
-              "duration": 6822233107,
+              "duration": 3652642345,
               "status": "passed"
             },
             "line": 9,
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 65439473,
+              "duration": 58671577,
               "status": "passed"
             },
             "line": 10,
@@ -110,7 +110,7 @@
           },
           {
             "result": {
-              "duration": 1487312759,
+              "duration": 1486765071,
               "status": "passed"
             },
             "line": 11,
@@ -122,7 +122,7 @@
           },
           {
             "result": {
-              "duration": 1386172079,
+              "duration": 1292560474,
               "status": "passed"
             },
             "line": 12,
@@ -134,7 +134,7 @@
           },
           {
             "result": {
-              "duration": 5985465378,
+              "duration": 5836115963,
               "status": "passed"
             },
             "line": 13,
@@ -146,9 +146,8 @@
           },
           {
             "result": {
-              "duration": 2128648627,
-              "error_message": "java.lang.NullPointerException\n\tat stepDefinitions.OpportunitiesStepDef.Opportunity_Information(OpportunitiesStepDef.java:234)\n\tat ✽.And Opportunity Information(/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/src/main/java/Features/Opportunities.feature:14)\n",
-              "status": "failed"
+              "duration": 12581265420,
+              "status": "passed"
             },
             "line": 14,
             "name": "Opportunity Information",
@@ -159,7 +158,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 5508145033,
+              "status": "passed"
             },
             "line": 15,
             "name": "Interested In Attributes",
@@ -170,7 +170,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 10716721067,
+              "status": "passed"
             },
             "line": 16,
             "name": "Interested In Details",
@@ -181,7 +182,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3155229824,
+              "status": "passed"
             },
             "line": 17,
             "name": "Towing Information",
@@ -192,7 +194,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 8475105456,
+              "status": "passed"
             },
             "line": 18,
             "name": "Currently Own Trade-InCurrently Own TradeIn from Web Lead fields",
@@ -203,7 +206,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2914607766,
+              "status": "passed"
             },
             "line": 19,
             "name": "Pupulate Info from lead fields",
@@ -214,7 +218,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3768368412,
+              "status": "passed"
             },
             "line": 20,
             "name": "Lead Source",
@@ -225,7 +230,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 676583577,
+              "status": "passed"
             },
             "line": 21,
             "name": "Enter the Description Information",
@@ -236,7 +242,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 9813211188,
+              "status": "passed"
             },
             "line": 22,
             "name": "Other data fields",
@@ -247,7 +254,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3258617826,
+              "status": "passed"
             },
             "line": 23,
             "name": "System Information fields",
@@ -258,7 +266,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 100067922,
+              "status": "passed"
             },
             "line": 24,
             "name": "Click the Save button",

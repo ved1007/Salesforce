@@ -274,11 +274,27 @@ public class OpportunitiesStepDef {
 		op.customerDeliveryDateAndTime();
 		op.customerDeliveryDateAndTimeCalender();
 
-		// Appointment - Deliverery Set - Contacted - Up Assigned check boxes
+		// Appointment Set checkbox
+		op.appointmentSetCheckbox();
+
+		// Delivery Set checkbox
+		op.deliverySetCheckbox();
+
+		// Contacted
+		op.contactedCheckBox();
+
+		// Up Assigned checkbox
+
+		op.upAssignedCheckbox();
+
+		// Replied
+		op.repliedCheckBox();
 
 		// FirstResponseTime
 		op.firstResponseTimeField();
 		op.FirstResponseTimeFieldCalender();
+
+		// Replied checkbox
 
 		// PDIPrinted Date and Time
 		op.pdiPrintedDateAndTimeField();
@@ -530,58 +546,56 @@ public class OpportunitiesStepDef {
 
 	@Then("^Pupulate Info from lead fields$")
 	public void pupulate_Info_from_lead_fields() {
-		// Lead Phone
-		driver.findElement(By.cssSelector("*[id^='4399:'][id$='a']")).sendKeys(LeadPhone);
+
+		op.leadPhoneField(LeadPhone);
 
 		// Lead Email
-		driver.findElement(By.cssSelector("*[id^='4415:'][id$='a']")).sendKeys(LeadEmail);
+		op.leadEmailField(LeadEmail);
 
 		// Lead Mobile Phone
-		driver.findElement(By.cssSelector("*[id^='4435:'][id$='a']")).sendKeys(LeadMobilePhone);
+		op.leadMobilePhoneField(LeadMobilePhone);
 
 		// Lead Score
-		driver.findElement(By.cssSelector("*[id^='4451:'][id$='a']")).sendKeys(LeadScore);
+		op.leadScoreField(LeadScore);
 
 		// Lead other Phone
-		driver.findElement(By.cssSelector("*[id^='4473:'][id$='a']")).sendKeys(LeadOtherPhone);
+		op.leadOtherPhoneField(LeadOtherPhone);
 
 		// Lead Work Phone
-		driver.findElement(By.cssSelector("*[id^='4507:'][id$='a']")).sendKeys(LeadWorkPhone);
+		op.leadWorkPhoneField(LeadWorkPhone);
 
 		// Lead Message
-		driver.findElement(By.cssSelector("*[aria-labelledby^='label-4545:'][aria-labelledby$='a']"))
-				.sendKeys(LeadMessage);
+		op.leadMessageField(LeadMessage);
 
 		// End Visit Notes
-		driver.findElement(By.cssSelector("*[data-aura-rendered-by^='4615:'][data-aura-rendered-by$='a']"))
-				.sendKeys(EndViditNotes);
+		op.endVisitNotesField(EndViditNotes);
 
 	}
 
 	@Then("^Lead Source$")
 	public void Lead_Source() {
 		// Source
-		driver.findElement(By.cssSelector("*[id^='4652:'][id$='a']")).sendKeys(Source);
+		op.sourceField(Source);
 
 		// Lead Source drop down
-		driver.findElement(By.cssSelector("*[aria-describedby^='4748:'][aria-describedby$='a-label']")).click();
-		driver.findElement(By.xpath("//a[@title='Internet']")).click();
+		op.leadSourceDropDownClick();
+		op.leadSourceDropDownPopulate();
 
 		// FormName
-		driver.findElement(By.cssSelector("*[id^='4794:'][id$='a']")).sendKeys(FormName);
+		op.FormNameField(FormName);
 
 		// Web Lead Source Detail drop down
-		driver.findElement(By.cssSelector("*[aria-describedby^='4814:'][aria-describedby$='a-label']")).click();
-		driver.findElement(By.xpath("//a[@title='Dealer Website']")).click();
+		op.webLeadSoureDetailDropDownClick();
+		op.WebLeadSoureDetailDropDownPopulate();
 
 		// Tracking Medium
-		driver.findElement(By.cssSelector("*[id^='4860:'][id$='a']")).sendKeys(TrackingMedium);
+		op.trackingMediumField(TrackingMedium);
 
 		// Tracking SCPC
-		driver.findElement(By.cssSelector("*[id^='4956:'][id$='a']")).sendKeys(TrackingSCPC);
+		op.trackingSCPCField(TrackingSCPC);
 
 		// Web Lead Source Name
-		driver.findElement(By.cssSelector("*[id^='4976:'][id$='a']")).sendKeys(WebLeadSourceName);
+		op.webLeadSourceNameField(WebLeadSourceName);
 
 		// Geo Lookup
 		// Lead Queue Id
@@ -589,29 +603,19 @@ public class OpportunitiesStepDef {
 		// Website
 		// Location Primary Lead
 		// Enterprise Lead
+
 		// eLead Create Date
-		driver.findElement(By.cssSelector("*[id^='5430:'][id$='a']")).click();
-		List<WebElement> eLeadCreatedDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
-		int total_node = eLeadCreatedDate.size();
-		for (int i = 0; i < total_node; i++) {
-			String date = eLeadCreatedDate.get(i).getText();
-			if (date.equals("27")) {
-				eLeadCreatedDate.get(i).click();
-				break;
-			}
-
-		}
-
+		op.eLeadCreateDateCalender();
 	}
 
 	@Then("^Enter the Description Information$")
 	public void enter_the_Description_Information() {
 		// Description
-		driver.findElement(By.cssSelector("*[id^='5468:'][id$='a']")).sendKeys(Discription);
+		op.discriptionField(Discription);
 
 		// Price drop down
-		driver.findElement(By.cssSelector("*[aria-describedby^='5488:'][aria-describedby$='a-label']")).click();
-		driver.findElement(By.xpath("//a[@title='$15,000 to $30,000']")).click();
+		op.priceDropDownClick();
+		op.priceDropDownPopulate();
 
 	}
 
@@ -619,68 +623,68 @@ public class OpportunitiesStepDef {
 	public void populate_Other_data_fields() {
 
 		// Primary Email
-		driver.findElement(By.cssSelector("*[id^='5863:'][id$='a']")).sendKeys(PrimaryEmail);
+		op.primaryEmailField(PrimaryEmail);
 
 		// Primary Phone
-		driver.findElement(By.cssSelector("*[id^='5897:'][id$='a']")).sendKeys(PrimaryPhone);
+		op.primaryPhoneField(PrimaryPhone);
 
 		// Lead Ip Address
-		driver.findElement(By.cssSelector("*[id^='5945:'][id$='a']")).sendKeys(LeadIPAddress);
+		op.leadIPAddressField(LeadIPAddress);
 
 		// Lead System Data
-		driver.findElement(By.cssSelector("*[id^='5979:'][id$='a']")).sendKeys(LeadSystemData);
+		op.leadSystemDataField(LeadSystemData);
 
 		// Category drop down
-		driver.findElement(By.cssSelector("*[aria-describedby^='6049:'][aria-describedby$='a-label']")).click();
-		driver.findElement(By.xpath("//a[@title='Camping Trailer']")).click();
+		op.categoryDropDownClick();
+		op.categoryDropDownPopulate();
 
 		// Tracking Id
-		driver.findElement(By.cssSelector("*[id^='6138:'][id$='a']")).sendKeys(TrackingID);
+		op.trackingIDField(TrackingID);
 
 		// Tracking LandingPage URL
-		driver.findElement(By.cssSelector("*[id^='6174:'][id$='a']")).sendKeys(TrackingLandingPageURL);
+		op.trackingLandingPageURLField(TrackingLandingPageURL);
 
 		// Tracking Referral URL
-		driver.findElement(By.cssSelector("*[id^='6211:'][id$='a']")).sendKeys(TrackingReferralURL);
+		op.trackingReferralURLField(TrackingReferralURL);
 
 		// Tracking Promo Code
-		driver.findElement(By.cssSelector("*[id^='6248:'][id$='a']")).sendKeys(TrackingPromoCode);
+		op.trackingPromoCodeField(TrackingPromoCode);
 
 		// Next Step
-		driver.findElement(By.cssSelector("*[id^='6264:'][id$='a']")).sendKeys(NextStep);
+		op.nextStepField(NextStep);
 
 		// Tracking Campaign
-		driver.findElement(By.cssSelector("*[id^='6284:'][id$='a']")).sendKeys(TrackingCampaign);
+		op.trackingCampaignField(TrackingCampaign);
 
 		// Tracking Source
-		driver.findElement(By.cssSelector("*[id^='6318:'][id$='a']")).sendKeys(TrackingSource);
+		op.trackingSourceField(TrackingSource);
 
 		// Tracking Content
-		driver.findElement(By.cssSelector("*[id^='6352:'][id$='a']")).sendKeys(TrackingContent);
+		op.TrackingContentField(TrackingContent);
 
 		// Tracking Keywords
-		driver.findElement(By.cssSelector("*[id^='6448:'][id$='a']")).sendKeys(TrackingKeywords);
+		op.trackingKeywordsField(TrackingKeywords);
 
 		// Backend GP
-		driver.findElement(By.cssSelector("*[id^='6496:'][id$='a']")).sendKeys(BackendGP);
+		op.BackendGPField(BackendGP);
 
 		// Ad Campaign
-		driver.findElement(By.cssSelector("*[id^='6518:'][id$='a']")).sendKeys(ADCampaign);
+		op.ADCampaignField(ADCampaign);
 
 		// Ad Group
-		driver.findElement(By.cssSelector("*[id^='6552:'][id$='a']")).sendKeys(ADGroup);
+		op.aDGroupField(ADGroup);
 
 		// Ad Keyword
-		driver.findElement(By.cssSelector("*[id^='6586:'][id$='a']")).sendKeys(ADKeyword);
+		op.ADKeywordField(ADKeyword);
 
 		// Ad Slot
-		driver.findElement(By.cssSelector("*[id^='6620:'][id$='a']")).sendKeys(ADSlot);
+		op.ADSlotField(ADSlot);
 
 		// Ad Slot Position
-		driver.findElement(By.cssSelector("*[id^='6654:'][id$='a']")).sendKeys(ADSlotPosition);
+		op.aDSlotPositionField(ADSlotPosition);
 
 		// Ad Content
-		driver.findElement(By.cssSelector("*[id^='6688:'][id$='a']")).sendKeys(ADContent);
+		op.ADContentField(ADContent);
 
 		// Forecast Category
 		// Manager Assisted | Manager Interaction | Manager Turn Over check boxes
@@ -691,82 +695,30 @@ public class OpportunitiesStepDef {
 	public void System_Information_fields() {
 
 		// LastActivityDate
-		driver.findElement(By.cssSelector("*[id^='6733:'][id$='a']")).click();
-		List<WebElement> LastActivityDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
-		int total_node12 = LastActivityDate.size();
-		for (int i = 0; i < total_node12; i++) {
-			String date = LastActivityDate.get(i).getText();
-			if (date.equals("27")) {
-				LastActivityDate.get(i).click();
-				break;
-			}
-		}
+		op.lastActivityDateCalender();
+
 		// Next Activity Date
-		driver.findElement(By.cssSelector("*[id^='6780:'][id$='a']")).click();
-		List<WebElement> NextActivityDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
-		int total_node13 = NextActivityDate.size();
-		for (int i = 0; i < total_node13; i++) {
-			String date = NextActivityDate.get(i).getText();
-			if (date.equals("27")) {
-				NextActivityDate.get(i).click();
-				break;
-			}
-		}
+		op.nextActivityDateCalender();
 
 		// LastStageChangeTime Date and Time
-		driver.findElement(By.cssSelector("*[id^='6843:'][id$='a']")).click();
-		List<WebElement> LastStageChangeTime = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
-		int total_node14 = LastStageChangeTime.size();
-		for (int i = 0; i < total_node14; i++) {
-			String date = LastStageChangeTime.get(i).getText();
-			if (date.equals("27")) {
-				LastStageChangeTime.get(i).click();
-				break;
-			}
-		}
+		op.lastStageChangeTimeDateAndTimeCalender();
 
 		// Last Sales Activity Date Time
-		driver.findElement(By.cssSelector("*[id^='6803:'][id$='a']")).click();
-		List<WebElement> LastSalesActivityDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
-		int total_node15 = LastSalesActivityDate.size();
-		for (int i = 0; i < total_node15; i++) {
-			String date = LastSalesActivityDate.get(i).getText();
-			if (date.equals("27")) {
-				LastSalesActivityDate.get(i).click();
-				break;
-			}
-		}
+		op.LastSalesActivityDateTimeCalender();
 
 		// Last Lead Conversion Date Time
-		driver.findElement(By.cssSelector("*[id^='6879:'][id$='a']")).click();
-		List<WebElement> LastLeadConversionDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
-		int total_node16 = LastLeadConversionDate.size();
-		for (int i = 0; i < total_node16; i++) {
-			String date = LastLeadConversionDate.get(i).getText();
-			if (date.equals("30")) {
-				LastLeadConversionDate.get(i).click();
-				break;
-			}
-		}
+		op.LastLeadConversionDateTimeCalender();
 
 		// CRM Submission TIME DATE
-		driver.findElement(By.cssSelector("*[id^='7061:'][id$='a']")).click();
-		List<WebElement> CRMSubmissionTime = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
-		int total_node17 = CRMSubmissionTime.size();
-		for (int i = 0; i < total_node17; i++) {
-			String date = CRMSubmissionTime.get(i).getText();
-			if (date.equals("30")) {
-				CRMSubmissionTime.get(i).click();
-				break;
-			}
-		}
+		op.CRMSubmissionTIMEDATECalender();
 
 	}
 
 	@Then("^Click the Save button$")
 	public void click_the_Save_button() {
 
-		driver.findElement(By.cssSelector("*[data-aura-rendered-by^='9211:'][data-aura-rendered-by$='a']")).click();
+		// Click on the Save button
+		op.clicktheSavebutton();
 
 	}
 }

@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
+import cucumber.api.java.en.Then;
+
 public class OpportunitesPage extends BasePageTest {
 
 	By userNameField = By.id("username");
@@ -49,6 +51,11 @@ public class OpportunitesPage extends BasePageTest {
 	By AppointmentCompletedDateFieldCalender = By.xpath("//table[@class='calGrid']//td");
 	By CustomerDeliveryDateAndTimeField = By.cssSelector("*[id^='1335:'][id$='a']");
 	By CustomerDeliveryDateAndTimeCalender = By.xpath("//table[@class='calGrid']//td");
+	By AppointmentSetCheckbox = By.xpath("*[id^='1375:'][id$='a']");
+	By DeliverySetCheckbox = By.xpath("*[id^='1471:'][id$='a']");
+	By ContactedCheckBox = By.xpath("*[id^='1507:'][id$='a']");
+	By UpAssignedCheckbox = By.xpath("*[id^='1487:'][id$='a']");
+	By RepliedCheckBox = By.xpath("*[id^='1599:'][id$='a']");
 	By FirstResponseTimeField = By.cssSelector("*[id^='1523:'][id$='a']");
 	By FirstResponseTimeFieldCalender = By.xpath("//table[@class='calGrid']//td");
 	By PDIPrintedDateAndTimeField = By.cssSelector("*[id^='1563:'][id$='a']");
@@ -135,6 +142,49 @@ public class OpportunitesPage extends BasePageTest {
 	By CurrentOwnedConditionField = By.cssSelector("*[id^='4298:'][id$='a']");
 	By CurrentOwnedIDField = By.cssSelector("*[id^='4334:'][id$='a']");
 	By CurrentOwnedOptionsField = By.cssSelector("*[id^='4354:'][id$='a']");
+	By LeadPhoneField = By.cssSelector("*[id^='4399:'][id$='a']");
+	By LeadEmailField = By.cssSelector("*[id^='4415:'][id$='a']");
+	By LeadMobilePhoneField = By.cssSelector("*[id^='4435:'][id$='a']");
+	By LeadScoreField = By.cssSelector("*[id^='4451:'][id$='a']");
+	By LeadOtherPhoneField = By.cssSelector("*[id^='4473:'][id$='a']");
+	By LeadWorkPhoneField = By.cssSelector("*[id^='4507:'][id$='a']");
+	By LeadMessageField = By.cssSelector("*[aria-labelledby^='label-4545:'][aria-labelledby$='a']");
+	By EndVisitNotesField = By.cssSelector("*[data-aura-rendered-by^='4615:'][data-aura-rendered-by$='a']");
+	By SourceField = By.cssSelector("*[id^='4652:'][id$='a']");
+	By LeadSourceDropDownClick = By.cssSelector("*[aria-describedby^='4748:'][aria-describedby$='a-label']");
+	By LeadSourceDropDownPopulate = By.xpath("//a[@title='Internet']");
+	By FormNameField = By.cssSelector("*[id^='4794:'][id$='a']");
+	By WebLeadSoureDetailDropDownClick = By.cssSelector("*[aria-describedby^='4814:'][aria-describedby$='a-label']");
+	By WebLeadSoureDetailDropDownPopulate = By.xpath("//a[@title='Dealer Website']");
+	By TrackingMediumField = By.cssSelector("*[id^='4860:'][id$='a']");
+	By TrackingSCPCField = By.cssSelector("*[id^='4956:'][id$='a']");
+	By WebLeadSourceNameField = By.cssSelector("*[id^='4976:'][id$='a']");
+	By DiscriptionField = By.cssSelector("*[id^='5468:'][id$='a']");
+	By PriceDropDownClick = By.cssSelector("*[aria-describedby^='5488:'][aria-describedby$='a-label']");
+	By PriceDropDownPopulate = By.xpath("//a[@title='$15,000 to $30,000']");
+	By PrimaryEmailField = By.cssSelector("*[id^='5863:'][id$='a']");
+	By PrimaryPhoneField = By.cssSelector("*[id^='5897:'][id$='a']");
+	By LeadIPAddressField = By.cssSelector("*[id^='5945:'][id$='a']");
+	By LeadSystemDataField = By.cssSelector("*[id^='5979:'][id$='a']");
+	By CategoryDropDownClick = By.cssSelector("*[aria-describedby^='6049:'][aria-describedby$='a-label']");
+	By CategoryDropDownPopulate = By.xpath("//a[@title='Camping Trailer']");
+	By TrackingIDField = By.cssSelector("*[id^='6138:'][id$='a']");
+	By TrackingLandingPageURLField = By.cssSelector("*[id^='6174:'][id$='a']");
+	By TrackingReferralURLField = By.cssSelector("*[id^='6211:'][id$='a']");
+	By TrackingPromoCodeField = By.cssSelector("*[id^='6248:'][id$='a']");
+	By NextStepField = By.cssSelector("*[id^='6264:'][id$='a']");
+	By TrackingCampaignField = By.cssSelector("*[id^='6284:'][id$='a']");
+	By TrackingSourceField = By.cssSelector("*[id^='6318:'][id$='a']");
+	By TrackingContentField = By.cssSelector("*[id^='6352:'][id$='a']");
+	By TrackingKeywordsField = By.cssSelector("*[id^='6448:'][id$='a']");
+	By BackendGPField = By.cssSelector("*[id^='6496:'][id$='a']");
+	By ADCampaignField = By.cssSelector("*[id^='6518:'][id$='a']");
+	By ADGroupField = By.cssSelector("*[id^='6552:'][id$='a']");
+	By ADKeywordField = By.cssSelector("*[id^='6586:'][id$='a']");
+	By ADSlotField = By.cssSelector("*[id^='6620:'][id$='a']");
+	By ADSlotPositionField = By.cssSelector("*[id^='6654:'][id$='a']");
+	By ADContentField = By.cssSelector("*[id^='6688:'][id$='a']");
+	By ClicktheSavebutton = By.cssSelector("*[data-aura-rendered-by^='9211:'][data-aura-rendered-by$='a']");
 
 	public void userNamefield(String username) {
 		$(userNameField).sendKeys(username);
@@ -402,6 +452,31 @@ public class OpportunitesPage extends BasePageTest {
 				break;
 			}
 		}
+	}
+
+	// Appointment Set checkbox
+	public void appointmentSetCheckbox() {
+		$(AppointmentSetCheckbox).click();
+	}
+
+	// Delivery Set checkbox
+	public void deliverySetCheckbox() {
+		$(DeliverySetCheckbox).click();
+	}
+
+	// Contacted
+	public void contactedCheckBox() {
+		$(ContactedCheckBox).click();
+	}
+
+	// Up Assigned checkbox
+	public void upAssignedCheckbox() {
+		$(UpAssignedCheckbox).click();
+	}
+
+	// Replied
+	public void repliedCheckBox() {
+		$(RepliedCheckBox).click();
 	}
 
 	// FirstResponseTime
@@ -922,6 +997,326 @@ public class OpportunitesPage extends BasePageTest {
 	// Current Owned Options
 	public void currentOwnedOptionsField(String CurrentOwnedOptions) {
 		$(CurrentOwnedOptionsField).sendKeys(CurrentOwnedOptions);
+	}
+
+	// Lead Phone
+	public void leadPhoneField(String LeadPhone) {
+		$(LeadPhoneField).sendKeys(LeadPhone);
+	}
+
+	// Lead Email
+	public void leadEmailField(String LeadEmail) {
+		$(LeadEmailField).sendKeys(LeadEmail);
+	}
+
+	// Lead Mobile Phone
+	public void leadMobilePhoneField(String LeadMobilePhone) {
+		$(LeadMobilePhoneField).sendKeys(LeadMobilePhone);
+	}
+
+	// Lead Score
+	public void leadScoreField(String LeadScore) {
+		$(LeadScoreField).sendKeys(LeadScore);
+	}
+
+	// Lead other Phone
+	public void leadOtherPhoneField(String LeadOtherPhone) {
+		$(LeadOtherPhoneField).sendKeys(LeadOtherPhone);
+	}
+
+	// Lead Work Phone
+	public void leadWorkPhoneField(String LeadWorkPhone) {
+		$(LeadWorkPhoneField).sendKeys(LeadWorkPhone);
+	}
+
+	// Lead Message
+	public void leadMessageField(String LeadMessage) {
+		$(LeadMessageField).sendKeys(LeadMessage);
+	}
+
+	// End Visit Notes
+	public void endVisitNotesField(String EndViditNotes) {
+		$(EndVisitNotesField).sendKeys(EndViditNotes);
+	}
+
+	// Source
+	public void sourceField(String Source) {
+		$(SourceField).sendKeys(Source);
+	}
+
+	// Lead Source drop down click
+	public void leadSourceDropDownClick() {
+		$(LeadSourceDropDownClick).click();
+	}
+
+	// Lead Source drop down populate
+	public void leadSourceDropDownPopulate() {
+		$(LeadSourceDropDownPopulate).click();
+	}
+
+	// FormName
+	public void FormNameField(String FormName) {
+		$(FormNameField).sendKeys(FormName);
+	}
+
+	// Web Lead Source Detail drop down click
+	public void webLeadSoureDetailDropDownClick() {
+		$(WebLeadSoureDetailDropDownClick).click();
+
+	}
+
+	// Web Lead Source Detail drop down populate
+	public void WebLeadSoureDetailDropDownPopulate() {
+		$(WebLeadSoureDetailDropDownPopulate).click();
+
+	}
+
+	// Tracking Medium
+	public void trackingMediumField(String TrackingMedium) {
+		$(TrackingMediumField).sendKeys(TrackingMedium);
+	}
+
+	// Tracking SCPC
+	public void trackingSCPCField(String TrackingSCPC) {
+		$(TrackingSCPCField).sendKeys(TrackingSCPC);
+	}
+
+	// Web Lead Source Name
+	public void webLeadSourceNameField(String WebLeadSourceName) {
+		$(WebLeadSourceNameField).sendKeys(WebLeadSourceName);
+	}
+
+	// eLead Create Date
+	public void eLeadCreateDateCalender() {
+		driver.findElement(By.cssSelector("*[id^='5430:'][id$='a']")).click();
+		List<WebElement> eLeadCreatedDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node = eLeadCreatedDate.size();
+		for (int i = 0; i < total_node; i++) {
+			String date = eLeadCreatedDate.get(i).getText();
+			if (date.equals("27")) {
+				eLeadCreatedDate.get(i).click();
+				break;
+			}
+
+		}
+
+	}
+
+	// Description
+	public void discriptionField(String Discription) {
+		$(DiscriptionField).sendKeys(Discription);
+	}
+
+	// Price drop down click
+	public void priceDropDownClick() {
+		$(PriceDropDownClick).click();
+
+	}
+
+	// Price drop down populate
+	public void priceDropDownPopulate() {
+		$(PriceDropDownPopulate).click();
+
+	}
+
+	// Primary Email
+	public void primaryEmailField(String PrimaryEmail) {
+		$(PrimaryEmailField).sendKeys(PrimaryEmail);
+	}
+
+	// Primary Phone
+	public void primaryPhoneField(String PrimaryPhone) {
+		$(PrimaryPhoneField).sendKeys(PrimaryPhone);
+	}
+
+	// Lead Ip Address
+	public void leadIPAddressField(String LeadIPAddress) {
+		$(LeadIPAddressField).sendKeys(LeadIPAddress);
+	}
+
+	// Lead System Data
+	public void leadSystemDataField(String LeadSystemData) {
+		$(LeadSystemDataField).sendKeys(LeadSystemData);
+	}
+
+	// Category drop down click
+	public void categoryDropDownClick() {
+		$(CategoryDropDownClick).click();
+	}
+
+	// Category drop down populate
+	public void categoryDropDownPopulate() {
+		$(CategoryDropDownPopulate).click();
+	}
+
+	// Tracking Id
+	public void trackingIDField(String TrackingID) {
+		$(TrackingIDField).sendKeys(TrackingID);
+	}
+
+	// Tracking LandingPage URL
+	public void trackingLandingPageURLField(String TrackingLandingPageURL) {
+		$(TrackingLandingPageURLField).sendKeys(TrackingLandingPageURL);
+	}
+
+	// Tracking Referral URL
+	public void trackingReferralURLField(String TrackingReferralURL) {
+		$(TrackingReferralURLField).sendKeys(TrackingReferralURL);
+	}
+
+	// Tracking Promo Code
+	public void trackingPromoCodeField(String TrackingPromoCode) {
+		$(TrackingPromoCodeField).sendKeys(TrackingPromoCode);
+	}
+
+	// Next Step
+	public void nextStepField(String NextStep) {
+		$(NextStepField).sendKeys(NextStep);
+	}
+
+	// Tracking Campaign
+	public void trackingCampaignField(String TrackingCampaign) {
+		$(TrackingCampaignField).sendKeys(TrackingCampaign);
+	}
+
+	// Tracking Source
+	public void trackingSourceField(String TrackingSource) {
+		$(TrackingSourceField).sendKeys(TrackingSource);
+	}
+
+	// Tracking Content
+	public void TrackingContentField(String TrackingContent) {
+		$(TrackingContentField).sendKeys(TrackingContent);
+	}
+
+	// Tracking Keywords
+	public void trackingKeywordsField(String TrackingKeywords) {
+		$(TrackingKeywordsField).sendKeys(TrackingKeywords);
+	}
+
+	// Backend GP
+	public void BackendGPField(String BackendGP) {
+		$(BackendGPField).sendKeys(BackendGP);
+	}
+
+	// Ad Campaign
+	public void ADCampaignField(String ADCampaign) {
+		$(ADCampaignField).sendKeys(ADCampaign);
+	}
+
+	// Ad Group
+	public void aDGroupField(String ADGroup) {
+		$(ADGroupField).sendKeys(ADGroup);
+	}
+
+	// Ad Keyword
+	public void ADKeywordField(String ADKeyword) {
+		$(ADKeywordField).sendKeys(ADKeyword);
+	}
+
+	// Ad Slot
+	public void ADSlotField(String ADSlot) {
+		$(ADSlotField).sendKeys(ADSlot);
+	}
+
+	// Ad Slot Position
+	public void aDSlotPositionField(String ADSlotPosition) {
+		$(ADSlotPositionField).sendKeys(ADSlotPosition);
+	}
+
+	// Ad Content
+	public void ADContentField(String ADContent) {
+		$(ADContentField).sendKeys(ADContent);
+	}
+
+	// LastActivityDate
+	public void lastActivityDateCalender() {
+		driver.findElement(By.cssSelector("*[id^='6733:'][id$='a']")).click();
+		List<WebElement> LastActivityDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node12 = LastActivityDate.size();
+		for (int i = 0; i < total_node12; i++) {
+			String date = LastActivityDate.get(i).getText();
+			if (date.equals("27")) {
+				LastActivityDate.get(i).click();
+				break;
+			}
+		}
+	}
+
+	// Next Activity Date
+	public void nextActivityDateCalender() {
+		driver.findElement(By.cssSelector("*[id^='6780:'][id$='a']")).click();
+		List<WebElement> NextActivityDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node13 = NextActivityDate.size();
+		for (int i = 0; i < total_node13; i++) {
+			String date = NextActivityDate.get(i).getText();
+			if (date.equals("27")) {
+				NextActivityDate.get(i).click();
+				break;
+			}
+		}
+	}
+
+	// LastStageChangeTime Date and Time
+	public void lastStageChangeTimeDateAndTimeCalender() {
+		driver.findElement(By.cssSelector("*[id^='6843:'][id$='a']")).click();
+		List<WebElement> LastStageChangeTime = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node14 = LastStageChangeTime.size();
+		for (int i = 0; i < total_node14; i++) {
+			String date = LastStageChangeTime.get(i).getText();
+			if (date.equals("27")) {
+				LastStageChangeTime.get(i).click();
+				break;
+			}
+		}
+	}
+
+	// Last Sales Activity Date Time
+	public void LastSalesActivityDateTimeCalender() {
+		driver.findElement(By.cssSelector("*[id^='6803:'][id$='a']")).click();
+		List<WebElement> LastSalesActivityDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node15 = LastSalesActivityDate.size();
+		for (int i = 0; i < total_node15; i++) {
+			String date = LastSalesActivityDate.get(i).getText();
+			if (date.equals("27")) {
+				LastSalesActivityDate.get(i).click();
+				break;
+			}
+		}
+	}
+
+	// Last Lead Conversion Date Time
+	public void LastLeadConversionDateTimeCalender() {
+		driver.findElement(By.cssSelector("*[id^='6879:'][id$='a']")).click();
+		List<WebElement> LastLeadConversionDate = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node16 = LastLeadConversionDate.size();
+		for (int i = 0; i < total_node16; i++) {
+			String date = LastLeadConversionDate.get(i).getText();
+			if (date.equals("30")) {
+				LastLeadConversionDate.get(i).click();
+				break;
+			}
+		}
+	}
+
+	// CRM Submission TIME DATE
+	public void CRMSubmissionTIMEDATECalender() {
+		driver.findElement(By.cssSelector("*[id^='7061:'][id$='a']")).click();
+		List<WebElement> CRMSubmissionTime = driver.findElements(By.xpath("//table[@class='calGrid']//td"));
+		int total_node17 = CRMSubmissionTime.size();
+		for (int i = 0; i < total_node17; i++) {
+			String date = CRMSubmissionTime.get(i).getText();
+			if (date.equals("30")) {
+				CRMSubmissionTime.get(i).click();
+				break;
+			}
+		}
+
+	}
+
+	public void clicktheSavebutton() {
+		$(ClicktheSavebutton).click();
+
 	}
 
 }

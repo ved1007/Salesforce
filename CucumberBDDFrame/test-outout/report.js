@@ -255,7 +255,7 @@ formatter.match({
   "location": "OpportunitiesStepDef.open_the_Salesforce_Website()"
 });
 formatter.result({
-  "duration": 5515425685,
+  "duration": 4931719773,
   "status": "passed"
 });
 formatter.match({
@@ -268,7 +268,7 @@ formatter.match({
   "location": "OpportunitiesStepDef.verify_the_Salesforce_page_title_as(String)"
 });
 formatter.result({
-  "duration": 7537764,
+  "duration": 8232388,
   "status": "passed"
 });
 formatter.match({
@@ -285,14 +285,14 @@ formatter.match({
   "location": "OpportunitiesStepDef.login_with_valid_username_and_password_and(String,String)"
 });
 formatter.result({
-  "duration": 194932590,
+  "duration": 192339579,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.click_login_button()"
 });
 formatter.result({
-  "duration": 1997168543,
+  "duration": 1906711793,
   "status": "passed"
 });
 formatter.match({
@@ -305,103 +305,112 @@ formatter.match({
   "location": "OpportunitiesStepDef.verify_Salesforce_Home_page_title_as(String)"
 });
 formatter.result({
-  "duration": 6822233107,
+  "duration": 3652642345,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.click_on_the_Opportunities_tab()"
 });
 formatter.result({
-  "duration": 65439473,
+  "duration": 58671577,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.click_on_the_New_button()"
 });
 formatter.result({
-  "duration": 1487312759,
+  "duration": 1486765071,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.select_a_record_type_and_click_Next()"
 });
 formatter.result({
-  "duration": 1386172079,
+  "duration": 1292560474,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.populate_System_Admin_Layout_fields()"
 });
 formatter.result({
-  "duration": 5985465378,
+  "duration": 5836115963,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.Opportunity_Information()"
 });
 formatter.result({
-  "duration": 2128648627,
-  "error_message": "java.lang.NullPointerException\n\tat stepDefinitions.OpportunitiesStepDef.Opportunity_Information(OpportunitiesStepDef.java:234)\n\tat ✽.And Opportunity Information(/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/src/main/java/Features/Opportunities.feature:14)\n",
-  "status": "failed"
+  "duration": 12581265420,
+  "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.populate_Interested_In_Attributes_fields()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5508145033,
+  "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.Interested_In_Details()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10716721067,
+  "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.Towing_Information()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3155229824,
+  "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.currently_Own_Trade_InCurrently_Own_TradeIn_from_Web_Lead_fields()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 8475105456,
+  "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.pupulate_Info_from_lead_fields()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2914607766,
+  "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.Lead_Source()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3768368412,
+  "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.enter_the_Description_Information()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 676583577,
+  "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.populate_Other_data_fields()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 9813211188,
+  "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.System_Information_fields()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3258617826,
+  "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.click_the_Save_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 100067922,
+  "status": "passed"
 });
 });
