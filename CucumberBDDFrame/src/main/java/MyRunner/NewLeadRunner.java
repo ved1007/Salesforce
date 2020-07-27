@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/src/main/java/Features/CreateNewLead.feature",
+@CucumberOptions(features = "/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/src/main/java/Features/Leads.feature",
 
         glue = {"stepDefinitions" }, 
         format = { "pretty", "html:test-outout", "json:json_output/cucumber.json",
@@ -18,6 +18,6 @@ import cucumber.api.junit.Cucumber;
 	//	plugin= {"pretty", "html:test-output"}
 )
 
-public class CreateNewLead {
+public class NewLeadRunner {
 
 }
