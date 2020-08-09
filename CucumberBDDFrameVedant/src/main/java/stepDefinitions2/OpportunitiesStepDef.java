@@ -188,7 +188,6 @@ public class OpportunitiesStepDef {
 
 	@Then("^Click on the New button$")
 	public void click_on_the_New_button() throws Throwable {
-
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement newButton = wait.until(ExpectedConditions.elementToBeClickable(
 				By.xpath("//*[@id=\"brandBand_1\"]/div/div/div/div/div[1]/div[1]/div[2]/ul/li/a")));
@@ -198,8 +197,6 @@ public class OpportunitiesStepDef {
 
 	@Then("^Select a record type and click Next$")
 	public void select_a_record_type_and_click_Next() throws Throwable {
-		
-		
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement nextButton = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(),'Next')]")));

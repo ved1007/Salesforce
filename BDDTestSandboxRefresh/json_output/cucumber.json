@@ -1,0 +1,302 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 32,
+        "name": "User is able to create Opportunitie",
+        "description": "",
+        "id": "created-new-opportunitie;user-is-able-to-create-opportunitie;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7312670315,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open the Salesforce Website",
+            "match": {
+              "location": "OpportunitiesStepDef.open_the_Salesforce_Website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11271175,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "verify the Salesforce page title as \"Login | Salesforce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login | Salesforce",
+                  "offset": 37
+                }
+              ],
+              "location": "OpportunitiesStepDef.verify_the_Salesforce_page_title_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 84578872,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Login with valid username and password \"vedant.jagani@campingworld.com.test\" and \"Welcome2019*\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "vedant.jagani@campingworld.com.test",
+                  "offset": 40
+                },
+                {
+                  "val": "Welcome2019*",
+                  "offset": 82
+                }
+              ],
+              "location": "OpportunitiesStepDef.login_with_valid_username_and_password_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2217278128,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click login button",
+            "match": {
+              "location": "OpportunitiesStepDef.click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12006053731,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify Salesforce Home page title as \"Home | Salesforce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Home | Salesforce",
+                  "offset": 38
+                }
+              ],
+              "location": "OpportunitiesStepDef.verify_Salesforce_Home_page_title_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35253942,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click on the Opportunities tab",
+            "match": {
+              "location": "OpportunitiesStepDef.click_on_the_Opportunities_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1396192429,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click on the New button",
+            "match": {
+              "location": "OpportunitiesStepDef.click_on_the_New_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4650171704,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Select a record type and click Next",
+            "match": {
+              "location": "OpportunitiesStepDef.select_a_record_type_and_click_Next()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 326128578,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Verify Required fields message",
+            "match": {
+              "location": "OpportunitiesStepDef.verify_Required_fields_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 351293844,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Save button",
+            "match": {
+              "location": "OpportunitiesStepDef.Save_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30996656479,
+              "error_message": "org.openqa.selenium.NoSuchElementException: Unable to locate element: *[id^\u003d\u0027121:\u0027][id$\u003d\u0027a\u0027]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027HQ-991-0L7LVCF\u0027, ip: \u00272601:246:4500:eb00:a50e:841:879e:18e%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14.6\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 31319, moz:profile: /var/folders/s3/88ktkygs3s3..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 4d1d05c1-b860-344d-81ce-c1048ad85910\n*** Element info: {Using\u003dcss selector, value\u003d*[id^\u003d\u0027121:\u0027][id$\u003d\u0027a\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat pages.BasePageTest.$(BasePageTest.java:57)\n\tat pages.OpportunitiesPage.expirationDate1(OpportunitiesPage.java:268)\n\tat stepDefinitions.OpportunitiesStepDef.populate_System_Admin_Layout_fields(OpportunitiesStepDef.java:206)\n\tat ✽.And Populate System Admin Layout fields(/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/src/main/java/Features/Opportunities.feature:15)\n",
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "Populate System Admin Layout fields",
+            "match": {
+              "location": "OpportunitiesStepDef.populate_System_Admin_Layout_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Opportunity Information",
+            "match": {
+              "location": "OpportunitiesStepDef.Opportunity_Information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "Interested In Attributes",
+            "match": {
+              "location": "OpportunitiesStepDef.populate_Interested_In_Attributes_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "Interested In Details",
+            "match": {
+              "location": "OpportunitiesStepDef.Interested_In_Details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "Towing Information",
+            "match": {
+              "location": "OpportunitiesStepDef.Towing_Information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "Currently Own Trade-InCurrently Own TradeIn from Web Lead fields",
+            "match": {
+              "location": "OpportunitiesStepDef.currently_Own_Trade_InCurrently_Own_TradeIn_from_Web_Lead_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "Populate Info from lead fields",
+            "match": {
+              "location": "OpportunitiesStepDef.pupulate_Info_from_lead_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "Lead Source",
+            "match": {
+              "location": "OpportunitiesStepDef.Lead_Source()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "Enter the Description Information",
+            "match": {
+              "location": "OpportunitiesStepDef.enter_the_Description_Information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "Other data fields",
+            "match": {
+              "location": "OpportunitiesStepDef.populate_Other_data_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "System Information fields",
+            "match": {
+              "location": "OpportunitiesStepDef.System_Information_fields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "Click the Save button",
+            "match": {
+              "location": "OpportunitiesStepDef.click_the_Save_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "created New Opportunitie",
+    "description": "",
+    "id": "created-new-opportunitie",
+    "keyword": "Feature",
+    "uri": "/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/src/main/java/Features/Opportunities.feature"
+  }
+]

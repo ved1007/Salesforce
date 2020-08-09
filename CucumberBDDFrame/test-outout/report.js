@@ -36,7 +36,7 @@ formatter.step({
 });
 formatter.step({
   "line": 9,
-  "name": "Verify Salesforce Home page title as \"Lightning Experience\"",
+  "name": "Verify Salesforce Home page title as \"Home | Salesforce\"",
   "keyword": "And "
 });
 formatter.step({
@@ -56,66 +56,76 @@ formatter.step({
 });
 formatter.step({
   "line": 13,
+  "name": "Verify Required fields message",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 14,
+  "name": "Save button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 15,
   "name": "Populate System Admin Layout fields",
   "keyword": "And "
 });
 formatter.step({
-  "line": 14,
+  "line": 16,
   "name": "Opportunity Information",
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 17,
   "name": "Interested In Attributes",
   "keyword": "And "
 });
 formatter.step({
-  "line": 16,
+  "line": 18,
   "name": "Interested In Details",
   "keyword": "And "
 });
 formatter.step({
-  "line": 17,
+  "line": 19,
   "name": "Towing Information",
   "keyword": "And "
 });
 formatter.step({
-  "line": 18,
+  "line": 20,
   "name": "Currently Own Trade-InCurrently Own TradeIn from Web Lead fields",
   "keyword": "And "
 });
 formatter.step({
-  "line": 19,
-  "name": "Pupulate Info from lead fields",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 20,
-  "name": "Lead Source",
-  "keyword": "And "
-});
-formatter.step({
   "line": 21,
-  "name": "Enter the Description Information",
+  "name": "Populate Info from lead fields",
   "keyword": "And "
 });
 formatter.step({
   "line": 22,
-  "name": "Other data fields",
+  "name": "Lead Source",
   "keyword": "And "
 });
 formatter.step({
   "line": 23,
-  "name": "System Information fields",
+  "name": "Enter the Description Information",
   "keyword": "And "
 });
 formatter.step({
   "line": 24,
+  "name": "Other data fields",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 25,
+  "name": "System Information fields",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 26,
   "name": "Click the Save button",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 27,
+  "line": 30,
   "name": "",
   "description": "",
   "id": "created-new-opportunitie;user-is-able-to-create-opportunitie;",
@@ -125,7 +135,7 @@ formatter.examples({
         "username",
         "password"
       ],
-      "line": 28,
+      "line": 31,
       "id": "created-new-opportunitie;user-is-able-to-create-opportunitie;;1"
     },
     {
@@ -133,14 +143,14 @@ formatter.examples({
         "vedant.jagani@campingworld.com.test",
         "Welcome2019*"
       ],
-      "line": 29,
+      "line": 32,
       "id": "created-new-opportunitie;user-is-able-to-create-opportunitie;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 29,
+  "line": 32,
   "name": "User is able to create Opportunitie",
   "description": "",
   "id": "created-new-opportunitie;user-is-able-to-create-opportunitie;;2",
@@ -173,7 +183,7 @@ formatter.step({
 });
 formatter.step({
   "line": 9,
-  "name": "Verify Salesforce Home page title as \"Lightning Experience\"",
+  "name": "Verify Salesforce Home page title as \"Home | Salesforce\"",
   "keyword": "And "
 });
 formatter.step({
@@ -193,61 +203,71 @@ formatter.step({
 });
 formatter.step({
   "line": 13,
+  "name": "Verify Required fields message",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 14,
+  "name": "Save button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 15,
   "name": "Populate System Admin Layout fields",
   "keyword": "And "
 });
 formatter.step({
-  "line": 14,
+  "line": 16,
   "name": "Opportunity Information",
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 17,
   "name": "Interested In Attributes",
   "keyword": "And "
 });
 formatter.step({
-  "line": 16,
+  "line": 18,
   "name": "Interested In Details",
   "keyword": "And "
 });
 formatter.step({
-  "line": 17,
+  "line": 19,
   "name": "Towing Information",
   "keyword": "And "
 });
 formatter.step({
-  "line": 18,
+  "line": 20,
   "name": "Currently Own Trade-InCurrently Own TradeIn from Web Lead fields",
   "keyword": "And "
 });
 formatter.step({
-  "line": 19,
-  "name": "Pupulate Info from lead fields",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 20,
-  "name": "Lead Source",
-  "keyword": "And "
-});
-formatter.step({
   "line": 21,
-  "name": "Enter the Description Information",
+  "name": "Populate Info from lead fields",
   "keyword": "And "
 });
 formatter.step({
   "line": 22,
-  "name": "Other data fields",
+  "name": "Lead Source",
   "keyword": "And "
 });
 formatter.step({
   "line": 23,
-  "name": "System Information fields",
+  "name": "Enter the Description Information",
   "keyword": "And "
 });
 formatter.step({
   "line": 24,
+  "name": "Other data fields",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 25,
+  "name": "System Information fields",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 26,
   "name": "Click the Save button",
   "keyword": "Then "
 });
@@ -255,7 +275,7 @@ formatter.match({
   "location": "OpportunitiesStepDef.open_the_Salesforce_Website()"
 });
 formatter.result({
-  "duration": 4931719773,
+  "duration": 6087101388,
   "status": "passed"
 });
 formatter.match({
@@ -268,7 +288,7 @@ formatter.match({
   "location": "OpportunitiesStepDef.verify_the_Salesforce_page_title_as(String)"
 });
 formatter.result({
-  "duration": 8232388,
+  "duration": 5591348,
   "status": "passed"
 });
 formatter.match({
@@ -285,132 +305,146 @@ formatter.match({
   "location": "OpportunitiesStepDef.login_with_valid_username_and_password_and(String,String)"
 });
 formatter.result({
-  "duration": 192339579,
+  "duration": 68879285,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.click_login_button()"
 });
 formatter.result({
-  "duration": 1906711793,
+  "duration": 2542058840,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Lightning Experience",
+      "val": "Home | Salesforce",
       "offset": 38
     }
   ],
   "location": "OpportunitiesStepDef.verify_Salesforce_Home_page_title_as(String)"
 });
 formatter.result({
-  "duration": 3652642345,
+  "duration": 12009814860,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.click_on_the_Opportunities_tab()"
 });
 formatter.result({
-  "duration": 58671577,
+  "duration": 28025434,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.click_on_the_New_button()"
 });
 formatter.result({
-  "duration": 1486765071,
+  "duration": 1271670580,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.select_a_record_type_and_click_Next()"
 });
 formatter.result({
-  "duration": 1292560474,
+  "duration": 4345713320,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OpportunitiesStepDef.verify_Required_fields_message()"
+});
+formatter.result({
+  "duration": 341527093,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OpportunitiesStepDef.Save_button()"
+});
+formatter.result({
+  "duration": 329969681,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.populate_System_Admin_Layout_fields()"
 });
 formatter.result({
-  "duration": 5836115963,
+  "duration": 1082942816,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.Opportunity_Information()"
 });
 formatter.result({
-  "duration": 12581265420,
+  "duration": 8199117887,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.populate_Interested_In_Attributes_fields()"
 });
 formatter.result({
-  "duration": 5508145033,
+  "duration": 5495613889,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.Interested_In_Details()"
 });
 formatter.result({
-  "duration": 10716721067,
+  "duration": 4998515685,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.Towing_Information()"
 });
 formatter.result({
-  "duration": 3155229824,
+  "duration": 493301955,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.currently_Own_Trade_InCurrently_Own_TradeIn_from_Web_Lead_fields()"
 });
 formatter.result({
-  "duration": 8475105456,
+  "duration": 1406310714,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.pupulate_Info_from_lead_fields()"
 });
 formatter.result({
-  "duration": 2914607766,
+  "duration": 518184379,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.Lead_Source()"
 });
 formatter.result({
-  "duration": 3768368412,
+  "duration": 1349461953,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.enter_the_Description_Information()"
 });
 formatter.result({
-  "duration": 676583577,
+  "duration": 61591529,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.populate_Other_data_fields()"
 });
 formatter.result({
-  "duration": 9813211188,
+  "duration": 2011572891,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.System_Information_fields()"
 });
 formatter.result({
-  "duration": 3258617826,
+  "duration": 2186869333,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.click_the_Save_button()"
 });
 formatter.result({
-  "duration": 100067922,
+  "duration": 33186,
   "status": "passed"
 });
 });

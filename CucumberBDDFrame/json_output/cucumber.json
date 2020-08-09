@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "line": 29,
+        "line": 32,
         "name": "User is able to create Opportunitie",
         "description": "",
         "id": "created-new-opportunitie;user-is-able-to-create-opportunitie;;2",
@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4931719773,
+              "duration": 6087101388,
               "status": "passed"
             },
             "line": 5,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 8232388,
+              "duration": 5591348,
               "status": "passed"
             },
             "line": 6,
@@ -42,7 +42,7 @@
           },
           {
             "result": {
-              "duration": 192339579,
+              "duration": 68879285,
               "status": "passed"
             },
             "line": 7,
@@ -68,7 +68,7 @@
           },
           {
             "result": {
-              "duration": 1906711793,
+              "duration": 2542058840,
               "status": "passed"
             },
             "line": 8,
@@ -80,15 +80,15 @@
           },
           {
             "result": {
-              "duration": 3652642345,
+              "duration": 12009814860,
               "status": "passed"
             },
             "line": 9,
-            "name": "Verify Salesforce Home page title as \"Lightning Experience\"",
+            "name": "Verify Salesforce Home page title as \"Home | Salesforce\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Lightning Experience",
+                  "val": "Home | Salesforce",
                   "offset": 38
                 }
               ],
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 58671577,
+              "duration": 28025434,
               "status": "passed"
             },
             "line": 10,
@@ -110,7 +110,7 @@
           },
           {
             "result": {
-              "duration": 1486765071,
+              "duration": 1271670580,
               "status": "passed"
             },
             "line": 11,
@@ -122,7 +122,7 @@
           },
           {
             "result": {
-              "duration": 1292560474,
+              "duration": 4345713320,
               "status": "passed"
             },
             "line": 12,
@@ -134,10 +134,34 @@
           },
           {
             "result": {
-              "duration": 5836115963,
+              "duration": 341527093,
               "status": "passed"
             },
             "line": 13,
+            "name": "Verify Required fields message",
+            "match": {
+              "location": "OpportunitiesStepDef.verify_Required_fields_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 329969681,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Save button",
+            "match": {
+              "location": "OpportunitiesStepDef.Save_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1082942816,
+              "status": "passed"
+            },
+            "line": 15,
             "name": "Populate System Admin Layout fields",
             "match": {
               "location": "OpportunitiesStepDef.populate_System_Admin_Layout_fields()"
@@ -146,10 +170,10 @@
           },
           {
             "result": {
-              "duration": 12581265420,
+              "duration": 8199117887,
               "status": "passed"
             },
-            "line": 14,
+            "line": 16,
             "name": "Opportunity Information",
             "match": {
               "location": "OpportunitiesStepDef.Opportunity_Information()"
@@ -158,10 +182,10 @@
           },
           {
             "result": {
-              "duration": 5508145033,
+              "duration": 5495613889,
               "status": "passed"
             },
-            "line": 15,
+            "line": 17,
             "name": "Interested In Attributes",
             "match": {
               "location": "OpportunitiesStepDef.populate_Interested_In_Attributes_fields()"
@@ -170,10 +194,10 @@
           },
           {
             "result": {
-              "duration": 10716721067,
+              "duration": 4998515685,
               "status": "passed"
             },
-            "line": 16,
+            "line": 18,
             "name": "Interested In Details",
             "match": {
               "location": "OpportunitiesStepDef.Interested_In_Details()"
@@ -182,10 +206,10 @@
           },
           {
             "result": {
-              "duration": 3155229824,
+              "duration": 493301955,
               "status": "passed"
             },
-            "line": 17,
+            "line": 19,
             "name": "Towing Information",
             "match": {
               "location": "OpportunitiesStepDef.Towing_Information()"
@@ -194,10 +218,10 @@
           },
           {
             "result": {
-              "duration": 8475105456,
+              "duration": 1406310714,
               "status": "passed"
             },
-            "line": 18,
+            "line": 20,
             "name": "Currently Own Trade-InCurrently Own TradeIn from Web Lead fields",
             "match": {
               "location": "OpportunitiesStepDef.currently_Own_Trade_InCurrently_Own_TradeIn_from_Web_Lead_fields()"
@@ -206,11 +230,11 @@
           },
           {
             "result": {
-              "duration": 2914607766,
+              "duration": 518184379,
               "status": "passed"
             },
-            "line": 19,
-            "name": "Pupulate Info from lead fields",
+            "line": 21,
+            "name": "Populate Info from lead fields",
             "match": {
               "location": "OpportunitiesStepDef.pupulate_Info_from_lead_fields()"
             },
@@ -218,10 +242,10 @@
           },
           {
             "result": {
-              "duration": 3768368412,
+              "duration": 1349461953,
               "status": "passed"
             },
-            "line": 20,
+            "line": 22,
             "name": "Lead Source",
             "match": {
               "location": "OpportunitiesStepDef.Lead_Source()"
@@ -230,10 +254,10 @@
           },
           {
             "result": {
-              "duration": 676583577,
+              "duration": 61591529,
               "status": "passed"
             },
-            "line": 21,
+            "line": 23,
             "name": "Enter the Description Information",
             "match": {
               "location": "OpportunitiesStepDef.enter_the_Description_Information()"
@@ -242,10 +266,10 @@
           },
           {
             "result": {
-              "duration": 9813211188,
+              "duration": 2011572891,
               "status": "passed"
             },
-            "line": 22,
+            "line": 24,
             "name": "Other data fields",
             "match": {
               "location": "OpportunitiesStepDef.populate_Other_data_fields()"
@@ -254,10 +278,10 @@
           },
           {
             "result": {
-              "duration": 3258617826,
+              "duration": 2186869333,
               "status": "passed"
             },
-            "line": 23,
+            "line": 25,
             "name": "System Information fields",
             "match": {
               "location": "OpportunitiesStepDef.System_Information_fields()"
@@ -266,10 +290,10 @@
           },
           {
             "result": {
-              "duration": 100067922,
+              "duration": 33186,
               "status": "passed"
             },
-            "line": 24,
+            "line": 26,
             "name": "Click the Save button",
             "match": {
               "location": "OpportunitiesStepDef.click_the_Save_button()"

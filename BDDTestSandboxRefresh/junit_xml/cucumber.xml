@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="59.387549">
+    <testcase classname="created New Opportunitie" name="User is able to create Opportunitie" time="59.387549">
+        <failure message="org.openqa.selenium.NoSuchElementException: Unable to locate element: *[id^='121:'][id$='a']&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'HQ-991-0L7LVCF', ip: '2601:246:4500:eb00:a50e:841:879e:18e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '13.0.2'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 31319, moz:profile: /var/folders/s3/88ktkygs3s3..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 4d1d05c1-b860-344d-81ce-c1048ad85910&#10;*** Element info: {Using=css selector, value=*[id^='121:'][id$='a']}&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)&#10;&#9;at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#10;&#9;at pages.BasePageTest.$(BasePageTest.java:57)&#10;&#9;at pages.OpportunitiesPage.expirationDate1(OpportunitiesPage.java:268)&#10;&#9;at stepDefinitions.OpportunitiesStepDef.populate_System_Admin_Layout_fields(OpportunitiesStepDef.java:206)&#10;&#9;at ✽.And Populate System Admin Layout fields(/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/src/main/java/Features/Opportunities.feature:15)&#10;">
+            <![CDATA[Given Open the Salesforce Website...........................................passed
+When verify the Salesforce page title as "Login | Salesforce"...............passed
+Then Login with valid username and password "vedant.jagani@campingworld.com.test" and "Welcome2019*".passed
+And Click login button......................................................passed
+And Verify Salesforce Home page title as "Home | Salesforce"................passed
+Then Click on the Opportunities tab.........................................passed
+Then Click on the New button................................................passed
+Then Select a record type and click Next....................................passed
+Then Verify Required fields message.........................................passed
+Then Save button............................................................passed
+And Populate System Admin Layout fields.....................................failed
+And Opportunity Information.................................................skipped
+And Interested In Attributes................................................skipped
+And Interested In Details...................................................skipped
+And Towing Information......................................................skipped
+And Currently Own Trade-InCurrently Own TradeIn from Web Lead fields........skipped
+And Populate Info from lead fields..........................................skipped
+And Lead Source.............................................................skipped
+And Enter the Description Information.......................................skipped
+And Other data fields.......................................................skipped
+And System Information fields...............................................skipped
+Then Click the Save button..................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: *[id^='121:'][id$='a']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HQ-991-0L7LVCF', ip: '2601:246:4500:eb00:a50e:841:879e:18e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '13.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 31319, moz:profile: /var/folders/s3/88ktkygs3s3..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4d1d05c1-b860-344d-81ce-c1048ad85910
+*** Element info: {Using=css selector, value=*[id^='121:'][id$='a']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.BasePageTest.$(BasePageTest.java:57)
+	at pages.OpportunitiesPage.expirationDate1(OpportunitiesPage.java:268)
+	at stepDefinitions.OpportunitiesStepDef.populate_System_Admin_Layout_fields(OpportunitiesStepDef.java:206)
+	at ✽.And Populate System Admin Layout fields(/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/src/main/java/Features/Opportunities.feature:15)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

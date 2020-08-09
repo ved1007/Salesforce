@@ -1,7 +1,13 @@
 package stepDefinitions;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import com.excel.test.utility.Xls_Reader;
@@ -9,7 +15,7 @@ import com.excel.test.utility.Xls_Reader;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import pages.OpportunitesPage;
+import pages.OpportunitiesPage;
 
 public class OpportunitiesStepDef {
 
@@ -20,6 +26,8 @@ public class OpportunitiesStepDef {
 
 	String WorksheetID = reader.getCellData("Sheet2Opportunities", "WorksheetID", 2);
 	String PromoMessage = reader.getCellData("Sheet2Opportunities", "PromoMessage", 2);
+	String CustomerNumber = reader.getCellData("Sheet2Opportunities", "CustomerNumber", 2);
+	String QuoteNumber = reader.getCellData("Sheet2Opportunities", "QuoteNumber", 2);
 	String OpportunityName = reader.getCellData("Sheet2Opportunities", "OpportunityName", 2);
 	String Amount = reader.getCellData("Sheet2Opportunities", "Amount", 2);
 	String Nickname = reader.getCellData("Sheet2Opportunities", "Nickname", 2);
@@ -83,8 +91,8 @@ public class OpportunitiesStepDef {
 	String CurrentOwnedOptions = reader.getCellData("Sheet2Opportunities", "CurrentOwnedOptions", 2);
 	String LeadPhone = reader.getCellData("Sheet2Opportunities", "LeadPhone", 2);
 	String LeadEmail = reader.getCellData("Sheet2Opportunities", "LeadEmail", 2);
-	String LeadMobilePhone = reader.getCellData("Sheet2Opportunities", "LeadScore", 2);
-	String LeadScore = reader.getCellData("Sheet2Opportunities", "Mileage", 2);
+	String LeadMobilePhone = reader.getCellData("Sheet2Opportunities", "LeadMobilePhone", 2);
+	String LeadScore = reader.getCellData("Sheet2Opportunities", "LeadScore", 2);
 	String LeadOtherPhone = reader.getCellData("Sheet2Opportunities", "LeadOtherPhone", 2);
 	String LeadWorkPhone = reader.getCellData("Sheet2Opportunities", "LeadWorkPhone", 2);
 	String LeadMessage = reader.getCellData("Sheet2Opportunities", "LeadMessage", 2);
@@ -117,7 +125,7 @@ public class OpportunitiesStepDef {
 	String ADContent = reader.getCellData("Sheet2Opportunities", "ADContent", 2);
 	By InterestedIdField = By.cssSelector("*[id^='3423:'][id$='a']");
 
-	OpportunitesPage op = new OpportunitesPage();
+	OpportunitiesPage op = new OpportunitiesPage();
 
 	@Given("^Open the Salesforce Website$")
 	public void open_the_Salesforce_Website() throws Throwable {
@@ -134,7 +142,7 @@ public class OpportunitiesStepDef {
 	}
 
 	@Then("^Login with valid username and password \"([^\"]*)\" and \"([^\"]*)\"$")
-	public void login_with_valid_username_and_password_and(String username, String password) throws Throwable {
+	public void login_with_valid_username_and_password_and(String username, String password) {
 		op.userNamefield(username);
 		op.passwordField(password);
 
@@ -147,7 +155,8 @@ public class OpportunitiesStepDef {
 	}
 
 	@Then("^Verify Salesforce Home page title as \"([^\"]*)\"$")
-	public void verify_Salesforce_Home_page_title_as(String SalseforceHomePageTitle) throws Throwable {
+	public void verify_Salesforce_Home_page_title_as(String SalseforceHomePageTitle) throws InterruptedException {
+		Thread.sleep(12000);
 		String HomepageTitle = op.getTitle();
 		System.out.println(HomepageTitle);
 		Assert.assertEquals(SalseforceHomePageTitle, HomepageTitle);
@@ -172,8 +181,20 @@ public class OpportunitiesStepDef {
 
 	}
 
+	@Then("^Save button$")
+	public void Save_button() {
+		op.clicktheSavebutton1();
+	}
+
+	@Then("^Verify Required fields message$")
+	public void verify_Required_fields_message() {
+		op.requiredFieldMessage();
+
+	}
+
 	@Then("^Populate System Admin Layout fields$")
 	public void populate_System_Admin_Layout_fields() {
+
 		// Worksheet ID field
 		op.workSheetIDInputField(WorksheetID);
 
@@ -184,12 +205,18 @@ public class OpportunitiesStepDef {
 		// Promo Message
 		op.promoMessageInputField(PromoMessage);
 
+		// Customer Number field
+		op.customerNumberInputField(CustomerNumber);
+
+		// Quote Number field
+		op.quoteNumberInputField(QuoteNumber);
+
 		// Expiration Date
-		op.expirationDate1();
-		op.expirationDate2();
+//        op.expirationDate1();
+//        op.expirationDate2();
 
 		// eLead Cheat checkbox
-		op.eLeadCheatCheckBox();
+		// op.eLeadCheatCheckBox();
 
 	}
 
@@ -246,6 +273,14 @@ public class OpportunitiesStepDef {
 		// County field
 		op.countryField(Country);
 
+		// eLead Create Date
+		op.eLeadCreateDateClick();
+		op.ELeadCreateDatePopulate();
+
+		// Dealership field
+		op.dealershipSearchFieldclick();
+		op.dealershipSearchFieldPopulated();
+
 		// Customer appointment Date and Time
 		op.customerAppointmentDateAndTimeField();
 		op.customerAppointmentDateAndTimeCalender();
@@ -263,42 +298,42 @@ public class OpportunitiesStepDef {
 		op.customerDeliveryDateAndTimeCalender();
 
 		// Appointment Set checkbox
-		op.appointmentSetCheckbox();
+//		op.appointmentSetCheckbox();
 
 		// Delivery Set checkbox
-		op.deliverySetCheckbox();
+//		op.deliverySetCheckbox();
 
 		// Contacted
-		op.contactedCheckBox();
+//		op.contactedCheckBox();
 
 		// Up Assigned checkbox
 
-		op.upAssignedCheckbox();
+//		op.upAssignedCheckbox();
 
 		// Replied
-		op.repliedCheckBox();
+//		op.repliedCheckBox();
 
-		// FirstResponseTime
-		op.firstResponseTimeField();
-		op.FirstResponseTimeFieldCalender();
-
-		// Replied checkbox
-
-		// PDIPrinted Date and Time
-		op.pdiPrintedDateAndTimeField();
-		op.PDIPrintedDateAndTimeCalender();
-
-		// BusinessAdjustedCreatedDate
-		op.businessAdjustedCreatedDateField();
-		op.BusinessAdjustedCreatedDateCalender();
-
-		// BusinessAdjustedCreatedDateEnd
-		op.businessAdjustedCreatedDateEndField();
-		op.BusinessAdjustedCreatedDateEndCalender();
-
-		// BusinessAdjustedCreatedDateStart
-		op.businessAdjustedCreatedDateStartField();
-		op.BusinessAdjustedCreatedDateStartCalender();
+//        // FirstResponseTime
+//        op.firstResponseTimeField();
+//        op.FirstResponseTimeFieldCalender();
+//
+//        // Replied checkbox
+//
+//        // PDIPrinted Date and Time
+//        op.pdiPrintedDateAndTimeField();
+//        op.PDIPrintedDateAndTimeCalender();
+//
+//        // BusinessAdjustedCreatedDate
+//        op.businessAdjustedCreatedDateField();
+//        op.BusinessAdjustedCreatedDateCalender();
+//
+//        // BusinessAdjustedCreatedDateEnd
+//        op.businessAdjustedCreatedDateEndField();
+//        op.BusinessAdjustedCreatedDateEndCalender();
+//
+//        // BusinessAdjustedCreatedDateStart
+//        op.businessAdjustedCreatedDateStartField();
+		// op.BusinessAdjustedCreatedDateStartCalender();
 
 	}
 
@@ -442,11 +477,23 @@ public class OpportunitiesStepDef {
 		op.webpageField(webpage);
 
 		// Toy Deck drop down
+		op.toyDeskDropdownClick();
+		op.toyDeskDropdownPopulate();
+
 		// Outdoor Kitchen
+		op.outdoorKitchenDropdownClick();
+		op.outdoorKitchenDropdownPopulate();
+
 		// Outdoor Entertainment
+		op.outdoorEntertainmentDropdownClick();
+		op.outdoorEntertainmentDropdownPopulate();
+
 		// Check boxes |Meet&Greet|Needs Analysis|Selection|Presentation|Intro to
 		// Service|Write Up Stage|T.O to F&I|
+
 		// Previouse Stage drop down
+		op.previousStageDropdownClick();
+		op.previousStageDropdownPopulate();
 
 	}
 
@@ -532,7 +579,7 @@ public class OpportunitiesStepDef {
 
 	}
 
-	@Then("^Pupulate Info from lead fields$")
+	@Then("^Populate Info from lead fields$")
 	public void pupulate_Info_from_lead_fields() {
 
 		op.leadPhoneField(LeadPhone);
@@ -593,7 +640,7 @@ public class OpportunitiesStepDef {
 		// Enterprise Lead
 
 		// eLead Create Date
-		op.eLeadCreateDateCalender();
+//        op.eLeadCreateDateCalender();
 	}
 
 	@Then("^Enter the Description Information$")
@@ -601,10 +648,10 @@ public class OpportunitiesStepDef {
 		// Description
 		op.discriptionField(Discription);
 
-		// Price drop down
-		op.priceDropDownClick();
-		op.priceDropDownPopulate();
-
+//        // Price drop down
+//        op.priceDropDownClick();
+//        op.priceDropDownPopulate();
+//
 	}
 
 	@Then("^Other data fields$")
@@ -689,13 +736,13 @@ public class OpportunitiesStepDef {
 		op.nextActivityDateCalender();
 
 		// LastStageChangeTime Date and Time
-		op.lastStageChangeTimeDateAndTimeCalender();
+//        op.lastStageChangeTimeDateAndTimeCalender();
 
 		// Last Sales Activity Date Time
 		op.LastSalesActivityDateTimeCalender();
 
 		// Last Lead Conversion Date Time
-		op.LastLeadConversionDateTimeCalender();
+//        op.LastLeadConversionDateTimeCalender();
 
 		// CRM Submission TIME DATE
 		op.CRMSubmissionTIMEDATECalender();
@@ -706,7 +753,7 @@ public class OpportunitiesStepDef {
 	public void click_the_Save_button() {
 
 		// Click on the Save button
-		op.clicktheSavebutton();
-
+//        op.clicktheSavebutton();
+//
 	}
 }
