@@ -275,7 +275,7 @@ formatter.match({
   "location": "OpportunitiesStepDef.open_the_Salesforce_Website()"
 });
 formatter.result({
-  "duration": 6087101388,
+  "duration": 8321224108,
   "status": "passed"
 });
 formatter.match({
@@ -288,7 +288,7 @@ formatter.match({
   "location": "OpportunitiesStepDef.verify_the_Salesforce_page_title_as(String)"
 });
 formatter.result({
-  "duration": 5591348,
+  "duration": 6427924,
   "status": "passed"
 });
 formatter.match({
@@ -305,14 +305,14 @@ formatter.match({
   "location": "OpportunitiesStepDef.login_with_valid_username_and_password_and(String,String)"
 });
 formatter.result({
-  "duration": 68879285,
+  "duration": 83806771,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.click_login_button()"
 });
 formatter.result({
-  "duration": 2542058840,
+  "duration": 9225256713,
   "status": "passed"
 });
 formatter.match({
@@ -325,126 +325,115 @@ formatter.match({
   "location": "OpportunitiesStepDef.verify_Salesforce_Home_page_title_as(String)"
 });
 formatter.result({
-  "duration": 12009814860,
+  "duration": 12009084604,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.click_on_the_Opportunities_tab()"
 });
 formatter.result({
-  "duration": 28025434,
+  "duration": 38676196,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.click_on_the_New_button()"
 });
 formatter.result({
-  "duration": 1271670580,
+  "duration": 1148002950,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.select_a_record_type_and_click_Next()"
 });
 formatter.result({
-  "duration": 4345713320,
+  "duration": 839016655,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.verify_Required_fields_message()"
 });
 formatter.result({
-  "duration": 341527093,
+  "duration": 309744619,
   "status": "passed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.Save_button()"
 });
 formatter.result({
-  "duration": 329969681,
-  "status": "passed"
+  "duration": 30027519298,
+  "error_message": "org.openqa.selenium.NoSuchElementException: Unable to locate element: *[data-aura-rendered-by^\u003d\u00279061:\u0027][data-aura-rendered-by$\u003d\u0027a\u0027]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u0027unknown\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027HQ-991-0L7LVCF\u0027, ip: \u00272601:246:4500:eb00:fda7:189f:348a:36fc%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14.6\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201019162914, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 28940, moz:profile: /var/folders/s3/88ktkygs3s3..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: d6ac8f33-3c46-1546-aa8b-56d5ad6db84a\n*** Element info: {Using\u003dcss selector, value\u003d*[data-aura-rendered-by^\u003d\u00279061:\u0027][data-aura-rendered-by$\u003d\u0027a\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat pages.BasePageTest.$(BasePageTest.java:57)\n\tat pages.OpportunitiesPage.clicktheSavebutton1(OpportunitiesPage.java:255)\n\tat stepDefinitions.OpportunitiesStepDef.Save_button(OpportunitiesStepDef.java:186)\n\tat ✽.Then Save button(/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/src/main/java/Features/Opportunities.feature:14)\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.populate_System_Admin_Layout_fields()"
 });
 formatter.result({
-  "duration": 1082942816,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.Opportunity_Information()"
 });
 formatter.result({
-  "duration": 8199117887,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.populate_Interested_In_Attributes_fields()"
 });
 formatter.result({
-  "duration": 5495613889,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.Interested_In_Details()"
 });
 formatter.result({
-  "duration": 4998515685,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.Towing_Information()"
 });
 formatter.result({
-  "duration": 493301955,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.currently_Own_Trade_InCurrently_Own_TradeIn_from_Web_Lead_fields()"
 });
 formatter.result({
-  "duration": 1406310714,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.pupulate_Info_from_lead_fields()"
 });
 formatter.result({
-  "duration": 518184379,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.Lead_Source()"
 });
 formatter.result({
-  "duration": 1349461953,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.enter_the_Description_Information()"
 });
 formatter.result({
-  "duration": 61591529,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.populate_Other_data_fields()"
 });
 formatter.result({
-  "duration": 2011572891,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.System_Information_fields()"
 });
 formatter.result({
-  "duration": 2186869333,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "OpportunitiesStepDef.click_the_Save_button()"
 });
 formatter.result({
-  "duration": 33186,
-  "status": "passed"
+  "status": "skipped"
 });
 });
