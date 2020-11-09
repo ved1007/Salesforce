@@ -25,7 +25,7 @@ public class CreateNewLead {
 
 	@Given("^Salesforce site$")
 	public void salesforce_site() throws Throwable {
-
+		
 		System.setProperty("webdriver.chrome.driver",
 				"/Users/vedant.jagani/Documents/Automation/SampleAutomation/Drivers/chromedriver");
 
@@ -91,7 +91,7 @@ public class CreateNewLead {
 	}
 
 	@Then("^Choose Location and Save$")
-	public void choose_Location_and_Save() {
+	public void choose_Location_and_Save() throws Throwable {
 
 		
 	}

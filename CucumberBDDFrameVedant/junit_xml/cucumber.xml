@@ -1,124 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="51.409669">
-    <testcase classname="created New Opportunitie" name="User is able to create Opportunitie" time="51.409669">
-        <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id=&quot;brandBand_1&quot;]/div/div/div/div/div[1]/div[1]/div[2]/ul/li/a (tried for 10 second(s) with 500 milliseconds interval)&#10;&#9;at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)&#10;&#9;at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)&#10;&#9;at stepDefinitions2.OpportunitiesStepDef.click_on_the_New_button(OpportunitiesStepDef.java:193)&#10;&#9;at ✽.Then Click on the New button(/Users/vedant.jagani/git/Salesforce/CucumberBDDFrameVedant/src/main/java/Features/Opportunities2.feature:11)&#10;Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;brandBand_1&quot;]/div/div/div/div/div[1]/div[1]/div[2]/ul/li/a&quot;}&#10;  (Session info: chrome=84.0.4147.89)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: 'unknown', revision: 'unknown', time: 'unknown'&#10;System info: host: 'HQ-991-0L7LVCF', ip: '2601:246:4500:eb00:44fb:30ba:6d46:8ead%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '13.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/s3/88ktkygs3s3...}, goog:chromeOptions: {debuggerAddress: localhost:64748}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 147d6c588277a47ee5b1bfbdb2aa9b2c&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;brandBand_1&quot;]/div/div/div/div/div[1]/div[1]/div[2]/ul/li/a}&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)&#10;&#9;at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)&#10;&#9;at stepDefinitions2.OpportunitiesStepDef.click_on_the_New_button(OpportunitiesStepDef.java:193)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:567)&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:40)&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:34)&#10;&#9;at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)&#10;&#9;at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#10;&#9;at cucumber.runtime.Runtime.runStep(Runtime.java:300)&#10;&#9;at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#10;&#9;at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#10;&#9;at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:128)&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:27)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:128)&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:27)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#10;&#9;at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#10;">
-            <![CDATA[Given Open the Salesforce Website...........................................passed
-When verify the Salesforce page title.......................................passed
-Then Login with valid username and password "vedant.jagani@campingworld.com.test" and "Welcome2019*".passed
-And Click login button......................................................passed
-And Verify Salesforce Home page title.......................................passed
-Then Click on the Opportunities tab.........................................passed
-Then Click on the New button................................................failed
-Then Select a record type and click Next....................................skipped
-And Populate System Admin Layout fields.....................................skipped
-And Opportunity Information.................................................skipped
-And Interested In Attributes................................................skipped
-And Interested In Details...................................................skipped
-And Towing Information......................................................skipped
-And Currently Own Trade-InCurrently Own TradeIn from Web Lead fields........skipped
-And Pupulate Info from lead fields..........................................skipped
-And Lead Source.............................................................skipped
-And Enter the Description Information.......................................skipped
-And Other data fields.......................................................skipped
-And System Information fields...............................................skipped
-Then Click the Save button..................................................skipped
-
-StackTrace:
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id="brandBand_1"]/div/div/div/div/div[1]/div[1]/div[2]/ul/li/a (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at stepDefinitions2.OpportunitiesStepDef.click_on_the_New_button(OpportunitiesStepDef.java:193)
-	at ✽.Then Click on the New button(/Users/vedant.jagani/git/Salesforce/CucumberBDDFrameVedant/src/main/java/Features/Opportunities2.feature:11)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="brandBand_1"]/div/div/div/div/div[1]/div[1]/div[2]/ul/li/a"}
-  (Session info: chrome=84.0.4147.89)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'HQ-991-0L7LVCF', ip: '2601:246:4500:eb00:44fb:30ba:6d46:8ead%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/s3/88ktkygs3s3...}, goog:chromeOptions: {debuggerAddress: localhost:64748}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 147d6c588277a47ee5b1bfbdb2aa9b2c
-*** Element info: {Using=xpath, value=//*[@id="brandBand_1"]/div/div/div/div/div[1]/div[1]/div[2]/ul/li/a}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at stepDefinitions2.OpportunitiesStepDef.click_on_the_New_button(OpportunitiesStepDef.java:193)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0">
+    <testcase classname="Create New Account" name="Within the Salesforce application User is able to create New Account" time="0">
+        <failure message="The scenario has pending or undefined step(s)">
+            <![CDATA[Given User will Open Salesforce Website.....................................undefined
+When verify title for the Salesforce page...................................undefined
+Then user will enter "vedant.jagani@campingworld.com.test" and "Welcome2019*".undefined
+And user click  the login button............................................undefined
+And verify title for the Salesforce Home page...............................undefined
+Then user will click on the waffle icon.....................................undefined
+Then user will navigate to the Search field and search for the Account......undefined
+Then user weill verify title for the Account page...........................undefined
+Then user will click on the New button......................................undefined
+Then user will select the Household radio button............................undefined
+Then user will click the Next button within the New Account window..........undefined
+Then user will verify that the required fields message is displayed.........undefined
+Then user will populate fields within the Account Information section "Automation1" and "1234567890" and "101".undefined
+Then user will populate fields within the Address Inforamtion section "101 Chicago St" and "102 Chicago St" and "Chicago" and "S Chicago" and "<billingzipcode>" and "60169".undefined
+Then user will populate fields within the Cloud MDM Information.............undefined
+And Click on the Save button................................................undefined
 ]]>
         </failure>
     </testcase>

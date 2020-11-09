@@ -30,8 +30,12 @@ public class NewAccount {
 
 	WebDriver driver;
 
+	
+	
+	
 	@Given("^User will Open Salesforce Website$")
-	public void user_will_Open_Salesforce_Website() {
+	public void user_will_Open_Salesforce_Website()  {
+	   
 
 		System.setProperty("webdriver.chrome.driver",
 				"/Users/vedant.jagani/Documents/Automation/SampleAutomation/Drivers/chromedriver");
